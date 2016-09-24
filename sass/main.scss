@@ -305,6 +305,16 @@ a {
     }
 }
 
+// ---------this css is for home-page--------------------
+.home-page {
+    .div-one {
+        background: url("../img/banner.jpg");
+        .quick-search {
+            padding: 40px 30px 30px 30px;
+        }
+    }
+}
+
 @import "fancybox-override";
 @import "sagar";
 @import "mobile";
