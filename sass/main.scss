@@ -175,6 +175,9 @@ header {
                 border-radius: 4px;
                 padding: 10px 14px
             }
+            li:last-child {
+                padding-right: 0;
+            }
         }
     }
 }
