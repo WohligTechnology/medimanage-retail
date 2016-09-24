@@ -54,6 +54,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('SignupCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("signup"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Sign Up"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {
 
     $scope.changeLanguage = function() {

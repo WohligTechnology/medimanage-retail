@@ -28,6 +28,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'LoginCtrl'
         })
+        .state('signup', {
+            url: "/signup",
+            templateUrl: "views/template.html",
+            controller: 'SignupCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: "views/template.html",
