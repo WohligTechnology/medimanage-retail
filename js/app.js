@@ -33,6 +33,26 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'SignupCtrl'
         })
+        .state('testimonial', {
+            url: "/testimonial",
+            templateUrl: "views/template.html",
+            controller: 'TestimonialCtrl'
+        })
+        .state('forgot-password', {
+            url: "/forgot-password",
+            templateUrl: "views/template.html",
+            controller: 'PasswordCtrl'
+        })
+        .state('privacy-policy', {
+            url: "/privacy-policy",
+            templateUrl: "views/template.html",
+            controller: 'PpolicyCtrl'
+        })
+        .state('our-team', {
+            url: "/our-team",
+            templateUrl: "views/template.html",
+            controller: 'TeamCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: "views/template.html",

@@ -63,6 +63,42 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('TeamCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("our-team"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Our Team"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
+.controller('TestimonialCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("testimonial"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Testimonials"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
+.controller('PpolicyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("privacy-policy"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Privacy Policy"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
+.controller('PasswordCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("forgot-password"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Forgot Password"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {
 
     $scope.changeLanguage = function() {
