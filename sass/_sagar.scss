@@ -36,6 +36,14 @@ $shadow-col: #ececec;
     text-align: left;
 }
 
+.brand-danger{
+  color: $brand-danger;
+}
+
+.brand-primary{
+  color: $brand-primary;
+}
+
 .font-color {
     color: $font-color;
 }
@@ -394,4 +402,20 @@ h4 {
   width: 50px;
   height: 50px;
   margin: 0 auto;
+}
+
+//Careers sectioN
+.career-sec{
+  .career-cont{
+    color: #4b4b4b;
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .career-up{
+    color: #4f4f4f;
+  }
+}
+
+.padding-top40{
+  padding-top: 40px;
 }

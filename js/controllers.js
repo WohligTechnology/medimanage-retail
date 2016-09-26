@@ -98,6 +98,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("careers"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Careers"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
 .controller('TestimonialCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("testimonial"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Testimonials"); //This is the Title of the Website
