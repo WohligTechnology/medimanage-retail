@@ -109,29 +109,31 @@
             <h1>Buy Health Insurance in <b>3 Easy Steps</b></h1>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-4">
-                        <div class="title-image">
-                            <img src="img/pic-1.jpg" class="img-responsive" alt="">
-                            <div class="title">Step 1</div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="title-image">
+                                <img src="img/pic-1.jpg" class="img-responsive" alt="">
+                                <div class="title">Step 1</div>
+                            </div>
+                            <h4>Enter your details</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempora dolore consequatur corporis nobis, rerum repellendus ea dolores, aperiam quisquam eveniet optio minus atque architecto? Illo ad sunt, veritatis tempore.</p>
                         </div>
-                        <h4>Enter your details</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempora dolore consequatur corporis nobis, rerum repellendus ea dolores, aperiam quisquam eveniet optio minus atque architecto? Illo ad sunt, veritatis tempore.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="title-image">
-                            <img src="img/pic-2.jpg" class="img-responsive" alt="">
-                            <div class="title">Step 2</div>
+                        <div class="col-md-4">
+                            <div class="title-image">
+                                <img src="img/pic-2.jpg" class="img-responsive" alt="">
+                                <div class="title">Step 2</div>
+                            </div>
+                            <h4>Choose your best policy</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam deleniti, quidem quaerat quia recusandae obcaecati nostrum, sed facere maiores mollitia fugiat reiciendis quasi, vero suscipit neque atque sit, sequi dolor.</p>
                         </div>
-                        <h4>Choose your best policy</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam deleniti, quidem quaerat quia recusandae obcaecati nostrum, sed facere maiores mollitia fugiat reiciendis quasi, vero suscipit neque atque sit, sequi dolor.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="title-image">
-                            <img src="img/pic-3.jpg" class="img-responsive" alt="">
-                            <div class="title">Step 3</div>
+                        <div class="col-md-4">
+                            <div class="title-image">
+                                <img src="img/pic-3.jpg" class="img-responsive" alt="">
+                                <div class="title">Step 3</div>
+                            </div>
+                            <h4>Make Payment & Get Insured</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum explicabo, quis laboriosam alias in adipisci excepturi laudantium ullam! Asperiores obcaecati atque dignissimos at ex aut vero sint libero aliquam pariatur.</p>
                         </div>
-                        <h4>Make Payment & Get Insured</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum explicabo, quis laboriosam alias in adipisci excepturi laudantium ullam! Asperiores obcaecati atque dignissimos at ex aut vero sint libero aliquam pariatur.</p>
                     </div>
                 </div>
             </div>
@@ -157,7 +159,9 @@
                                                 <h3 class="heading">{{slide.heading}}</h3>
                                                 <p class="fixed-content">{{slide.fixedContent}}</p>
                                                 <p class="heading-content">{{slide.content}}</p>
-                                                <img ng-src="{{slide.img}}" alt="" class="img-responsive customer-image">
+                                                <div class="slider-imgholder">
+                                                    <img ng-src="{{slide.img}}" alt="" class="img-responsive customer-image">
+                                                </div>
                                                 <p class="cust-name">{{slide.custName}}</p>
                                                 <button type="button" class="btn btn-success">HAPPY TO HELP</button>
                                             </div>
@@ -235,41 +239,81 @@
     <div class="div-six">
         <div class="container">
             <div class="story">
-                <ul class="nav nav-pills">
-                    <li class="active"><a data-toggle="tab" href="#home">PRODUCT REVIEWS</a></li>
-                    <li><a data-toggle="tab" href="#menu1">ARTICLES</a></li>
-                    <li><a data-toggle="tab" href="#menu2">INDUSTRY UPDATES</a></li>
-                    <li><a data-toggle="tab" href="#menu3">BLOG</a></li>
-                    <li><a data-toggle="tab" href="#menu4">BUY ONLINE</a></li>
-                    <li><a data-toggle="tab" href="#menu5">PLANS WITHOUT MEDICAL TESTS</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
-                        <h3>HOME</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div id="menu1" class="tab-pane fade">
-                        <h3>Menu 1</h3>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    <div id="menu2" class="tab-pane fade">
-                        <h3>Menu 2</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="menu3" class="tab-pane fade">
-                        <h3>Menu 3</h3>
-                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                    <div id="menu4" class="tab-pane fade">
-                        <h3>Menu 3</h3>
-                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                    <div id="menu5" class="tab-pane fade">
-                        <h3>Menu 3</h3>
-                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
+                <div class="product-detail-tab">
+                    <uib-tabset>
+                        <uib-tab>
+                            <uib-tab-heading>1</uib-tab-heading>
+                            <div class="tab-content-detail">art</div>
+                        </uib-tab>
+                        <uib-tab>
+                            <uib-tab-heading>1</uib-tab-heading>
+                            <div class="tab-content-detail">45</div>
+                        </uib-tab>
+                        <uib-tab>
+                            <uib-tab-heading>1</uib-tab-heading>
+                            <div class="tab-content-detail">56</div>
+                        </uib-tab>
+                        <uib-tab>
+                            <uib-tab-heading>1</uib-tab-heading>
+                            <div class="tab-content-detail">89</div>
+                        </uib-tab>
+                    </uib-tabset>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="div-seven">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="img/article-pic-1.jpg" class="img-responsive" alt="">
+                                <h4>Best medical insurance policy</h4>
+                                <p>Once you have decided to buy the health insurance, it is imperative to understand the best policy that would suit your requirements ...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="img/article-pic-2.jpg" class="img-responsive" alt="">
+                                <h4>Why your company mediclaim policy is not enough?</h4>
+                                <p>You may be happy that your company has a health insurance plan but you still need to buy an independent health insurance policy to secure your finances ...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <img src="img/article-pic-3.jpg" class="img-responsive" alt="">
+                                <h4>Critical Illness: Better be prepared than Regret!</h4>
+                                <p>Critical Illness cover is a plan which covers certain diseases like Stroke, Cancer, Heart attack which do not necessarily cause death but diminish the working capacity and which have extremely expensive treatments ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="request">
+                <button type="button" class="btn btn-success">CALL ME BACK</button>
+            </div>
+            <h4>Latest news, reviews, deals & announcements from Medimanage straight to your inbox.</h4>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Full Name" id="Full Name">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Email Address" id="Email Address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-success btn-width">Get a Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
 </section>
