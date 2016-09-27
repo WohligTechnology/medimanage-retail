@@ -72,13 +72,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 })
 
 .controller('CustomCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-    $scope.template = TemplateService.changecontent("custom"); //Use same name of .html file
-    $scope.menutitle = NavigationService.makeactive("Custom"); //This is the Title of the Website
-    TemplateService.title = $scope.menutitle;
-    $scope.navigation = NavigationService.getnav();
+        $scope.template = TemplateService.changecontent("custom"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Custom"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
 
 
-})
+    })
+    .controller('FaqCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("faq"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Faq"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+
+    })
 
 .controller('LoginCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("login"); //Use same name of .html file

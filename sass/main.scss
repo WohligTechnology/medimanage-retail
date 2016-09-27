@@ -566,6 +566,65 @@
                             }
                         }
                         
+                        // ----------this css is for custom page--------------
+                        .custom {
+                            .expert-call {
+                                text-align: center;
+                                background-color: #F7F7F7;
+                                padding: 45px 0;
+                                color: $font-color;
+                                h2 {
+                                    margin-top: 0;
+                                    margin-bottom: 15px;
+                                    span {
+                                        color: $brand-danger;
+                                        font-weight: bold;
+                                    }
+                                }
+                                .head-content {
+                                    display: block;
+                                    margin-bottom: 10px;
+                                }
+                                .mobile-no {
+                                    width: 40%;
+                                    margin: 0 auto;
+                                    .input-group-addon {
+                                        border-radius: 4px 0 0 4px;
+                                    }
+                                    .btn {
+                                        border-radius: 0 4px 4px 0;
+                                    }
+                                    input {
+                                        font-size: 12px;
+                                        font-weight: bold;
+                                    }
+                                    .btn {
+                                        font-size: 12px;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                            .show-error {
+                                text-align: center;
+                                padding: 20px 0 50px 0;
+                                img {
+                                    margin-bottom: 25px;
+                                }
+                                .btn {
+                                    font-weight: bold;
+                                    color: #fff;
+                                    border: none;
+                                    padding: 6px 40px;
+                                }
+                                .home-btn {
+                                    background-color: $brand-danger;
+                                }
+                                .back-btn {
+                                    background-color: $dark-font-color;
+                                }
+                            }
+                        }
+                        
                         @import "fancybox-override";
                         @import "sagar";
                         @import "mobile";
