@@ -73,6 +73,16 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'CareersCtrl'
         })
+        .state('trust', {
+            url: "/trust",
+            templateUrl: "views/template.html",
+            controller: 'TrustCtrl'
+        })
+        .state('why-medimanage', {
+            url: "/why-medimanage",
+            templateUrl: "views/template.html",
+            controller: 'WhyCtrl'
+        })
         .state('get-call', {
             url: "/get-call",
             templateUrl: "views/template.html",

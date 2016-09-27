@@ -124,10 +124,27 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('WhyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("why-medimanage"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Why Medimanage"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
 
 .controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("careers"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Careers"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
+.controller('TrustCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("trust"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Trust & Security"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 

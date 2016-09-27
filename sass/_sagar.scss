@@ -1,8 +1,13 @@
 //defaults
 $fb-color: #5174af !default;
 $g-plus-color: #dc473c !default;
-$black-color: #000;
-$shadow-col: #ececec;
+$black-color: #000 !default;
+$shadow-col: #ececec !default;
+$white-color: #fff !default;
+
+.posi-rel{
+  position: relative;
+}
 
 .bord-rad5 {
     border-radius: 5px;
@@ -483,4 +488,102 @@ h4 {
         right: 5px;
         position: absolute;
     }
+}
+
+//Our story sectioN
+.blue-bg{
+  background: #8bb5c4;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 40px;
+  &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 30px 30px 0 30px;
+      border-color: #909da2 transparent transparent transparent;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+      top: 0;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+  }
+}
+
+.gray-bg{
+  background: #909da2;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 40px;
+  &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 30px 30px 0 30px;
+      border-color: #8bb5c4 transparent transparent transparent;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+      top: 0;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+  }
+}
+
+.padd-tb30{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.margin-bt50{
+  margin-bottom: 50px;
+}
+.marg-tb30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.white-font{
+  color: $white-color;
+}
+
+.first-bx{
+  border-radius: 20px 20px 0 0;
+  &:before{
+    border-color: $white-color transparent transparent transparent;
+  }
+}
+
+.last-bx{
+  border-radius:0 0 20px 20px;
+
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 30px 0 30px;
+        border-color: #909da2 transparent transparent transparent;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        left: 50%;
+        bottom: -30px;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+}
+
+.padd-lf10{
+  padding-left: 10px;
+}
+
+.marg-bt20{
+    margin-bottom: 20px;
 }
