@@ -117,8 +117,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 })
 
 .controller('GetcallCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-    $scope.template = TemplateService.changecontent("careers"); //Use same name of .html file
-    $scope.menutitle = NavigationService.makeactive("Careers"); //This is the Title of the Website
+    $scope.template = TemplateService.changecontent("get-call"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Have us call "); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
