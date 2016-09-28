@@ -747,8 +747,8 @@ h4 {
     }
 }
 
-.senior-cont{
-  padding: 40px;
+.senior-cont {
+    padding: 40px;
 }
 
 .senior-padd {
@@ -814,59 +814,272 @@ h4 {
             list-style: none;
             background: url("../img/arrow-bg.png") no-repeat;
             padding-left: 30px;
-            margin: 20px 0px 20px 0;
+            margin: 20px 0;
         }
     }
-  }
+}
 
-  .senior-tax{
+.senior-tax {
     background: $brand-danger;
     color: $white-color;
     padding: 40px;
-    p{
-      font-size: 20px;
-    }
-  }
 
-  .senior-prod{
-    padding: 40px;
-    ul{
-      li{
-        list-style: none;
-        margin: 20px 10px 40px 10px;
-        div{
-          padding:0 10px;
-          font-size: 16px;
-        }
-        .center-bord{
-          border-left: 1px solid #ccc;
-          border-right: 1px solid #ccc;
-          margin-left: 0px;
-          margin-right: 0px;
-        }
-        img{
-          margin: 0 auto;
-        }
-      }
+    p {
+        font-size: 20px;
     }
+}
+
+.senior-prod {
+    padding: 40px;
+
+    ul {
+        li {
+            list-style: none;
+            margin: 20px 10px 40px;
+
+            div {
+                padding: 0 10px;
+                font-size: 16px;
+            }
+
+            .center-bord {
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
     button {
         width: 30%;
         margin: 0 auto;
         font-size: 20px;
     }
-  }
-
-.senior-why{
-  padding: 40px;
-  background: #fafcfd;
-  p{
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: lighter;
-  }
 }
 
-.senior-req{
-  text-align: center;
-  padding: 50px;
+.senior-why {
+    padding: 40px;
+    background: #fafcfd;
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: lighter;
+    }
+}
+
+.senior-req {
+    text-align: center;
+    padding: 50px;
+}
+//Personal accident sectioN
+.peraccident-hd-bg {
+    background: url("../img/citizen-banner.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 5%;
+    background-position: 50%;
+    text-align: center;
+
+    .head-txt {
+        bottom: 0;
+    }
+
+    button {
+        width: 30%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+}
+
+.peraccident-cont {
+    padding: 40px;
+}
+
+.peraccident-padd {
+    padding: 30px;
+    font-weight: 300;
+
+    .txt-left {
+        padding: 20px;
+    }
+
+    .txt-right {
+        padding: 10px 20px 20px;
+    }
+}
+
+.peraccident-click {
+    width: 40%;
+    margin: 0 auto;
+
+    .input-group {
+        //border: 1px solid $brand-success;
+        border-radius: 4px 4px 4px 4px;
+
+        .btn {
+            border-radius: 0 4px 4px 0;
+            font-size: 12px;
+            height: 34px;
+        }
+
+        input {
+            font-size: 16px;
+            font-weight: 300;
+            border-radius: 4px 0 0 4px;
+            border: 2px solid $brand-success;
+
+            &::-webkit-input-placeholder {
+                color: $black-color;
+            }
+
+            &:-moz-placeholder {
+                color: $black-color;
+            }
+
+            &::-moz-placeholder {
+                color: $black-color;
+            }
+
+            &:-ms-input-placeholder {
+                color: $black-color;
+            }
+        }
+    }
+}
+
+.peraccident-point {
+    background: #f3f8fa url("../img/citizen-plan-img.png") no-repeat top center;
+    //background-size: cover;
+    font-size: 18px;
+    padding: 40px;
+
+    ul {
+        li {
+            list-style: none;
+            background: url("../img/arrow-bg.png") no-repeat;
+            padding-left: 30px;
+            margin: 20px 0;
+        }
+    }
+}
+
+.peraccident-tax {
+    background: $brand-danger;
+    color: $white-color;
+    padding: 40px;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.peraccident-prod {
+    padding: 40px;
+
+    ul {
+        li {
+            list-style: none;
+            margin: 20px 10px 40px;
+
+            div {
+                padding: 0 10px;
+                font-size: 16px;
+            }
+
+            .center-bord {
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    button {
+        width: 30%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+}
+
+.peraccident-why {
+    padding: 40px;
+    background: #fafcfd;
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: lighter;
+    }
+}
+
+.peraccident-req {
+    text-align: center;
+    padding: 50px;
+}
+//Our value sectioN
+.our-value {
+    img {
+        margin: 0 auto;
+    }
+}
+
+.value-head {
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    ul {
+        li {
+            position: relative;
+
+            a {
+                color: $white-color;
+                background: #C0C0C0;
+                padding: 10px 20px;
+                margin: 20px 10px;
+                border-radius: 5px;
+                font-size: 18px;
+
+                &.active {
+                    background: $brand-danger;
+
+                    &:before {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 10px 5px 0 5px;
+                        border-color: $brand-danger transparent transparent transparent;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        bottom: -17px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.value-commitment,
+.value-main,
+.value-passion,
+.value-promise {
+    p {
+        margin: 20px 0;
+    }
 }
