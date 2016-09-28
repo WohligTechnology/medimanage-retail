@@ -54,6 +54,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'SeniorcitizenCtrl'
         })
+        .state('peronal-accident', {
+            url: "/personal-accident",
+            templateUrl: "views/template.html",
+            controller: 'PaccidentCtrl'
+        })
         .state('forgot-password', {
             url: "/forgot-password",
             templateUrl: "views/template.html",
