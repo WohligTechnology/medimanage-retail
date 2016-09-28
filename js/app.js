@@ -16,14 +16,10 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
         .state('home', {
             url: "/",
             templateUrl: "views/template.html",
-            controller: 'HomeCtrl'
-        })
-        .state('home-page', {
-            url: "/home-page",
-            templateUrl: "views/template.html",
             controller: 'HomepageCtrl'
         })
-        .state('login', {
+
+    .state('login', {
             url: "/login",
             templateUrl: "views/template.html",
             controller: 'LoginCtrl'
@@ -37,6 +33,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             url: "/faq",
             templateUrl: "views/template.html",
             controller: 'FaqCtrl'
+        })
+        .state('ask-expert', {
+            url: "/ask-expert",
+            templateUrl: "views/template.html",
+            controller: 'AskExpertCtrl'
         })
         .state('signup', {
             url: "/signup",
