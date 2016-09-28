@@ -95,8 +95,32 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.oneAtATime = true;
+        $scope.mySlides = [{
+            heading: "Why customers love us? ",
+            fixedContent: "Here's what our customers have to say about us",
+            content: "“ I spoke to the Advisory / Sales Team. I had a very good experience interacting with Medimanage. I feel they are the best as i have been getting the best service from the medimanage team. ”",
+            img: "img/pic-4.png",
+            custName: "Ananya"
+        }, {
+            heading: "Why customers love us? ",
+            fixedContent: "Here's what our customers have to say about us",
+            content: "“ I spoke to the Advisory / Sales Team. I had a very good experience interacting with Medimanage. I feel they are the best as i have been getting the best service from the medimanage team. ”",
+            img: "img/pic-4.png",
+            custName: "Ananya"
 
-
+        }, {
+            heading: "Why customers love us? ",
+            fixedContent: "Here's what our customers have to say about us",
+            content: "“ I spoke to the Advisory / Sales Team. I had a very good experience interacting with Medimanage. I feel they are the best as i have been getting the best service from the medimanage team. ”",
+            img: "img/pic-4.png",
+            custName: "Ananya"
+        }, {
+            heading: "Why customers love us? ",
+            fixedContent: "Here's what our customers have to say about us",
+            content: "“ I spoke to the Advisory / Sales Team. I had a very good experience interacting with Medimanage. I feel they are the best as i have been getting the best service from the medimanage team. ”",
+            img: "img/pic-4.png",
+            custName: "Ananya"
+        }, ];
 
     })
 

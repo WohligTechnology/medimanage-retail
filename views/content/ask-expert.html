@@ -110,6 +110,30 @@
             </div>
         </div>
     </div>
+    <div class="slide">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="why-us">
+                        <flex-slider flex-slide="slide in mySlides track by $index">
+                            <li>
+                                <div class="slider-holder">
+                                    <h3 class="heading">{{slide.heading}}</h3>
+                                    <p class="fixed-content">{{slide.fixedContent}}</p>
+                                    <p class="heading-content">{{slide.content}}</p>
+                                    <div class="slider-imgholder">
+                                        <img ng-src="{{slide.img}}" alt="" class="img-responsive customer-image">
+                                    </div>
+                                    <p class="cust-name">{{slide.custName}}</p>
+                                    <button type="button" class="btn btn-success">HAPPY TO HELP</button>
+                                </div>
+                            </li>
+                        </flex-slider>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </section>

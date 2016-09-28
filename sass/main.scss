@@ -889,6 +889,59 @@
         }
     }
     
+    .slide {
+        .why-us {
+            .flexslider {
+                background-color: transparent;
+                border: none;
+            }
+            .flex-control-nav {
+                display: none;
+            }
+            .flex-prev,
+            .flex-next {
+                &:before {
+                    color: $brand-danger;
+                    font-size: 25px;
+                }
+            }
+            .slider-holder {
+                text-align: center;
+                color: $font-color;
+                .heading {
+                    font-weight: bold;
+                    font-size: 26px;
+                    color: $brand-danger;
+                }
+                .fixed-content {
+                    margin-bottom: 20px;
+                }
+                .heading-content {
+                    text-align: justify;
+                    width: 70%;
+                    margin: 0 auto 20px;
+                }
+                .customer-image {
+                    border-radius: 50%;
+                    border: 1px solid #fff;
+                    margin: 0 auto 10px;
+                    width: 15%;
+                }
+                .cust-name {
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                }
+                .btn {
+                    font-weight: bold;
+                    padding: 15px 35px;
+                    font-size: 16px;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+    
     @import "fancybox-override";
     @import "sagar";
     @import "mobile";
