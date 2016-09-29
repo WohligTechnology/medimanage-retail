@@ -46,43 +46,43 @@
                             <div class="col-md-6">
                                 <div class="text-center rad-borbt padding40">
                                     <img src="img/individual-img.png" alt="">
-                                    <div class="radio">
+                                    <div class="radio rad1">
                                         <label class="radio-inline">
-                                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                          <br><span class="disp-blk">For individual</span>
+                                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" class="rad1" checked>
+                                          <br><span class="disp-blk radio-span">For individual</span>
                                       </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="text-center rad-bordbt padding40">
+                                <div class="text-center rad-borbt padding40">
                                     <img src="img/family-img.png" alt="">
-                                    <div class="radio">
+                                    <div class="radio rad1">
                                         <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
-                                        <br><span class="disp-blk">For family</span>
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1" class="rad1" checked>
+                                        <br><span class="disp-blk radio-span">For family</span>
                                     </label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="buy1-iam text-center padding40">
+                    <div class="buy1-iam text-center rad-borbt padding40">
                         <div class="row">
                             <div class="col-md-6">
                                 <h3>I am <span class="badge">?</span></a></h3>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="disp-blk">
-                                            <div class="img-holder disp-inblk">
+                                            <div class="circ-img-holder disp-inblk">
                                                 <img src="img/male-pic.png" alt="">
                                             </div>
-                                            <label for="" class="disp-inblk"> Male</label>
+                                            <label for="" class="disp-inblk select-lab"> Male</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="disp-blk">
-                                            <div class="img-holder disp-inblk">
+                                            <div class="circ-img-holder disp-inblk">
                                                 <img src=" img/female-img.png" alt="">
                                             </div>
                                             <label for="" class="disp-inblk"> Female</label>
@@ -98,88 +98,146 @@
                         </div>
                     </div>
                     <div class="buy1-family padding40">
-                        <h3>My family member <span class="badge">?</span></a></h3>
+                        <h3 class="text-center">My family member <span class="badge">?</span></a></h3>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <input type="checkbox" aria-label="...">
-                                    </span>
-                                    <label for=""> self</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                      <input type="checkbox" aria-label="...">
-                                  </span>
-                                    <label for=""> husband</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <input type="checkbox" aria-label="...">
-                                    </span>
-                                    <label for=""> son</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                      <input type="checkbox" aria-label="...">
-                                  </span>
-                                    <label for="">daughter</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3>add son</h3>
-                            </div>
-                            <div class="col-md-6">
-                                <h3>add daughter</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <input type="checkbox" aria-label="...">
-                                    </span>
-                                    <label for=""> father</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                      <input type="checkbox" aria-label="...">
-                                  </span>
-                                    <label for="">mother</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <form>
-                                    <div class="form-group">
-                                        <select class="form-control" id="prod">
-                                      <option>More Members</option>
-                                      <option>Member 2</option>
-                                      <option>Member 3</option>
-                                      <option>Member 4</option>
-                                    </select>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="checkbox-col">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="checkbox1" id="self">
+                                                <label for="self"><small>Self</small></label>
+                                            </div>
+                                        </div>
                                     </div>
-                                </form>
+                                    <div class="col-md-6">
+                                        <div class="date-col">
+                                            <input type="date" data-date-inline-picker="true" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="checkbox-col">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="checkbox1" id="husband">
+                                                <label for="husband"> <small>Husband</small></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="date-col">
+                                            <input type="date" data-date-inline-picker="true" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="checkbox-col">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="checkbox1" id="son">
+                                                <label for="son"> <small>Son</small></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="date-col">
+                                            <input type="date" data-date-inline-picker="true" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="checkbox-col">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="checkbox1" id="daughter">
+                                                <label for="daughter"><small>Daughter</small></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="date-col">
+                                            <input type="date" data-date-inline-picker="true" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ------------------------------------------------ -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-offset-6 col-md-6">
+                                        <p><a href="#">Add Son</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <p><a href="#">Add Daughter</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-offset-6 col-md-6">
+                                        <div class="checkbox-col">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="checkbox1" id="father">
+                                                <label for="father"><small>Father</small></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="checkbox-col">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="checkbox1" id="mother">
+                                                <label for="mother"> <small>Mother</small></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                  <div class="col-md-offset-6 col-md-6">
+                                    <form>
+                                        <div class="form-group">
+                                            <select class="form-control" id="prod">
+                                          <option>More Members</option>
+                                          <option>Member 2</option>
+                                          <option>Member 3</option>
+                                          <option>Member 4</option>
+                                        </select>
+                                        </div>
+                                    </form>
+                                  </div>
+                                </div>
                             </div>
                             <div class="col-md-6">
                             </div>
                         </div>
                     </div>
-                    <div class="buy1-btn text-center">
-                      <button type="button" class="btn btn-success">search</button>
+                    <div class="buy1-btn text-center padding40">
+                        <button type="button" class="btn btn-success buy1-sub"><i class="fa fa-search" aria-hidden="true"></i> search</button>
                     </div>
                 </div>
             </div>
