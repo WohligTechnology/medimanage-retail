@@ -196,6 +196,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('Buystep1Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("buying-process-step1"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Buying Process: Step-1"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
 .controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("careers"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Careers"); //This is the Title of the Website

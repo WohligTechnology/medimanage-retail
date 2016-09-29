@@ -95,6 +95,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'TrustCtrl'
         })
+        .state('buying-process-step1', {
+            url: "/buying-process-step1",
+            templateUrl: "views/template.html",
+            controller: 'Buystep1Ctrl'
+        })
         .state('why-medimanage', {
             url: "/why-medimanage",
             templateUrl: "views/template.html",
