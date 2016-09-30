@@ -6,8 +6,9 @@
     @import "../bower_components/fancyBox/source/jquery.fancybox.css";
     @import "../bower_components/swiper/dist/css/swiper.min.css";
     @import "../bower_components/smart-app-banner/smart-app-banner.css";
+    @import "../bower_components/angularjs-slider/dist/rzslider.min";
     /* Bootstrap Variables Goes Here */
-    
+
     $brand-primary: #26B1E6 !default;
     $brand-success: #03A14C !default;
     $brand-warning: #F57E20 !default;
@@ -20,7 +21,7 @@
     body {
         // padding-top: 70px;
     }
-    
+
     .btn-success {
         background-color: $brand-success;
         border-color: $brand-success;
@@ -33,7 +34,7 @@
             border-color: $brand-success;
         }
     }
-    
+
     .btn-primary {
         background-color: $brand-primary;
         border-color: $brand-primary;
@@ -46,7 +47,7 @@
             border-color: $brand-primary;
         }
     }
-    
+
     .btn-danger {
         background-color: $brand-danger;
         border-color: $brand-danger;
@@ -59,38 +60,38 @@
             border-color: $brand-danger;
         }
     }
-    
+
     img.loading {
         text-align: center;
         opacity: 1;
         width: 32px !important;
         height: auto;
     }
-    
+
     img {
         opacity: 0;
         @include transition(all 300ms ease);
     }
-    
+
     img.doneLoading {
         opacity: 1;
     }
-    
+
     nav li:hover .dropdown-menu {
         display: block;
     }
-    
+
     #map img {
         opacity: 1;
     }
-    
+
     a,
     .btn,
     [ui-sref] {
         cursor: pointer;
         @include transition(all ease 300ms);
     }
-    
+
     header {
         top: 0;
         .head-1 {
@@ -184,7 +185,7 @@
             }
         }
     }
-    
+
     footer {
         font-size: 12px;
         background-color: #f2f5f9;
@@ -229,7 +230,7 @@
             padding: 20px 0;
         }
     }
-    
+
     //bootstrap forms
     .input-lg,
     .input-group-lg>.form-control,
@@ -240,17 +241,17 @@
         border-radius: 0;
         @include box-shadow(none);
     }
-    
+
     .form-control:focus {
         border-color: $brand-primary;
         outline: 0;
         @include box-shadow(none);
     }
-    
+
     .form-group {
         position: relative;
     }
-    
+
     .form-invalid {
         color: $brand-danger;
         .form-control {
@@ -258,11 +259,11 @@
             color: $brand-danger;
         }
     }
-    
+
     .form-submission {
         min-height: 300px;
     }
-    
+
     //FLEX SLIDER FIXES
     .flex-direction-nav {
         a {
@@ -275,28 +276,28 @@
             right: 10px !important;
         }
     }
-    
+
     //SWIPER CSS
     .swiper-button-prev,
     .swiper-container-rtl .swiper-button-next {
         background-image: url(../img/prev.png);
     }
-    
+
     .swiper-button-next,
     .swiper-container-rtl .swiper-button-prev {
         background-image: url(../img/next.png);
     }
     /* Start writing sass here */
-    
+
     .content {
         min-height: 450px;
     }
-    
+
     .full-img {
         width: 100%;
         display: block;
     }
-    
+
     a {
         color: $font-color;
         text-decoration: none;
@@ -305,7 +306,7 @@
             text-decoration: none;
         }
     }
-    
+
     // ---------this css is for home-page--------------------
     .home-page {
         .div-one {
@@ -541,7 +542,7 @@
             }
         }
     }
-    
+
     .div-six {
         padding-top: 60px;
         .story {
@@ -600,7 +601,7 @@
             }
         }
     }
-    
+
     .div-seven {
         text-align: center;
         padding: 40px 0;
@@ -626,7 +627,7 @@
             width: 100%;
         }
     }
-    
+
     // ----------this css is for custom page--------------
     .custom {
         .expert-call {
@@ -685,7 +686,7 @@
             }
         }
     }
-    
+
     // ------------this css is for faq--------------------
     .faq {
         color: $font-color;
@@ -761,7 +762,7 @@
             }
         }
     }
-    
+
     // --------------this css is for ask-expert page----------------
     .ask-expert {
         .expert-cover {
@@ -888,7 +889,7 @@
             }
         }
     }
-    
+
     .slide {
         .why-us {
             .flexslider {
@@ -941,7 +942,7 @@
             }
         }
     }
-    
+
     @import "fancybox-override";
     @import "sagar";
     @import "mobile";

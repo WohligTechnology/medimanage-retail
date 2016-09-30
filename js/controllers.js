@@ -1,4 +1,4 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper','rzModule'])
 
 .controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
@@ -202,6 +202,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
+
+})
+
+.controller('Buystep2Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("buying-process-step2"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Buying Process: Step-2"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    $scope.slider = {
+      minValue: 0,
+        maxValue: 796,
+        options: {
+            floor: 0,
+            ceil: 796,
+            step: 1
+        }
+    };
 
 })
 
