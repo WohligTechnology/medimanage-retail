@@ -1470,97 +1470,99 @@ h4 {
     background: url("../img/add-icon-h.png") no-repeat left center;
 }
 
-.date-col {
-    float: left;
-    width: 210px;
-    margin-left: 2px;
-}
+.buy1 {
+    .date-col {
+        float: left;
+        width: 210px;
+        margin-left: 2px;
+    }
 
-.checkbox {
-    margin: 0;
-}
+    .checkbox {
+        margin: 0;
+    }
 
-.date-col input[type="date"] {
-    border: 2px solid #25b1e6;
-    color: #25b1e6;
-    border-radius: 3px;
-    line-height: 39px;
-    width: 100%;
-    background: url("../img/calendar-icon.png") no-repeat scroll 95% 50%;
-    font-size: 18px; // font-family: 'robotomedium';
-    padding: 0 2%;
-    margin: 10px 0;
-}
+    .date-col input[type="date"] {
+        border: 2px solid #25b1e6;
+        color: #25b1e6;
+        border-radius: 3px;
+        line-height: 39px;
+        width: 100%;
+        background: url("../img/calendar-icon.png") no-repeat scroll 95% 50%;
+        font-size: 18px; // font-family: 'robotomedium';
+        padding: 0 2%;
+        margin: 10px 0;
+    }
 
-.checkbox-col {
-    float: left;
-    width: 100%;
-    border: 2px solid #d9d9d9;
-    border-radius: 4px;
-    margin: 10px 0;
-}
+    .checkbox-col {
+        float: left;
+        width: 100%;
+        border: 2px solid #d9d9d9;
+        border-radius: 4px;
+        margin: 10px 0;
+    }
 
-.checkbox-col small {
-    font-size: 16px; // font-family: 'robotobold';
-    color: #000;
-    vertical-align: top;
-    line-height: 40px;
-    padding-left: 22px;
-    font-weight: 700;
-}
+    .checkbox-col small {
+        font-size: 16px; // font-family: 'robotobold';
+        color: #000;
+        vertical-align: top;
+        line-height: 40px;
+        padding-left: 22px;
+        font-weight: 700;
+    }
 
-.checkbox-col input[type=radio],
-input[type=checkbox] {
-    display: none;
-}
+    .checkbox-col input[type=radio],
+    input[type=checkbox] {
+        display: none;
+    }
 
-.checkbox-col .checkbox {
-    text-align: left !important;
-}
+    .checkbox-col .checkbox {
+        text-align: left !important;
+    }
 
-.checkbox-col label:before {
-    border-radius: 0;
-    margin-right: 0 !important;
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    left: 0;
-    top: 0;
-}
+    .checkbox-col label:before {
+        border-radius: 0;
+        margin-right: 0 !important;
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        left: 0;
+        top: 0;
+    }
 
-.checkbox-col label {
-    color: #000;
-    height: 40px;
-    vertical-align: top;
-    margin-bottom: 0;
-}
+    .checkbox-col label {
+        color: #000;
+        height: 40px;
+        vertical-align: top;
+        margin-bottom: 0;
+    }
 
-.checkbox-col label:before {
-    border-radius: 0;
-    background: #d9d9d9 url("../img/process-checkbox.png") no-repeat center;
-    height: 40px;
-    width: 40px;
-    padding: 4px 15px;
-}
+    .checkbox-col label:before {
+        border-radius: 0;
+        background: #d9d9d9 url("../img/process-checkbox.png") no-repeat center;
+        height: 40px;
+        width: 40px;
+        padding: 4px 15px;
+    }
 
-.checkbox-col [type=checkbox]:checked + label:before {
-    /*content: "\2713";*/
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 26px;
-    color: #f3f3f3;
-    text-align: center;
-    line-height: 36px;
-    background: #25b1e6 url("../img/process-checkbox-selected.png") no-repeat center;
-}
+    .checkbox-col [type=checkbox]:checked + label:before {
+        /*content: "\2713";*/
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+        font-size: 26px;
+        color: #f3f3f3;
+        text-align: center;
+        line-height: 36px;
+        background: #25b1e6 url("../img/process-checkbox-selected.png") no-repeat center;
+    }
 
-.checkbox-col .checkbox label {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: 0;
-    margin-right: 0;
+    .checkbox-col .checkbox label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 0;
+        margin-right: 0;
+    }
 }
 //buy1 family section end//
 
@@ -1578,7 +1580,7 @@ input[type=checkbox] {
         }
 
         select {
-          border-radius: 3px;
+            border-radius: 3px;
             border: 2px solid #d9d9d9;
             height: 48px;
             color: #000;
@@ -1618,3 +1620,4 @@ input[type=checkbox] {
         }
     }
 }
+// checkbox for product detailS
