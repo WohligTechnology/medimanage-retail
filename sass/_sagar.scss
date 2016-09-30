@@ -9,6 +9,10 @@ $white-color: #fff !default;
     position: relative;
 }
 
+.posi-abs{
+  position: absolute;
+}
+
 .bord-rad5 {
     border-radius: 5px;
 }
@@ -1621,3 +1625,5 @@ h4 {
     }
 }
 // checkbox for product detailS
+
+.check-box{}
