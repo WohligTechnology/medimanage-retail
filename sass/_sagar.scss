@@ -9,8 +9,8 @@ $white-color: #fff !default;
     position: relative;
 }
 
-.posi-abs{
-  position: absolute;
+.posi-abs {
+    position: absolute;
 }
 
 .bord-rad5 {
@@ -27,6 +27,10 @@ $white-color: #fff !default;
 
 .padding40 {
     padding: 40px;
+}
+
+.margin40 {
+    margin: 40px 0;
 }
 
 .disp-blk {
@@ -194,7 +198,7 @@ $white-color: #fff !default;
         background-color: #fff;
         padding: 0 16px;
         left: 50%;
-        transform: translateX(-50%);
+        @include transform(translate(-50%,-50%));
     }
 
     span {
@@ -515,7 +519,8 @@ h4 {
         top: 0;
         left: 50%;
         position: absolute;
-        transform: translateX(-50%);
+        //transform: translateX(-50%);
+        @include transform(translateX(-50%));
     }
 }
 
@@ -538,7 +543,8 @@ h4 {
         top: 0;
         left: 50%;
         position: absolute;
-        transform: translateX(-50%);
+        // transform: translateX(-50%);
+        @include transform(translateX(-50%));
     }
 }
 
@@ -584,7 +590,8 @@ h4 {
         left: 50%;
         bottom: -30px;
         position: absolute;
-        transform: translateX(-50%);
+        // transform: translateX(-50%);
+        @include transform(translateX(-50%));
     }
 }
 
@@ -1072,7 +1079,8 @@ h4 {
                         margin-right: 5px;
                         bottom: -17px;
                         left: 50%;
-                        transform: translateX(-50%);
+                        // transform: translateX(-50%);
+                        @include transform(translateX(-50%));
                         position: absolute;
                     }
                 }
@@ -1626,4 +1634,193 @@ h4 {
 }
 // checkbox for product detailS
 
-.check-box{}
+.check-pos {
+    top: 50%;
+    left: 0;
+}
+
+.check-box {
+    text-align: center;
+}
+//Buy2 sectioN
+
+.buy2-boxbord {
+    border: 1px solid #e0e0e0;
+}
+
+.buy2-rtbord {
+    border-right: 1px solid #e0e0e0;
+}
+
+.buy2-btbord {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.padd-1020 {
+    padding: 10px 20px;
+}
+
+.buy2-mydet {
+    padding: 30px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.fam-boxbg {
+    background: #F2F5F9;
+}
+
+.box-shad {
+    box-shadow: 5px 5px 0 rgb(226, 226, 226);
+}
+//Press Page
+
+.our-value {
+    img {
+        margin: 0 auto;
+    }
+}
+
+.press-head {
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    ul {
+        li {
+            position: relative;
+
+            a {
+                color: $white-color;
+                background: #C0C0C0;
+                padding: 10px 20px;
+                margin: 20px 10px;
+                border-radius: 5px;
+                font-size: 18px;
+
+                &.active {
+                    background: $brand-danger;
+
+                    &:before {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 10px 5px 0 5px;
+                        border-color: $brand-danger transparent transparent transparent;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        bottom: -17px;
+                        left: 50%;
+                        // transform: translateX(-50%);
+                        @include transform(translateX(-50%));
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.value-commitment,
+.value-main,
+.value-passion,
+.value-promise {
+    p {
+        margin: 20px 0;
+    }
+}
+
+.press-title {
+    h2 {
+        text-transform: capitalize;
+        color: #000;
+        font-weight: 700;
+    }
+
+    span {
+        color: $brand-danger;
+        font-weight: 500;
+    }
+}
+
+.press-header {
+    border-bottom: 1px solid #C0C0C0;
+    padding: 10px 0;
+    margin: 30px 0;
+}
+
+.press-cloud {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    background: #67C8ED;
+    border-radius: 100%;
+    padding: 30px 15px;
+    position: relative;
+    text-transform: capitalize;
+
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 15px;
+        border-color: transparent transparent transparent #67C8ED;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        @include transform(translate(-50%,-50%));
+
+    }
+
+    p {
+        //text-align: center;
+        color: $white-color;
+        font-size: 18px;
+        margin: 0px;
+    }
+}
+
+.press-stat{
+  margin: 10px;
+    border-bottom: 1px solid #C0C0C0;
+    padding: 10px 0 20px;
+    p{
+      font-size: 18px;
+      color: $black-color;
+    }
+}
+
+.press-src{
+  text-transform: capitalize;
+}
+
+.media-card{
+  //  border: 1px solid red;
+  color: $black-color;
+  box-shadow: 2px 0 8px #cccccc;
+  padding: 90px 40px;
+  margin: 40px;
+  p{
+    color: $black-color;
+    font-weight: 400;  
+    font-size: 21px;
+    line-height: 1;
+  }
+}
+
+.press-awards,
+.press-coverage,
+.press-release {
+    select {
+        border: 1px solid #d9e1ed;
+        height: 48px;
+        color: #000;
+        width: 100%;
+        font-size: 16px;
+        -webkit-appearance: none;
+    }
+}

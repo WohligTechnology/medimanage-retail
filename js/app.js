@@ -115,6 +115,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'GetcallCtrl'
         })
+        .state('press', {
+            url: "/press",
+            templateUrl: "views/template.html",
+            controller: 'PressCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: "views/template.html",
