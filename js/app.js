@@ -80,10 +80,20 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'OurvalueCtrl'
         })
+        .state('proposer-details', {
+            url: "/proposer-details",
+            templateUrl: "views/template.html",
+            controller: 'Propdet1Ctrl'
+        })
         .state('our-story', {
             url: "/our-story",
             templateUrl: "views/template.html",
             controller: 'OurstoryCtrl'
+        })
+        .state('blog-list', {
+            url: "/blog-list",
+            templateUrl: "views/template.html",
+            controller: 'BloglistCtrl'
         })
         .state('careers', {
             url: "/careers",

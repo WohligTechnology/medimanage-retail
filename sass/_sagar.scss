@@ -1886,14 +1886,26 @@ h4 {
     font-size: 16px;
     background: #C0C0C0;
     border-color: #C0C0C0;
+    color: $white-color;
 
     &:hover {
+      color: $white-color;
         background: #C0C0C0;
         border-color: #C0C0C0;
     }
 
+     &:focus{
+       color: $white-color;
+         background: #C0C0C0;
+         border-color: #C0C0C0;
+     }
+
     &:active {
+      color: $white-color;
         background-color: #C0C0C0;
         border-color: #C0C0C0;
     }
 }
+
+
+//Proposer detailS

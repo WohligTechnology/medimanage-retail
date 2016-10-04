@@ -231,6 +231,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('Propdet1Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("proposer-details"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Proposer Details"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
 .controller('TrustCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("trust"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Trust & Security"); //This is the Title of the Website
@@ -275,6 +284,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
 })
+
+.controller('BloglistCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("blog-list"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Blog Listing"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
 
 .controller('PressCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("press"); //Use same name of .html file
