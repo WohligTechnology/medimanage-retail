@@ -1462,6 +1462,11 @@ h4 {
 // .process-section-2 p
 
 .buy1-family {
+     a:hover {
+        color: #03a14c;
+        background: url("../img/add-icon-h.png") no-repeat left center;
+    }
+
     a {
         color: #8e8e8e;
         font-size: 16px;
@@ -1475,14 +1480,7 @@ h4 {
         -ms-transition: all 700ms ease 0s;
         -webkit-transition: all 700ms ease 0s;
     }
-}
 
-.buy1 a:hover {
-    color: #03a14c;
-    background: url("../img/add-icon-h.png") no-repeat left center;
-}
-
-.buy1 {
     .date-col {
         float: left;
         width: 210px;
@@ -1500,7 +1498,7 @@ h4 {
         line-height: 39px;
         width: 100%;
         background: url("../img/calendar-icon.png") no-repeat scroll 95% 50%;
-        font-size: 18px; // font-family: 'robotomedium';
+        font-size: 18px;
         padding: 0 2%;
         margin: 10px 0;
     }
@@ -1513,8 +1511,8 @@ h4 {
         margin: 10px 0;
     }
 
-    .checkbox-col small {
-        font-size: 16px; // font-family: 'robotobold';
+    .checkbox-col small{
+        font-size: 16px;
         color: #000;
         vertical-align: top;
         line-height: 40px;
@@ -1559,7 +1557,6 @@ h4 {
     }
 
     .checkbox-col [type=checkbox]:checked + label:before {
-        /*content: "\2713";*/
         text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
         font-size: 26px;
         color: #f3f3f3;
@@ -1576,6 +1573,100 @@ h4 {
         margin-right: 0;
     }
 }
+
+// .buy1 {
+//     .date-col {
+//         float: left;
+//         width: 210px;
+//         margin-left: 2px;
+//     }
+//
+//     .checkbox {
+//         margin: 0;
+//     }
+//
+//     .date-col input[type="date"] {
+//         border: 2px solid #25b1e6;
+//         color: #25b1e6;
+//         border-radius: 3px;
+//         line-height: 39px;
+//         width: 100%;
+//         background: url("../img/calendar-icon.png") no-repeat scroll 95% 50%;
+//         font-size: 18px;
+//         padding: 0 2%;
+//         margin: 10px 0;
+//     }
+//
+//     .checkbox-col {
+//         float: left;
+//         width: 100%;
+//         border: 2px solid #d9d9d9;
+//         border-radius: 4px;
+//         margin: 10px 0;
+//     }
+//
+//     .checkbox-col {
+//         font-size: 16px;
+//         color: #000;
+//         vertical-align: top;
+//         line-height: 40px;
+//         padding-left: 22px;
+//         font-weight: 700;
+//     }
+//
+//     .checkbox-col input[type=radio],
+//     input[type=checkbox] {
+//         display: none;
+//     }
+//
+//     .checkbox-col .checkbox {
+//         text-align: left !important;
+//     }
+//
+//     .checkbox-col label:before {
+//         border-radius: 0;
+//         margin-right: 0 !important;
+//         content: "";
+//         display: inline-block;
+//         width: 24px;
+//         height: 24px;
+//         margin-right: 10px;
+//         left: 0;
+//         top: 0;
+//     }
+//
+//     .checkbox-col label {
+//         color: #000;
+//         height: 40px;
+//         vertical-align: top;
+//         margin-bottom: 0;
+//     }
+//
+//     .checkbox-col label:before {
+//         border-radius: 0;
+//         background: #d9d9d9 url("../img/process-checkbox.png") no-repeat center;
+//         height: 40px;
+//         width: 40px;
+//         padding: 4px 15px;
+//     }
+//
+//     .checkbox-col [type=checkbox]:checked + label:before {
+//         text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+//         font-size: 26px;
+//         color: #f3f3f3;
+//         text-align: center;
+//         line-height: 36px;
+//         background: #25b1e6 url("../img/process-checkbox-selected.png") no-repeat center;
+//     }
+//
+//     .checkbox-col .checkbox label {
+//         display: inline-block;
+//         cursor: pointer;
+//         position: relative;
+//         padding-left: 0;
+//         margin-right: 0;
+//     }
+// }
 //buy1 family section end//
 
 .buy1-select {
@@ -1889,23 +1980,21 @@ h4 {
     color: $white-color;
 
     &:hover {
-      color: $white-color;
+        color: $white-color;
         background: #C0C0C0;
         border-color: #C0C0C0;
     }
 
-     &:focus{
-       color: $white-color;
-         background: #C0C0C0;
-         border-color: #C0C0C0;
-     }
+    &:focus {
+        color: $white-color;
+        background: #C0C0C0;
+        border-color: #C0C0C0;
+    }
 
     &:active {
-      color: $white-color;
+        color: $white-color;
         background-color: #C0C0C0;
         border-color: #C0C0C0;
     }
 }
-
-
 //Proposer detailS
