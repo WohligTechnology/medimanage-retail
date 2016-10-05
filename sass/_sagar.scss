@@ -193,7 +193,7 @@ $white-color: #fff !default;
     &:before {
         content: 'OR';
         position: absolute;
-        top: -15px;
+        top: -2px;
         font-size: 20px;
         background-color: #fff;
         padding: 0 16px;
@@ -291,6 +291,32 @@ h4 {
             color: $brand-primary;
             text-decoration: none;
         }
+    }
+}
+
+.marg-bt40 {
+    margin-bottom: 40px;
+}
+
+.divider2 {
+    border-top: 1px solid #e0e0e0;
+    position: relative;
+    min-height: 30px;
+    margin-top: 30px;
+
+    &:before {
+        content: 'OR';
+        position: absolute;
+        top: -2px;
+        font-size: 20px;
+        background-color: #fff;
+        padding: 0 16px;
+        left: 50%;
+        @include transform(translate(-50%,-50%));
+    }
+
+    span {
+        display: none;
     }
 }
 //Privacy policy pagE
@@ -1462,7 +1488,7 @@ h4 {
 // .process-section-2 p
 
 .buy1-family {
-     a:hover {
+    a:hover {
         color: #03a14c;
         background: url("../img/add-icon-h.png") no-repeat left center;
     }
@@ -1511,7 +1537,7 @@ h4 {
         margin: 10px 0;
     }
 
-    .checkbox-col small{
+    .checkbox-col small {
         font-size: 16px;
         color: #000;
         vertical-align: top;
@@ -1573,7 +1599,6 @@ h4 {
         margin-right: 0;
     }
 }
-
 // .buy1 {
 //     .date-col {
 //         float: left;
@@ -1771,6 +1796,27 @@ h4 {
     }
 }
 
+    .active-orgtab {
+        background: $brand-danger !important;
+
+        &:before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 5px 0 5px;
+            border-color: $brand-danger transparent transparent transparent;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+            bottom: -17px;
+            left: 50%;
+            // transform: translateX(-50%);
+            @include transform(translateX(-50%));
+            position: absolute;
+        }
+    }
+
 .press-head {
     h2 {
         margin-bottom: 30px;
@@ -1787,27 +1833,26 @@ h4 {
                 margin: 20px 10px;
                 border-radius: 5px;
                 font-size: 18px;
-
-                &.active {
-                    background: $brand-danger;
-
-                    &:before {
-                        content: '';
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 10px 5px 0 5px;
-                        border-color: $brand-danger transparent transparent transparent;
-                        display: inline-block;
-                        vertical-align: middle;
-                        margin-right: 5px;
-                        bottom: -17px;
-                        left: 50%;
-                        // transform: translateX(-50%);
-                        @include transform(translateX(-50%));
-                        position: absolute;
-                    }
-                }
+                // &.active {
+                //     background: $brand-danger;
+                //
+                //     &:before {
+                //         content: '';
+                //         width: 0;
+                //         height: 0;
+                //         border-style: solid;
+                //         border-width: 10px 5px 0 5px;
+                //         border-color: $brand-danger transparent transparent transparent;
+                //         display: inline-block;
+                //         vertical-align: middle;
+                //         margin-right: 5px;
+                //         bottom: -17px;
+                //         left: 50%;
+                //         // transform: translateX(-50%);
+                //         @include transform(translateX(-50%));
+                //         position: absolute;
+                //     }
+                // }
             }
         }
     }

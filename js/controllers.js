@@ -1,4 +1,4 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper','rzModule'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', 'rzModule'])
 
 .controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
@@ -183,6 +183,58 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Our Values"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.tabs = [];
+    // $scope.
+
+    for (var i = 0; i < 3; i++) {
+        $scope.tabs.push({
+            active: false
+        });
+    }
+    $scope.tabs = [{
+      active:false
+    },{
+      active:false
+    },{
+      active:false
+    }]
+    $scope.showPassion = function(id) {
+            _.each($scope.tabs, function(key) {
+                key.active = false;
+            });
+            $scope.tabs[id - 1].active = true;
+            if (id == 1) {
+                $scope.passion = true;
+                $scope.promise = false;
+                $scope.commit = false;
+            } else if (id == 2) {
+                $scope.passion = false;
+                $scope.promise = true;
+                $scope.commit = false;
+            } else if (id == 3) {
+                $scope.passion = false;
+                $scope.promise = false;
+                $scope.commit = true;
+            }
+
+        }
+        // $scope.showPassion=function(){
+        //   $scope.passion=true;
+        //   $scope.promise=false;
+        //   $scope.commit=false;
+        // }
+        // $scope.showPromise=function(){
+        //   $scope.passion=false;
+        //   $scope.promise=true;
+        //   $scope.commit=false;
+        // }
+        // $scope.showCommit=function(){
+        //   $scope.passion=false;
+        //   $scope.promise=false;
+        //   $scope.commit=true;
+        // }
+
+
 
 
 })
@@ -211,7 +263,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     $scope.slider = {
-      minValue: 0,
+        minValue: 0,
         maxValue: 796,
         options: {
             floor: 0,

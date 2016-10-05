@@ -27,9 +27,9 @@
                         <div class="col-md-4">
                             <div class="nav-1">
                                 <ul>
-                                    <li>HOME</li>
-                                    <li>ABOUT US <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
-                                    <li>HELP <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                                    <li><a ui-sref="#">HOME</a></li>
+                                    <li><a ui-sref="#">ABOUT US <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                                    <li><a ui-sref="#">HELP <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
                                 </ul>
 
 
@@ -37,8 +37,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="claims">
-                                <span>Claims managed till date: </span>
-                                <div class="claim-no">4422626</div>
+                                <div class="claim-no"><span class="font-sz12 padd-rt10">Claims managed till date: </span>  4422626</div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -48,7 +47,7 @@
                                     <input type="text" class="form-control" placeholder="Search" id="search">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                 </div>
-                                <span class="pull-right">LOGIN</span>
+                                <a ui-sref="login"><span class="pull-right">LOGIN</span></a>
                             </div>
                         </div>
                     </div>
@@ -67,7 +66,7 @@
                             <li><a sref="">HEALTH INSURANCE  <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
                             <li><a sref="">COMPARE & BUY  <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
                             <li><a sref="">WHY MEDIMANAGE?</a></li>
-                            <li><button type="button" class="btn btn-success">GET A FREE QUOTE</button></li>
+                            <li><button type="button" class="btn btn-success" ui-sref="#">GET A FREE QUOTE</button></li>
                         </ul>
                     </div>
                 </div>

@@ -3,14 +3,14 @@
     <div class="value-head text-center padding40">
         <h1 class="font-wt700 black-color">Our Values</h1>
         <ul class="list-inline white-font font-wt700 text-uppercase">
-            <li><a href="" class="">our passion-you</a></li>
-            <li><a href="">under-promise, over deliver</a></li>
-            <li><a href="">commitment</a></li>
+            <li ng-click="showPassion(1)" ><a ng-class="{'active-orgtab':tabs[0].active}" class="">our passion-you</a></li>
+            <li ng-click="showPassion(2)" ><a class="" ng-class="{'active-orgtab':tabs[1].active}">under-promise, over deliver</a></li>
+            <li ng-click="showPassion(3)" ><a class="" ng-class="{'active-orgtab':tabs[2].active}">commitment</a></li>
         </ul>
     </div>
 
-  <!--          MAIN VALUE PAGE        -->
-    <div class="value-main col-696969 font-sz16 text-justify padding40s">
+  <!--          MAIN VALUE PAGE DEFAULT       -->
+    <div class="value-main col-696969 font-sz16 text-justify padding40s" ng-hide='passion || promise || commit'>
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-1 col-md-10">
@@ -32,7 +32,7 @@
     </div>
 
 <!--      OUR PASSION PAGE      -->
-    <div class="value-passion col-696969 font-sz16 text-justify padding40 hide">
+    <div class="value-passion col-696969 font-sz16 text-justify padding40" ng-show='passion'>
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-1 col-md-10">
@@ -54,7 +54,7 @@
     </div>
 
 <!--      PROMISE PAGE      -->
-    <div class="value-promise col-696969 font-sz16 text-justify padding40 hide">
+    <div class="value-promise col-696969 font-sz16 text-justify padding40 " ng-show='promise'>
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-1 col-md-10">
@@ -75,7 +75,7 @@
 
 
 <!--        COMMITMENT PAGE       -->
-    <div class="value-commitment col-696969 font-sz16 text-justify padding40 hide">
+    <div class="value-commitment col-696969 font-sz16 text-justify padding40" ng-show='commit'>
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-1 col-md-10">
