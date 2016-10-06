@@ -1,15 +1,15 @@
 <div class="press-page">
     <div class="press-head text-center padding40">
         <ul class="list-inline white-font font-wt700 text-uppercase">
-            <li><a href="" class="">press release</a></li>
-            <li><a href="">press coverage</a></li>
-            <li><a href="">awards & recognition</a></li>
-            <li><a href="">media contact</a></li>
+            <li ng-click="showPress(1)"><a ng-class="{'active-orgtab':tabs[0].active}" >press release</a></li>
+            <li ng-click="showPress(2)"><a ng-class="{'active-orgtab':tabs[1].active}" >press coverage</a></li>
+            <li ng-click="showPress(3)"><a ng-class="{'active-orgtab':tabs[2].active}" >awards & recognition</a></li>
+            <li ng-click="showPress(4)"><a ng-class="{'active-orgtab':tabs[3].active}" >media contact</a></li>
         </ul>
     </div>
 
     <!-- PRESS RLEASE PAGE -->
-    <div class="press-release">
+    <div class="press-release" ng-show='release'>
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-1 col-md-10">
@@ -57,7 +57,7 @@
 
 
     <!-- PRESS COVERAGE PAGE -->
-    <div class="press-coverage hide">
+    <div class="press-coverage" ng-show='coverage'>
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-1 col-md-10">
@@ -105,7 +105,7 @@
 
 
     <!-- AWARDS & RECOGNITION -->
-    <div class="press-awards hide">
+    <div class="press-awards" ng-show='award'>
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-1 col-md-10">
@@ -179,13 +179,13 @@
     </div>
 
     <!--  MEDIA CONTACT -->
-    <div class="press-media hide">
+    <div class="press-media" ng-show='mediac'>
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-1 col-md-10">
                     <div class="media-card text-center">
                         <h2 class="font-wt700">Media Contact</h2>
-                        <p>For Media Related Queries,<br> Contact : <span class="font-wt700">Priyanka Khandelwal</span></p>
+                        <p class="med-padd">For Media Related Queries,<br> Contact : <span class="font-wt700">Priyanka Khandelwal</span></p>
                         <p>+91-22-40976644 / +91 9874560033<br>
                             <span class="brand-danger">priyanka@medimanage.com</span></p>
                     </div>
@@ -211,7 +211,7 @@
                                     <input type="text" class="form-control" placeholder="Enter your email address" id="Email Address">
                                 </div>
                                 <div class="col-md-4">
-                                    <button type="button" class="btn btn-block font-wt700 text-uppercase subs-btn">Call me back</button>
+                                    <button type="button" class="btn btn-block btn-success font-wt700 text-uppercase subs-btn">Subscribe now</button>
                                 </div>
                             </div>
                         </div>

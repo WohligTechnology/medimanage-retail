@@ -376,6 +376,46 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Press"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.release=true;
+    $scope.tabs = [];
+
+    $scope.tabs = [{
+      active:true
+    },{
+      active:false
+    },{
+      active:false
+    },{
+      active:false
+    }]
+    $scope.showPress = function(id) {
+            _.each($scope.tabs, function(key) {
+                key.active = false;
+            });
+            $scope.tabs[id - 1].active = true;
+            if (id == 1) {
+                $scope.release = true;
+                $scope.coverage = false;
+                $scope.award = false;
+                $scope.mediac = false;
+            } else if (id == 2) {
+                $scope.release = false;
+                $scope.coverage = true;
+                $scope.award = false;
+                $scope.mediac = false;
+            } else if (id == 3) {
+                $scope.release = false;
+                $scope.coverage = false;
+                $scope.award = true;
+                $scope.mediac = false;
+            } else if (id == 4) {
+                $scope.release = false;
+                $scope.coverage = false;
+                $scope.award = false;
+                $scope.mediac = true;
+            }
+
+        }
 
 
 })

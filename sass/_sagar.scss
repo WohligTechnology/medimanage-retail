@@ -77,6 +77,10 @@ $white-color: #fff !default;
     font-size: 16px;
 }
 
+.font-sz18 {
+    font-size: 18px;
+}
+
 .col-696969 {
     color: #696969;
 }
@@ -114,6 +118,14 @@ $white-color: #fff !default;
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+.marg-tp0 {
+    margin-top: 0;
+}
+
+.marg-tp40{
+  margin: 40px 0 0;
 }
 //login page starts here
 
@@ -381,6 +393,11 @@ h4 {
 
 .ourteam-sec {
     text-align: center;
+
+    h1 {
+        margin-bottom: 0;
+        padding: 0;
+    }
 }
 
 .team1 {
@@ -412,6 +429,13 @@ h4 {
     background: url("../img/view-icon-green.png") no-repeat scroll 0 3px;
     height: 15px;
     width: 15px;
+    padding-left: 20px;
+
+    span {
+      font-style: normal;
+        color: $brand-success;
+        font-weight: 700;
+    }
 }
 
 .test-card {
@@ -451,6 +475,7 @@ h4 {
         color: #4b4b4b;
         font-size: 22px;
         font-weight: 300;
+        padding: 30px 0;
     }
 
     .career-up {
@@ -502,8 +527,8 @@ h4 {
         button {
             font-size: 18px;
             font-weight: 700;
-            line-height: 45px;
-            width: 100%;
+            padding: 6px 25px;
+            border-radius: 5px;
         }
     }
 }
@@ -794,10 +819,18 @@ h4 {
 
     .txt-left {
         padding: 20px;
+        p{
+          font-size: 17px;
+          line-height: 28px;
+        }
     }
 
     .txt-right {
         padding: 10px 20px 20px;
+        p{
+          font-size: 17px;
+          line-height: 28px;
+        }
     }
 }
 
@@ -1090,26 +1123,26 @@ h4 {
                 border-radius: 5px;
                 font-size: 18px;
 
-                &.active {
-                    background: $brand-danger;
-
-                    &:before {
-                        content: '';
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 10px 5px 0 5px;
-                        border-color: $brand-danger transparent transparent transparent;
-                        display: inline-block;
-                        vertical-align: middle;
-                        margin-right: 5px;
-                        bottom: -17px;
-                        left: 50%;
-                        // transform: translateX(-50%);
-                        @include transform(translateX(-50%));
-                        position: absolute;
-                    }
-                }
+                // &.active {
+                //     background: $brand-danger;
+                //
+                //     &:before {
+                //         content: '';
+                //         width: 0;
+                //         height: 0;
+                //         border-style: solid;
+                //         border-width: 10px 5px 0 5px;
+                //         border-color: $brand-danger transparent transparent transparent;
+                //         display: inline-block;
+                //         vertical-align: middle;
+                //         margin-right: 5px;
+                //         bottom: -17px;
+                //         left: 50%;
+                //         // transform: translateX(-50%);
+                //         @include transform(translateX(-50%));
+                //         position: absolute;
+                //     }
+                // }
             }
         }
     }
@@ -1796,26 +1829,26 @@ h4 {
     }
 }
 
-    .active-orgtab {
-        background: $brand-danger !important;
+.active-orgtab {
+    background: $brand-danger !important;
 
-        &:before {
-            content: '';
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 10px 5px 0 5px;
-            border-color: $brand-danger transparent transparent transparent;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 5px;
-            bottom: -17px;
-            left: 50%;
-            // transform: translateX(-50%);
-            @include transform(translateX(-50%));
-            position: absolute;
-        }
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 5px 0 5px;
+        border-color: $brand-danger transparent transparent transparent;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        bottom: -17px;
+        left: 50%;
+        // transform: translateX(-50%);
+        @include transform(translateX(-50%));
+        position: absolute;
     }
+}
 
 .press-head {
     h2 {
@@ -1912,7 +1945,6 @@ h4 {
     }
 
     p {
-        //text-align: center;
         color: $white-color;
         font-size: 18px;
         margin: 0;
@@ -1993,25 +2025,6 @@ h4 {
     input {
         padding: 20px 10px;
         border-radius: 5px;
-        // &::-webkit-input-placeholder {
-        //     color: $black-color;
-        //     font-size: 14px;
-        // }
-        //
-        // &:-moz-placeholder {
-        //     color: $black-color;
-        //     font-size: 14px;
-        // }
-        //
-        // &::-moz-placeholder {
-        //     color: $black-color;
-        //     font-size: 14px;
-        // }
-        //
-        // &:-ms-input-placeholder {
-        //     color: $black-color;
-        //     font-size: 14px;
-        // }
     }
 }
 
@@ -2020,26 +2033,10 @@ h4 {
     padding: 8px;
     text-transform: uppercase;
     font-size: 16px;
-    background: #C0C0C0;
-    border-color: #C0C0C0;
-    color: $white-color;
+}
 
-    &:hover {
-        color: $white-color;
-        background: #C0C0C0;
-        border-color: #C0C0C0;
-    }
 
-    &:focus {
-        color: $white-color;
-        background: #C0C0C0;
-        border-color: #C0C0C0;
-    }
-
-    &:active {
-        color: $white-color;
-        background-color: #C0C0C0;
-        border-color: #C0C0C0;
-    }
+.med-padd{
+  padding: 10px 0;
 }
 //Proposer detailS
