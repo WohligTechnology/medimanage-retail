@@ -12,6 +12,30 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
         'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
     ];
+  //   $scope.tabimages = [{
+  //     inactive : 'img/assdas',
+  //     active: 'sadasdas'
+  //   },
+  //   {
+  //     inactive : 'img/assdas',
+  //     active: 'sadasdas'
+  //   },
+  //   {
+  //     inactive : 'img/assdas',
+  //     active: 'sadasdas'
+  //   },{
+  //     inactive : 'img/assdas',
+  //     active: 'sadasdas'
+  //   }]
+  // _.each($scope.tabimages,function (key) {
+  //   $scope.currentimage.push({
+  //     image:key.inactive
+  //   })
+  // });
+  // $scope.activateTab = function (index) {
+  //   $scope.currentimage[index].image = $scope.tabimages[index].active;
+  // }
+
 })
 
 .controller('FormCtrl', function($scope, TemplateService, NavigationService, $timeout) {
