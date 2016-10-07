@@ -2,20 +2,35 @@
     <div class="container">
         <div class="row">
             <div class="col-md-offset-1 col-md-10">
-                <div class="prop-form">
+                <div class="prop-form padding40">
                     <div class="row">
                         <div class="col-md-2">
-                            <p>propser details</p>
-                            <p>propser details</p>
-                            <p>propser details</p>
-                            <p>propser details</p>
-                            <p>propser details</p>
+                            <div class="permanent-nav">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="current-page"><span>1</span><p class="disp-inblk">Proposer<br/> Details</p></a>
+                                    </li>
+                                    <li>
+                                        <a><span>2</span><p class="disp-inblk">Insured<br/> Details</p></a>
+                                    </li>
+                                    <li>
+                                        <a><span>3</span><p class="disp-inblk">Medical<br/> History</p></a>
+                                    </li>
+                                    <li>
+                                        <a><span>4</span><p class="disp-inblk">Nominee<br/> Details</p></a>
+                                    </li>
+                                    <li>
+                                        <a><span>5</span><p class="disp-inblk">Pay & get<br/> Insured</p></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col-md-10">
                             <form>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group select-div">
+                                            <label for=""></label>
                                             <select class="form-control" id="prod">
                                                   <option>Mr.</option>
                                                   <option>Mrs.</option>
@@ -24,25 +39,73 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label class="disp-blk">First Name:</label>
+                                            <label class="disp-blk">First Name</label>
                                             <input type="text" value="" name="" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label class="disp-blk">middle Name: <span>(optional)</span></label>
+                                            <label class="disp-blk">middle Name <span>(optional)</span></label>
                                             <input type="text" value="" name="" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
-                                      <div class="form-group">
-                                          <label class="disp-blk">Last Name:</label>
-                                          <input type="text" value="" name="" placeholder="">
-                                      </div>
+                                        <div class="form-group">
+                                            <label class="disp-blk">Last Name</label>
+                                            <input type="text" value="" name="" placeholder="">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                  <div class="col-md-4"></div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="">DOB</label>
+                                            <div class="date-col">
+                                                <input type="date" data-date-inline-picker="true" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group select-div">
+                                            <label for="">gender</label>
+                                            <select class="form-control" id="prod">
+                                              <option>Male</option>
+                                              <option>Female</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group select-div">
+                                            <label for="">marital status</label>
+                                            <select class="form-control" id="prod">
+                                              <option>Married</option>
+                                              <option>Unmarried</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="disp-blk">E-mail ID</label>
+                                            <input type="email" value="" name="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="disp-blk">mobile</label>
+                                            <input type="tel" value="" name="" placeholder="91-">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="disp-blk">OTP</label>
+                                            <input type="text" value="" name="" placeholder="" class="otp">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <button type="button" class="btn btn-success pull-right btn-save">save</button>
                                 </div>
                             </form>
                         </div>

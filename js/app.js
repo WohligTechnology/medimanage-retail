@@ -85,6 +85,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'Propdet1Ctrl'
         })
+        .state('insured-details', {
+            url: "/insured-details",
+            templateUrl: "views/template.html",
+            controller: 'InsdetCtrl'
+        })
         .state('our-story', {
             url: "/our-story",
             templateUrl: "views/template.html",
