@@ -242,6 +242,10 @@ footer {
 
             ul {
                 list-style-type: none;
+
+                li {
+                    padding: 5px 0;
+                }
             }
 
             ul:first-child {
@@ -273,6 +277,7 @@ footer {
     }
 }
 //bootstrap forms
+
 .btn,
 .form-control,
 .input-group-lg > .form-control,
@@ -306,6 +311,7 @@ footer {
     min-height: 300px;
 }
 //FLEX SLIDER FIXES
+
 .flex-direction-nav {
     a {
         height: auto;
@@ -320,6 +326,7 @@ footer {
     }
 }
 //SWIPER CSS
+
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
     background-image: url("../img/prev.png");
@@ -349,6 +356,16 @@ a {
     }
 }
 // ---------this css is for home-page--------------------
+
+.drop-menu {
+  bottom: 0;
+  left: 0;
+    li {
+        background: white;
+        border: 1px solid black;
+    }
+}
+
 .home-page {
     .div-one {
         background: url("../img/banner.jpg");
@@ -381,12 +398,19 @@ a {
             input {
                 margin-bottom: 8px;
                 border: none;
+                border-radius: 5px;
+                line-height: 45px;
+                height: auto;
+                padding: 0 3%;
             }
 
             .btn {
                 width: 100%;
-                font-weight: bold;
+                font-weight: 700;
                 margin-top: 12px;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 16px;
             }
         }
     }
@@ -537,6 +561,10 @@ a {
                 width: 25%;
                 margin: 0 auto 8px;
                 border-radius: 2px;
+                font-size: 15px;
+                height: auto;
+                line-height: 45px;
+                padding: 0 1%;
             }
 
             .btn {
@@ -662,6 +690,7 @@ a {
 
             ul {
                 display: inline-block;
+                border-bottom: 0 solid #ddd;
             }
 
             li+li {
@@ -736,6 +765,7 @@ a {
     }
 }
 // ----------this css is for custom page--------------
+
 .custom {
     .expert-call {
         text-align: center;
@@ -807,6 +837,7 @@ a {
     }
 }
 // ------------this css is for faq--------------------
+
 .faq {
     color: $font-color;
 
@@ -899,6 +930,7 @@ a {
     }
 }
 // --------------this css is for ask-expert page----------------
+
 .ask-expert {
     .expert-cover {
         background-image: url('../img/expert-bg.jpg');
@@ -1053,13 +1085,12 @@ a {
     }
 }
 
-
-.tab-content-detail{
-  p{
-    text-align: center;
-    color: #696969;
-    font-size: 16px;
-  }
+.tab-content-detail {
+    p {
+        text-align: center;
+        color: #696969;
+        font-size: 16px;
+    }
 }
 
 .slide {

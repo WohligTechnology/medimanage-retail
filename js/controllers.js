@@ -35,7 +35,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   // $scope.activateTab = function (index) {
   //   $scope.currentimage[index].image = $scope.tabimages[index].active;
   // }
-
 })
 
 .controller('FormCtrl', function($scope, TemplateService, NavigationService, $timeout) {

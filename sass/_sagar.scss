@@ -2033,6 +2033,22 @@ h4 {
     padding: 8px;
     text-transform: uppercase;
     font-size: 16px;
+    color: $white-color;
+    &:hover{
+      color: white;
+    }
+}
+
+.sub-btn{
+  background: #b5b5b5;
+  border-radius: 4px;
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $white-color;
+  &:hover{
+    color: white;
+  }
 }
 
 

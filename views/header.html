@@ -27,7 +27,7 @@
                         <div class="col-md-4">
                             <div class="nav-1">
                                 <ul>
-                                    <li><a ui-sref="#">HOME</a></li>
+                                    <li><a ui-sref="home">HOME</a></li>
                                     <li><a ui-sref="#">ABOUT US <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
                                     <li><a ui-sref="#">HELP <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
                                 </ul>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="claims">
-                                <div class="claim-no"><span class="font-sz12 padd-rt10">Claims managed till date: </span>  4422626</div>
+                                <div class="claim-no"><span class="font-sz12 padd-rt10">Claims managed till date: </span> 4422626</div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -63,16 +63,39 @@
                     <a ui-sref="#"> <img src="img/logo.png" alt=""></a>
                     <div class="menu-box pull-right">
                         <ul class="list-inline">
-                            <li><a sref="">HEALTH INSURANCE  <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
-                            <li><a sref="">COMPARE & BUY  <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
-                            <li><a sref="">WHY MEDIMANAGE?</a></li>
-                            <li><button type="button" class="btn btn-success" ui-sref="#">GET A FREE QUOTE</button></li>
+                            <li><a sref="">HEALTH INSURANCE
+                              <div class="dropdwn disp-inblk posi-rel">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <ul class="drop-menu disp posi-abs">
+                                       <li><a href="#">individual</a></li>
+                            <li><a tabindex="-1" href="#">family</a></li>
+                            <li><a tabindex="-1" href="#">senior citizen</a></li>
+                            <li><a tabindex="-1" href="#">maternity</a></li>
+                            <li><a tabindex="-1" href="#">personal accident</a></li>
+                            <li><a tabindex="-1" href="#">critical illness</a></li>
+                            <li><a tabindex="-1" href="#">super top-up</a></li>
                         </ul>
                     </div>
+                    </a>
+                    </li>
+                    <li><a sref="">COMPARE & BUY
+                               <div class="dropdwn disp-inblk">
+                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                     <ul class="drop-menu">
+                        <li><a tabindex="-1" href="#">sub menu 1</a></li>
+                    <li><a tabindex="-1" href="#">sub menu 1</a></li>
+                    </ul>
                 </div>
+                </a>
+                </li>
+                <li><a sref="">WHY MEDIMANAGE?</a></li>
+                <li><button type="button" class="btn btn-success" ui-sref="#">GET A FREE QUOTE</button></li>
+                </ul>
             </div>
-
-
         </div>
+    </div>
+
+
+    </div>
     </div>
 </header>
