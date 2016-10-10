@@ -100,6 +100,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'InsdetCtrl'
         })
+        .state('nominee-details', {
+            url: "/nominee-details",
+            templateUrl: "views/template.html",
+            controller: 'NomdetCtrl'
+        })
         .state('our-story', {
             url: "/our-story",
             templateUrl: "views/template.html",
