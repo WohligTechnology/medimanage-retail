@@ -2203,9 +2203,43 @@ h4 {
   border: 1px solid #c9c9c9;
 }
 
+.card-padd{
+  padding: 0 10px;
+  .col-md-3, .col-md-4{
+    padding: 0 10px;
+  }
+   .col-md-8{
+     padding: 0;
+   }
+  select{
+    padding: 0 10px;
+  }
+}
+
 .card-head{
   background: #f2f5f9;
   border-bottom: 1px solid #c9c9c9;
   text-align: center;
   text-transform: uppercase;
+  h4{
+    margin-top: 0;
+    padding-top: 10px;
+  }
+}
+
+
+.btn-back {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 6px 40px;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.btn-continue {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 6px 40px;
+    border-radius: 2px;
+    font-weight: 700;
 }

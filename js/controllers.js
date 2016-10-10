@@ -315,6 +315,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('Propdet2Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("proposer-detail2"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Proposer Detail2"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
 .controller('InsdetCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("insured-details"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Insured Details"); //This is the Title of the Website
