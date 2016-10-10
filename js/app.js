@@ -49,6 +49,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'DashboardQuotesCtrl'
         })
+        .state('dashboard-contact', {
+            url: "/dashboard-contact",
+            templateUrl: "views/template.html",
+            controller: 'DashboardContactCtrl'
+        })
         .state('signup', {
             url: "/signup",
             templateUrl: "views/template.html",

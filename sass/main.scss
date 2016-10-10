@@ -1024,6 +1024,94 @@ a {
     }
 }
 
+.dashboard-quotes {
+    .quote-table {
+        margin-top: 40px;
+    }
+    th {
+        border-top: 1px dashed #c7c7c7 !important;
+        border-bottom: 1px dashed #c7c7c7 !important;
+        vertical-align: top !important;
+        text-align: center;
+        padding: 15px 10px !important;
+        color: #000;
+        &:last-child {
+            text-align: center;
+        }
+    }
+    td {
+        border-top: 0 !important;
+        border-bottom: 1px dashed #c7c7c7 !important;
+        text-align: center;
+        padding: 20px 0 !important;
+        vertical-align: middle !important;
+    }
+    .yearly {
+        font-size: 12px;
+        text-align: center;
+    }
+    .premium {
+        color: $brand-danger;
+        font-size: 12px;
+        text-decoration: underline;
+    }
+    .cont-btn {
+        border-radius: 4px;
+    }
+    .requote-btn {
+        border-radius: 4px;
+    }
+}
+
+.dashboard-contact {
+    .contact-tabs {
+        margin-top: 40px;
+    }
+    .nav-tabs {
+        padding-left: 30px;
+    }
+    .nav-item {
+        a {
+            padding: 20px 40px !important;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: $brand-danger;
+            color: #fff;
+            &:focus {
+                color: $brand-danger !important;
+            }
+            &:active {
+                color: $brand-danger !important;
+            }
+            &:hover {
+                color: #fff;
+                background-color: $brand-danger;
+            }
+        }
+    }
+    .tab-content {
+        border: 1px solid #dddddd;
+        border-top: 0;
+        padding: 4% 22% 12% 8%;
+        .submit {
+            width: 40%;
+            margin-top: 35px;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 0;
+        }
+    }
+    .appreciate {
+        .feedback {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            vertical-align: top;
+            background-color: #D9D9D9;
+        }
+    }
+}
+
 @import "fancybox-override";
 @import "sagar";
 @import "mobile";

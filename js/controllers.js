@@ -119,6 +119,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
 
     })
+    .controller('DashboardContactCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("dashboard-contact"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Dashboard-contact"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+    })
 
 
 .controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
