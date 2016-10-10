@@ -361,6 +361,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('MedhistoryCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("medical-history"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Medical history"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+
+})
+
+
 .controller('TrustCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("trust"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Trust & Security"); //This is the Title of the Website
