@@ -107,11 +107,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Dashboard-download"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-        $scope.oneAtATime = true;
+
 
 
 
     })
+    .controller('DashboardQuotesCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("dashboard-quotes"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Dashboard-quotes"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+    })
+
 
 .controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("faq"); //Use same name of .html file
