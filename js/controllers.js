@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', 'rzModule'])
 
-.controller('HomeCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -12,32 +12,32 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
         'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
     ];
-  //   $scope.tabimages = [{
-  //     inactive : 'img/assdas',
-  //     active: 'sadasdas'
-  //   },
-  //   {
-  //     inactive : 'img/assdas',
-  //     active: 'sadasdas'
-  //   },
-  //   {
-  //     inactive : 'img/assdas',
-  //     active: 'sadasdas'
-  //   },{
-  //     inactive : 'img/assdas',
-  //     active: 'sadasdas'
-  //   }]
-  // _.each($scope.tabimages,function (key) {
-  //   $scope.currentimage.push({
-  //     image:key.inactive
-  //   })
-  // });
-  // $scope.activateTab = function (index) {
-  //   $scope.currentimage[index].image = $scope.tabimages[index].active;
-  // }
+    //   $scope.tabimages = [{
+    //     inactive : 'img/assdas',
+    //     active: 'sadasdas'
+    //   },
+    //   {
+    //     inactive : 'img/assdas',
+    //     active: 'sadasdas'
+    //   },
+    //   {
+    //     inactive : 'img/assdas',
+    //     active: 'sadasdas'
+    //   },{
+    //     inactive : 'img/assdas',
+    //     active: 'sadasdas'
+    //   }]
+    // _.each($scope.tabimages,function (key) {
+    //   $scope.currentimage.push({
+    //     image:key.inactive
+    //   })
+    // });
+    // $scope.activateTab = function (index) {
+    //   $scope.currentimage[index].image = $scope.tabimages[index].active;
+    // }
 })
 
-.controller('FormCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('FormCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("form"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Form"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -45,21 +45,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $scope.formSubmitted = false;
 
-    $scope.submitForm = function(data) {
+    $scope.submitForm = function (data) {
         console.log(data);
         $scope.formSubmitted = true;
     }
 })
 
-.controller('headerctrl', function($scope, TemplateService) {
+.controller('headerctrl', function ($scope, TemplateService) {
     $scope.template = TemplateService;
-    $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+    $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
 })
 
-.controller('HomepageCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('HomepageCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -94,7 +94,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('CustomCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('CustomCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("custom"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Custom"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
@@ -102,7 +102,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
     })
-    .controller('FaqCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    .controller('DashboardDownloadCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("dashboard-download"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Dashboard-download"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.oneAtATime = true;
+
+
+
+    })
+
+.controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("faq"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Faq"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
@@ -112,7 +123,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
     })
-    .controller('AskExpertCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    .controller('AskExpertCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("ask-expert"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Ask-expert"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
@@ -147,7 +158,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     })
 
-.controller('LoginCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('LoginCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("login"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Login"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -156,7 +167,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('SignupCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('SignupCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("signup"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Sign Up"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -165,7 +176,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('TeamCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('TeamCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("our-team"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Our Team"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -174,7 +185,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('SeniorcitizenCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('SeniorcitizenCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("seniorcitizen"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Senior Citizen"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -183,7 +194,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('PaccidentCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('PaccidentCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("personal-accident"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Personal Accident"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -192,7 +203,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('OurstoryCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('OurstoryCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("our-story"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Our Story"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -201,7 +212,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('OurvalueCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('OurvalueCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("ourvalues"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Our Values"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -215,14 +226,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         });
     }
     $scope.tabs = [{
-      active:false
-    },{
-      active:false
-    },{
-      active:false
+        active: false
+    }, {
+        active: false
+    }, {
+        active: false
     }]
-    $scope.showPassion = function(id) {
-            _.each($scope.tabs, function(key) {
+    $scope.showPassion = function (id) {
+            _.each($scope.tabs, function (key) {
                 key.active = false;
             });
             $scope.tabs[id - 1].active = true;
@@ -262,7 +273,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('WhyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('WhyCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("why-medimanage"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Why Medimanage"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -271,7 +282,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('Buystep1Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('Buystep1Ctrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("buying-process-step1"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Buying Process: Step-1"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -280,7 +291,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('Buystep2Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('Buystep2Ctrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("buying-process-step2"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Buying Process: Step-2"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -297,7 +308,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('CareersCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("careers"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Careers"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -306,7 +317,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('Propdet1Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('Propdet1Ctrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("proposer-details"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Proposer Details"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -315,7 +326,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('Propdet2Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('Propdet2Ctrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("proposer-detail2"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Proposer Detail2"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -324,7 +335,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('InsdetCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('InsdetCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("insured-details"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Insured Details"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -333,7 +344,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('TrustCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('TrustCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("trust"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Trust & Security"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -342,7 +353,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('GetcallCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('GetcallCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("get-call"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Have us call "); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -351,7 +362,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('TestimonialCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('TestimonialCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("testimonial"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Testimonials"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -360,7 +371,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('PpolicyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('PpolicyCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("privacy-policy"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Privacy Policy"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -369,7 +380,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('PasswordCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('PasswordCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("forgot-password"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Forgot Password"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -378,7 +389,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('BloglistCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('BloglistCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("blog-list"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Blog Listing"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -388,58 +399,58 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 })
 
 
-.controller('PressCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('PressCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("press"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Press"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-    $scope.release=true;
+    $scope.release = true;
     $scope.tabs = [];
 
     $scope.tabs = [{
-      active:true
-    },{
-      active:false
-    },{
-      active:false
-    },{
-      active:false
+        active: true
+    }, {
+        active: false
+    }, {
+        active: false
+    }, {
+        active: false
     }]
-    $scope.showPress = function(id) {
-            _.each($scope.tabs, function(key) {
-                key.active = false;
-            });
-            $scope.tabs[id - 1].active = true;
-            if (id == 1) {
-                $scope.release = true;
-                $scope.coverage = false;
-                $scope.award = false;
-                $scope.mediac = false;
-            } else if (id == 2) {
-                $scope.release = false;
-                $scope.coverage = true;
-                $scope.award = false;
-                $scope.mediac = false;
-            } else if (id == 3) {
-                $scope.release = false;
-                $scope.coverage = false;
-                $scope.award = true;
-                $scope.mediac = false;
-            } else if (id == 4) {
-                $scope.release = false;
-                $scope.coverage = false;
-                $scope.award = false;
-                $scope.mediac = true;
-            }
-
+    $scope.showPress = function (id) {
+        _.each($scope.tabs, function (key) {
+            key.active = false;
+        });
+        $scope.tabs[id - 1].active = true;
+        if (id == 1) {
+            $scope.release = true;
+            $scope.coverage = false;
+            $scope.award = false;
+            $scope.mediac = false;
+        } else if (id == 2) {
+            $scope.release = false;
+            $scope.coverage = true;
+            $scope.award = false;
+            $scope.mediac = false;
+        } else if (id == 3) {
+            $scope.release = false;
+            $scope.coverage = false;
+            $scope.award = true;
+            $scope.mediac = false;
+        } else if (id == 4) {
+            $scope.release = false;
+            $scope.coverage = false;
+            $scope.award = false;
+            $scope.mediac = true;
         }
+
+    }
 
 
 })
 
-.controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {
+.controller('languageCtrl', function ($scope, TemplateService, $translate, $rootScope) {
 
-    $scope.changeLanguage = function() {
+    $scope.changeLanguage = function () {
         console.log("Language CLicked");
 
         if (!$.jStorage.get("language")) {

@@ -9,7 +9,7 @@ var firstapp = angular.module('firstapp', [
     'angulartics.google.analytics'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
+firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
     // for http request with session
     $httpProvider.defaults.withCredentials = true;
     $stateProvider
@@ -38,6 +38,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             url: "/ask-expert",
             templateUrl: "views/template.html",
             controller: 'AskExpertCtrl'
+        })
+        .state('dashboard-download', {
+            url: "/dashboard-download",
+            templateUrl: "views/template.html",
+            controller: 'DashboardDownloadCtrl'
         })
         .state('signup', {
             url: "/signup",
@@ -75,7 +80,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             controller: 'TeamCtrl'
         })
 
-        .state('ourvalues', {
+    .state('ourvalues', {
             url: "/ourvalues",
             templateUrl: "views/template.html",
             controller: 'OurvalueCtrl'
@@ -150,16 +155,16 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
 });
 
 
-firstapp.directive('img', function($compile, $parse) {
+firstapp.directive('img', function ($compile, $parse) {
     return {
         restrict: 'E',
         replace: false,
-        link: function($scope, element, attrs) {
+        link: function ($scope, element, attrs) {
             var $element = $(element);
             if (!attrs.noloading) {
                 $element.after("<img src='img/loading.gif' class='loading' />");
                 var $loading = $element.next(".loading");
-                $element.load(function() {
+                $element.load(function () {
                     $loading.remove();
                     $(this).addClass("doneLoading");
                 });
@@ -170,11 +175,11 @@ firstapp.directive('img', function($compile, $parse) {
     };
 });
 
-firstapp.directive('fancybox', function($document) {
+firstapp.directive('fancybox', function ($document) {
     return {
         restrict: 'EA',
         replace: false,
-        link: function(scope, element, attr) {
+        link: function (scope, element, attr) {
             var $element = $(element);
             var target;
             if (attr.rel) {
@@ -196,11 +201,11 @@ firstapp.directive('fancybox', function($document) {
     };
 });
 
-firstapp.directive('autoHeight', function($compile, $parse) {
+firstapp.directive('autoHeight', function ($compile, $parse) {
     return {
         restrict: 'EA',
         replace: false,
-        link: function($scope, element, attrs) {
+        link: function ($scope, element, attrs) {
             var $element = $(element);
             var windowHeight = $(window).height();
             $element.css("min-height", windowHeight);
@@ -208,7 +213,7 @@ firstapp.directive('autoHeight', function($compile, $parse) {
     };
 });
 
-firstapp.config(function($translateProvider) {
+firstapp.config(function ($translateProvider) {
     $translateProvider.translations('en', LanguageEnglish);
     $translateProvider.translations('hi', LanguageHindi);
     $translateProvider.preferredLanguage('en');
