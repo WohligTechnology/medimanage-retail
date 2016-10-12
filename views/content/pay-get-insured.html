@@ -1,3 +1,460 @@
-<div>
-  yaba daba dooooooooooooooooo
+<div class="pay-get-insured">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="pay-form margin40">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="permanent-nav">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a ui-sref="proposer-details"><span>1</span><p class="disp-inblk">Proposer<br/> Details</p></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="insured-details"><span>2</span><p class="disp-inblk">Insured<br/> Details</p></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="medical-history"><span>3</span><p class="disp-inblk">Medical<br/> History</p></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="nominee-details"><span>4</span><p class="disp-inblk">Nominee<br/> Details</p></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="pay-get-insured" class="current-page"><span>5</span><p class="disp-inblk">Pay & get<br/> Insured</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="policy-edit marg-bt40">
+                              <form>
+                                <div class="edit-head">
+                                  <h4 class="disp-inblk">CONFIRM POLICY</h4>
+                                  <button ui-sref="proposer-details" type="button" class="btn disp-inblk">edit</button>
+                                </div>
+                                  <div class="row">
+                                      <div class="col-md-3">
+                                          <div class="form-group">
+                                              <label for=""></label>
+                                              <input type="text" value="" name="" placeholder="">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                          <div class="form-group">
+                                              <label class="disp-blk">First Name</label>
+                                              <input type="text" value="" name="" placeholder="">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                          <div class="form-group">
+                                              <label class="disp-blk">middle Name <span>(optional)</span></label>
+                                              <input type="text" value="" name="" placeholder="">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                          <div class="form-group">
+                                              <label class="disp-blk">Last Name</label>
+                                              <input type="text" value="" name="" placeholder="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-4">
+                                          <div class="form-group">
+                                              <label for="">DOB</label>
+                                              <div class="date-col">
+                                                  <input type="date" data-date-inline-picker="true" />
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                          <div class="form-group">
+                                              <label for="">gender</label>
+                                              <input type="text" value="" name="" placeholder="">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                          <div class="form-group">
+                                              <label for="">marital status</label>
+                                              <input type="text" value="" name="" placeholder="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-4">
+                                          <div class="form-group">
+                                              <label class="disp-blk">E-mail ID</label>
+                                              <input type="email" value="" name="" placeholder="">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                          <div class="form-group">
+                                              <label class="disp-blk">mobile</label>
+                                              <input type="tel" value="" name="" placeholder="">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                      </div>
+                                  </div>
+                              </form>
+                            </div>
+
+                            <div class="add-edit margin40">
+                              <div class="row">
+                                  <form>
+                                      <div class="col-md-6">
+                                        <div class="edit-head">
+                                            <h4 class="disp-inblk">communication address</h4>
+                                            <button type="button" ui-sref="proposer-detail2" class="btn disp-inblk">edit</button>
+                                        </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">Street line 1 <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="street1" placeholder="" required>
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">Street line 2 <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="street2" placeholder="" required>
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">State <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="state" placeholder="" required>
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">City <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="city" placeholder="" required>
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">Postal Code <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="postalCode" placeholder="" required>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="edit-head">
+                                              <h4 class="disp-inblk">PERMANENT ADDRESS</h4>
+                                              <button type="button" ui-sref="proposer-detail2" class="btn disp-inblk">edit</button>
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">Street line 1 <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="street1" placeholder="" required>
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">Street line 2 <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="street2" placeholder="" required>
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">State <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="state" placeholder="" required>
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">City <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="city" placeholder="" required>
+                                          </div>
+                                          <div class="form-group">
+                                              <label class="disp-blk">Postal Code <span class="brand-danger">*</span></label>
+                                              <input type="text" value="" name="postalCode" placeholder="" required>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                            </div>
+
+
+                            <div class="ins-dets-edit margin40">
+                              <div class="edit-head">
+                                  <h4 class="disp-inblk">insured members</h4>
+                                  <button type="button" ui-sref="insured-details" class="btn disp-inblk">edit</button>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="card-det">
+                                            <div class="card-head">
+                                              <h4>Self</h4>
+                                            </div>
+                                            <div class="card-padd">
+                                              <div class="row">
+                                                  <div class="col-md-3">
+                                                      <div class="form-group select-div">
+                                                          <label for=""></label>
+                                                          <select class="form-control" id="prod">
+                                                            <option>Mr.</option>
+                                                            <option>Mrs.</option>
+                                                      </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">First Name</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">Last Name</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                      <div class="form-group">
+                                                          <div class="form-group">
+                                                              <label for="">DOB</label>
+                                                              <div class="date-col">
+                                                                  <input type="date" data-date-inline-picker="true" />
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                  <div class="col-md-4">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">height(feet)</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">height(inch)</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">weight(KG)</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group select-div">
+                                                        <label for="">occupation</label>
+                                                        <select class="form-control" id="prod">
+                                                          <option>select occupation</option>
+                                                        <option>teacher</option>
+                                                        <option>doctor</option>
+                                                  </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card-det margin40">
+                                            <div class="card-head">
+                                              <h4>Spouse</h4>
+                                            </div>
+                                            <div class="card-padd">
+                                              <div class="row">
+                                                  <div class="col-md-3">
+                                                      <div class="form-group select-div">
+                                                          <label for=""></label>
+                                                          <select class="form-control" id="prod">
+                                                            <option>Mr.</option>
+                                                            <option>Mrs.</option>
+                                                      </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">First Name</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">Last Name</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                      <div class="form-group">
+                                                          <div class="form-group">
+                                                              <label for="">DOB</label>
+                                                              <div class="date-col">
+                                                                  <input type="date" data-date-inline-picker="true" />
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                  <div class="col-md-4">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">height(feet)</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">height(inch)</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                      <div class="form-group">
+                                                          <label class="disp-blk">weight(KG)</label>
+                                                          <input type="text" value="" name="" placeholder="">
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group select-div">
+                                                        <label for="">occupation</label>
+                                                        <select class="form-control" id="prod">
+                                                          <option>select occupation</option>
+                                                        <option>teacher</option>
+                                                        <option>doctor</option>
+                                                  </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="med-hist-edit margin40">
+                              <div class="edit-head">
+                                  <h4 class="disp-inblk">medical history</h4>
+                                  <button type="button" ui-sref="medical-history" class="btn disp-inblk">edit</button>
+                              </div>
+                              <form>
+                                  <div class="marg-tb20">
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <div class="">
+                                                  <p class="font-wt700">Has any of the insured members suffered from following diseases?</p>
+                                              </div>
+                                              <div class="marg-tb20">
+                                                  <p>High or low blood pressure, Chest Pain, or any other cardiac disorder?</p>
+                                              </div>
+                                              <div class="marg-tb20">
+                                                  <p>Tuberculosis, Asthma, Bronchitis or any other lung/respiratory disorder?</p>
+                                              </div>
+                                              <div class="marg-tb20">
+                                                  <p>Ulcer(Stomach/Duodenal), Liver or gall bladder disorder or any other digestive tract disorder?</p>
+                                              </div>
+                                              <div class="marg-tb20">
+                                                  <p>Kidney Failure, Stone in kidney or urinary tract, Prostate disorder or any other kidney/urinary tract disorder?</p>
+                                              </div>
+                                              <div class="marg-tb20">
+                                                  <p>Stroke, Epilepsy (fits), Paralysis or any other nervous system (Brain, Spinal cord, etc) disorder?</p>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-md-6">
+                                              <div class="med-scroll">
+                                                <div class="med-box">
+                                                    <div class="med-row disp-inblk">
+                                                        <div class="text-center">
+                                                            <p class="font-wt700 font-sz14">Puneet Manocha<br><span class="brand-danger">(Self)</span></p>
+                                                        </div>
+                                                        <p>yes</p>
+                                                        <p>no</p>
+                                                        <p>yes</p>
+                                                        <p>no</p>
+                                                        <p>yes</p>
+                                                    </div>
+
+
+                                                    <div class="med-row disp-inblk">
+                                                      <div class="text-center">
+                                                          <p class="font-wt700 font-sz14">Akshita Manocha<br><span class="brand-danger">(Spouse)</span></p>
+                                                      </div>
+                                                      <p>yes</p>
+                                                      <p>no</p>
+                                                      <p>yes</p>
+                                                      <p>no</p>
+                                                      <p>yes</p>
+                                                    </div>
+
+                                                    <div class="med-row disp-inblk">
+                                                      <div class="text-center">
+                                                          <p class="font-wt700 font-sz14">Ayaan Manocha<br><span class="brand-danger">(Son)</span></p>
+                                                      </div>
+                                                      <p>yes</p>
+                                                      <p>no</p>
+                                                      <p>yes</p>
+                                                      <p>no</p>
+                                                      <p>yes</p>
+                                                    </div>
+
+
+                                                    <div class="med-row disp-inblk">
+                                                      <div class="text-center">
+                                                          <p class="font-wt700 font-sz14">Arya Manocha<br><span class="brand-danger">(Daughter)</span></p>
+                                                      </div>
+                                                      <p>yes</p>
+                                                      <p>no</p>
+                                                      <p>yes</p>
+                                                      <p>no</p>
+                                                      <p>yes</p>
+                                                    </div>
+
+                                                    <div class="med-row disp-inblk">
+                                                      <div class="text-center">
+                                                          <p class="font-wt700 font-sz14">Puneet Manocha<br><span class="brand-danger">(Father)</span></p>
+                                                      </div>
+                                                      <p>yes</p>
+                                                      <p>no</p>
+                                                      <p>yes</p>
+                                                      <p>no</p>
+                                                      <p>yes</p>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form>
+                            </div>
+
+                            <div class="nom-det-edit margin40">
+                              <div class="edit-head">
+                                  <h4 class="disp-inblk">nominee details</h4>
+                                  <button type="button" ui-sref="nominee-details" class="btn disp-inblk">edit</button>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <div class="form-group">
+                                          <label class="disp-blk">Nominee Name</label>
+                                          <input type="text" value="" name="nomineeName" placeholder="">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="form-group">
+                                          <label for="">Relationship</label>
+                                          <input type="text" value="" name="" placeholder="">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="form-group">
+                                          <label class="disp-blk">Address of the Nominee</label>
+                                          <textarea row="1" name="address" id="" placeholder="" required></textarea>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="ins-btn">
+                                <div class="row">
+                                    <button type="button" class="btn btn-success pull-left btn-back">back</button>
+                                    <button type="button" class="btn btn-danger pull-right btn-pay btn-continue">make payment</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

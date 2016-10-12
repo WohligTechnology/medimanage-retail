@@ -18,167 +18,919 @@
             </div>
         </div>
     </div>
-    <div class="buy2-cont margin40">
-        <div class="container">
-            <div class="buy2-head disp-blk buy2-boxbord box-shad">
-                <div class="buy2-mydet text-center disp-inblk">
-                    <p>my details</p>
-                    <button type="button" class="btn btn-success buy2-moddets"> modify details </button>
+    <div class="container">
+        <div class="layout">
+            <section class="buy-process-1">
+                <div class="cl"></div>
+            </section>
+            <!--buy-process-1 End-->
+        </div>
+        <div class="layout">
+            <div class="policy-details">
+                <div class="modify-box">
+                    <span>My Details</span>
+                    <a href="#">Modify Details</a>
                 </div>
-                <div class="buy2-det disp-inblk">
-                    <div class="buy2-per disp-blk  buy2-btbord">
-                        <div class="disp-inblk buy2-rtbord padd-1020">
-                            <img src="img/family-icon.png" alt=""> policy type: family
-                        </div>
-                        <div class="disp-inblk buy2-rtbord padd-1020">
-                            <img src="img/gender-icon.png" alt=""> Gender: Male
-                        </div>
-                        <div class="disp-inblk buy2-rtbord padd-1020">
-                            <img src="img/email-icon2.png" alt=""> Pincode: 201102
-                        </div>
-                        <div class="disp-inblk buy2-rtbord padd-1020">
-                            <img src="img/birth-icon.png" alt=""> Date of Birth: 09/04/1986
-                        </div>
-                    </div>
-                    <div class="buy2-fam disp-blk fam-boxbg">
-                        <div class="disp-inblk buy2-rtbord padd-1020">
-                            <img src="img/wife-icon.png" alt=""> Wife - Date of Birth: 09/04/1986
-                        </div>
-                        <div class="disp-inblk buy2-rtbord padd-1020">
-                            <img src="img/kid-icon.png" alt=""> Kid 1 - Date of Birth: 09/04/1986
-                        </div>
-                    </div>
+                <div class="details-box">
+                    <ul>
+                        <li>
+                            <div class="icon"><img src="img/family-icon.png" alt="" title=""></div>
+                            Policy Type: <span>Family</span>
+                        </li>
+                        <li>
+                            <div class="icon"><img src="img/gender-icon.png" alt="" title=""></div>
+                            Gender: <span>Male</span>
+                        </li>
+                        <li>
+                            <div class="icon"><img src="img/email-icon2.png" alt="" title=""></div>
+                            Pincode: <span>201102</span>
+                        </li>
+                        <li>
+                            <div class="icon"><img src="img/birth-icon.png" alt="" title=""></div>
+                            Date of Birth: <span>09/04/1986</span>
+                        </li>
+                        <li>
+                            <div class="icon"><img src="img/wife-icon.png" alt="" title=""></div>
+                            Wife - Date of Birth: <span>09/04/1986</span>
+                        </li>
+                        <li>
+                            <div class="icon"><img src="img/kid-icon.png" alt="" title=""></div>
+                            Kid 1 - Date of Birth: <span>09/04/1986</span>
+                        </li>
+                        <div class="cl"></div>
+                    </ul>
+                    <div class="cl"></div>
                 </div>
+                <div class="cl"></div>
             </div>
-            <div class="buy2-range buy2-boxbord margin40">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <form>
-                                    <div class="form-group select-div">
-                                        <label for="">cover amount</label>
-                                        <select class="form-control" id="cov-amt">
-                                        <option>20000</option>
-                                        <option>15000</option>
-                                        <option>10000</option>
-                                        <option>5000</option>
-                                   </select>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-md-6">
-                                <form>
-                                    <div class="form-group select-div">
-                                        <label for="">premium sort by</label>
-                                        <select class="form-control" id="prem-sort">
-                                    <option value="">Low to high</option>
-                                      <option>20000</option>
-                                      <option>15000</option>
-                                      <option>10000</option>
-                                      <option>5000</option>
-                                 </select>
-                                    </div>
-                                </form>
-                            </div>
+            <!--policy-details End-->
+            <div class="range-box">
+                <ul>
+                    <li>
+                        <span>cover amount</span>
+                        <div class="select_box">
+                            <select>
+                                <option selected>20000</option>
+                                <option>15000</option>
+                                <option>10000</option>
+                                <option>5000</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <label for="">premium range</label>
-                                <div>
-                                    <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options"></rzslider>
+                    </li>
+                    <li>
+                        <span>Premium Short By</span>
+                        <div class="select_box">
+                            <select>
+                                <option selected>Low to High</option>
+                                <option>20000</option>
+                                <option>15000</option>
+                                <option>10000</option>
+                                <option>5000</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Premium Range</span>
+                        <div class="cl"></div>
+                        <div id="slider-range"></div>
+                        <div id="min" class="low-range">&#8377; 5,265</div>
+                        <div id="max" class="hight-range">&#8377; 51,200</div>
+                    </li>
+                    <li>
+                        <span>Tenure</span>
+                        <div class="select_box">
+                            <select>
+                                <option selected>5 Years</option>
+                                <option>4 Years</option>
+                                <option>3 Years</option>
+                                <option>2 Years</option>
+                                <option>1 Years</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                <!--<img src="images/slider.png">-->
+                <div class="cl"></div>
+            </div>
+            <div class="policy-compare">
+                <ul>
+                    <li>
+                        <span class="comp-logo"><img src="img/apollo-logo.png" alt="" title=""></span>
+                        <span class="caption">Easy Health - Premium (1)<br/> - Floater </span>
+                        <a class="close-btn1" href="javascript:void(o)" id="close-btn1">
+                            <img src="img/close-btn-red.png" alt="" title "">
+                        </a>
+                    </li>
+                    <li>
+                        <span class="comp-logo"><img src="img/maxbupa-logo.jpg"></span>
+                        <span class="caption">Heartbeat Gold<br/> - Floater </span>
+                        <a class="close-btn1" href="javascript:void(o)" id="close-btn2">
+                            <img src="img/close-btn-red.png" alt="" title "">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="add-policy">Add Another Policy</div>
+                    </li>
+                </ul>
+                <div class="compare-btn">
+                    <a href="javascript:void(o)" class="compare-box">compare plans</a></div>
+                <div class="close-btn">
+                    <a href="javascript:void(o)" id="close-btn">
+                        <img src="img/close-btn-big-red.png" alt="" title ""></a>
+                </div>
+                <div class="cl"></div>
+            </div>
+            <!--policy-compare End-->
+            <!---->
+            <div style='display:none'>
+                <div id='compare-popup' class="color_box">
+                    <div id="compare-box">
+                        <h2>Compare & Buy</h2>
+                        <ul>
+                            <li>
+                                <div class="column-1 first">
+                                    <div class="icon"><img src="img/comp-policies-icon.png" alt="" title=""></div>
+                                    <span>Policies</span>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <form>
-                                    <div class="form-group select-div">
-                                        <label for="">tenure</label>
-                                        <select class="form-control" id="prem-sort">
-                                            <option value="">5 years</option>
-                                            <option>4 years</option>
-                                            <option>3 years</option>
-                                            <option>2 years</option>
-                                            <option>1 years</option>
-                                         </select>
+                                <div class="column-2">
+                                    <div class="insurance-detail">
+                                        <div class="comp-logo"><img src="img/company-logo-1.jpg"></div>
+                                        <h5>Happy Family Floater<br/>(Silver) </h5>
+                                        <div class="rating-star"><img src="img/comp-star.png"></div>
+                                        <small>Medimanage Rating</small>
+                                        <a href="#" class="view-detail">view detail</a>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="column-2">
+                                    <div class="insurance-detail">
+                                        <div class="comp-logo"><img src="img/company-logo-3.jpg"></div>
+                                        <h5>Happy Family Floater<br/>(Silver) </h5>
+                                        <div class="rating-star"><img src="img/comp-star.png"></div>
+                                        <small>Medimanage Rating</small>
+                                        <a href="#" class="view-detail">view detail</a>
+                                    </div>
+                                </div>
+                                <div class="column-2">
+                                    <div class="insurance-detail">
+                                        <div class="comp-logo"><img src="img/company-logo-4.jpg"></div>
+                                        <h5>Happy Family Floater<br/>(Silver) </h5>
+                                        <div class="rating-star"><img src="img/comp-star.png"></div>
+                                        <small>Medimanage Rating</small>
+                                        <a href="#" class="view-detail">view detail</a>
+                                    </div>
+                                </div>
+                                <div class="cl"></div>
+                            </li>
+                            <li>
+                                <div class="column-1">
+                                    <div class="icon"><img src="img/comp-premium-icon.png" alt="" title=""></div>
+                                    <span>Premium</span>
+                                </div>
+                                <div class="column-2 price">
+                                    <p>&#8377; 6,240</p>
+                                </div>
+                                <div class="column-2 price">
+                                    <p>&#8377; 6,240</p>
+                                </div>
+                                <div class="column-2 price">
+                                    <p>&#8377; 6,240</p>
+                                </div>
+                                <div class="cl"></div>
+                            </li>
+                            <li>
+                                <div class="column-1">
+                                    <div class="icon"><img src="img/comp-unique-icon.png" alt="" title=""></div>
+                                    <span>Unique Features</span>
+                                </div>
+                                <div class="column-2">
+                                    <p>No medical tests required upto 60 years</p>
+                                </div>
+                                <div class="column-2">
+                                    <p>No medical tests required upto 60 years</p>
+                                </div>
+                                <div class="column-2">
+                                    <p>No medical tests required upto 60 years</p>
+                                </div>
+                                <div class="cl"></div>
+                            </li>
+                            <li>
+                                <div class="column-1">
+                                    <div class="icon"><img src="img/comp-room-rent.png" alt="" title=""></div>
+                                    <span>Room rent</span>
+                                </div>
+                                <div class="column-2">
+                                    <p>1% of Sum Insured, per day</p>
+                                </div>
+                                <div class="column-2">
+                                    <p>1% of Sum Insured, per day</p>
+                                </div>
+                                <div class="column-2">
+                                    <p>1% of Sum Insured, per day</p>
+                                </div>
+                                <div class="cl"></div>
+                            </li>
+                            <li>
+                                <div class="column-1">
+                                    <div class="icon"><img src="img/comp-copay-icon.png" alt="" title=""></div>
+                                    <span>Co-pay</span>
+                                </div>
+                                <div class="column-2">
+                                    <p>10 % of admissible claim amount</p>
+                                </div>
+                                <div class="column-2">
+                                    <p>10 % of admissible claim amount</p>
+                                </div>
+                                <div class="column-2">
+                                    <p>10 % of admissible claim amount</p>
+                                </div>
+                                <div class="cl"></div>
+                            </li>
+                            <li>
+                                <div class="column-1">
+                                    <div class="icon"><img src="img/comp-check-icon.png" alt="" title=""></div>
+                                    <span>Health check up</span>
+                                </div>
+                                <div class="column-2">
+                                    <p>Not covered</p>
+                                </div>
+                                <div class="column-2">
+                                    <p>Not covered</p>
+                                </div>
+                                <div class="column-2">
+                                    <p>Not covered</p>
+                                </div>
+                                <div class="cl"></div>
+                            </li>
+                            <li>
+                                <div class="column-1">
+                                    <div class="icon"><img src="img/comp-buy-icon.png" alt="" title=""></div>
+                                    <span>Buy</span>
+                                </div>
+                                <div class="column-2">
+                                    <div class="buy-btn">
+                                        <a href="#"><small><img src="img/comp-buy-icon2.png" alt="" title=""></small>Buy</a>
+                                    </div>
+                                </div>
+                                <div class="column-2">
+                                    <div class="buy-btn">
+                                        <a href="#"><small><img src="img/comp-buy-icon2.png" alt="" title=""></small>Buy</a>
+                                    </div>
+                                </div>
+                                <div class="column-2">
+                                    <div class="buy-btn">
+                                        <a href="#"><small><img src="img/comp-buy-icon2.png" alt="" title=""></small>Buy</a>
+                                    </div>
+                                </div>
+                                <div class="cl"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-----compare-popup End---->
+            </div>
+        </div>
+        <div class="policy-box">
+            <!-----policy-service--->
+            <div class="policy-service layout">
+                <div class="policies_box">
+                    <div class="icon"><img src="img/policies-icon.png" alt="" title=""></div>
+                    <span>Policies</span>
+                </div>
+                <div class="premium_box">
+                    <div class="icon"><img src="img/premium-icon.png" alt="" title=""></div>
+                    <span>Premium</span>
+                </div>
+                <div class="unique_box">
+                    <div class="icon"><img src="img/unique-icon.png" alt="" title=""></div>
+                    <span>Unique Features</span>
+                </div>
+                <div class="room_rent">
+                    <div class="icon"><img src="img/room-rent-icon.png" alt="" title=""></div>
+                    <span>Room rent</span>
+                </div>
+                <div class="copay_box">
+                    <div class="icon"><img src="img/copay-icon.png" alt="" title=""></div>
+                    <span>Co-pay</span>
+                </div>
+                <div class="healthcheck_box">
+                    <div class="icon"><img src="img/check-icon.png" alt="" title=""></div>
+                    <span>Health check up</span>
+                </div>
+                <div class="buy_box">
+                    <div class="icon"><img src="img/buy-icon.png" alt="" title=""></div>
+                    <span>Buy</span>
+                </div>
+                <div class="cl"></div>
+            </div>
+        </div>
+
+        <!--policy-box End-->
+        <div class="layout">
+            <div class="policy-service-details">
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="compare">
+                    <label for="compare"><small>Compare</small></label>
+                </div>
+                <ul>
+                    <li>
+                        <div class="policies_box">
+                            <div class="insurance-detail">
+                                <div class="comp-logo"><img src="img/company-logo-1.jpg"></div>
+                                <h5>Happy Family Floater<br/>(Silver) </h5>
+                                <div class="rating-star"><img src="img/rating-star.png"></div>
+                                <small>Medimanage Rating</small>
+                                <a href="javascript:void(o)" id="toggle-viewdetails" class="view-detail">view detail</a>
                             </div>
+                        </div>
+                        <div class="premium_box">
+                            <p>&#8377; 6,240</p>
+                        </div>
+                        <div class="unique_box">
+                            <p>No medical tests required upto 60 years</p>
+                        </div>
+                        <div class="room_rent">
+                            <p>1% of Sum Insured, per day</p>
+                        </div>
+                        <div class="copay_box">
+                            <p>10 % of admissible claim amount</p>
+                        </div>
+                        <div class="healthcheck_box">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="buy_box">
+                            <span>
+                    	<figure class="buy-icon">
+                        	<img src="img/buy-icon2.png" alt="" title="">
+                        </figure>
+                        <a href="#">BuY</a>
+                    </span>
+                        </div>
+                        <div class="cl"></div>
+                    </li>
+                </ul>
+                <div class="compare-viewdetail">
+                    <div id="parentHorizontalTab">
+                        <ul class="resp-tabs-list hor_1">
+                            <li>Product</li>
+                            <li>Waiting Periods</li>
+                            <li>Downlaod</li>
+                            <li>about Company</span>
+                            </li>
+                        </ul>
+                        <div class="resp-tabs-container hor_1">
+                            <div>
+                                <ul class="product-panel">
+                                    <li>
+                                        <h4>Sum Insured options</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Annual Health check up</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li class="disable">
+                                        <h4>Day care Treatments</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Organ Donor expenses</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Restore Sum Insured</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Alternative Treatment</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Pre- hospitalization  Expenses</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Maternity</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Post-Hospitalization  Expenses</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Dental Treatments</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="cl"></div>
+                            </div>
+                            <!--Product  Tab End-->
+                            <div>
+                                <ul class="product-panel">
+                                    <li>
+                                        <h4>Accident cover</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Loading on Claims</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Pre-existing Diseases</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Renewable till</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Specific Illness</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Exclusions</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Sub-limits</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <small class="que-icon">
+                                	<img src="img/que-icon-3.png">
+                                   <span class="text_box">
+                                    	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem  sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small>
+                                            </span>
+                                            </small>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="cl"></div>
+                            </div>
+                            <!--Waiting Periods Tab End --->
+                            <div>
+                                <ul class="downlaod-panel">
+                                    <li>
+                                        <img src="img/conditions-icon.png" alt="" title="">
+                                        <h4>Terms & conditions </h4>
+                                        <a href="#" class="btn-1">downlaod</a>
+                                        <div class="cl"></div>
+                                    </li>
+                                    <li>
+                                        <img src="img/brochure-icon.png" alt="" title="">
+                                        <h4>Brochure </h4>
+                                        <a href="#" class="btn-1">downlaod</a>
+                                        <div class="cl"></div>
+                                    </li>
+                                    <li>
+                                        <img src="img/review-icon.png" alt="" title="">
+                                        <h4>Product Review</h4>
+                                        <a href="#" class="btn-1">downlaod</a>
+                                        <div class="cl"></div>
+                                    </li>
+                                    <li>
+                                        <img src="img/articles-icon.png" alt="" title="">
+                                        <h4>Articles</h4>
+                                        <a href="#" class="btn-1">downlaod</a>
+                                        <div class="cl"></div>
+                                    </li>
+                                </ul>
+                                <div class="cl"></div>
+                            </div>
+                            <!--Downlaod Tab End-->
+                            <div>
+                                <div class="about-panel">
+                                    <div class="panel-lft">
+                                        <h4>About Company</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius blandit ultricies. Nulla facilisi. Morbi commodo, est ac dignissim feugiat, augue tortor pharetra justo, non volutpat nisl metus eu risus.</p>
+                                        <div class="claim">
+                                            <h4>Cashless Claim</h4>
+                                            <div class="column-1">% of claims settled within</div>
+                                            <div class="column-2">
+                                                <span class="orang"></span>1 month
+                                            </div>
+                                            <div class="column-2">
+                                                <span class="red"></span>1-3 month
+                                            </div>
+                                            <div class="column-2">
+                                                <span class="blue"></span>3+month
+                                            </div>
+                                        </div>
+                                        <div class="cl"></div>
+                                        <div class="claim-bar">
+                                            <span class="orang-bar">85%</span>
+                                            <span class="red-bar">10%</span>
+                                            <span class="blue-bar">5%</span>
+                                            <div class="cl"></div>
+                                        </div>
+                                        <div class="cl"></div>
+                                    </div>
+                                    <div class="panel-rgt">
+                                        <h4>Our View</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius blandit ultricies. Nulla facilisi. Morbi commodo, est ac dignissim feugiat, augue tortor pharetra justo, non volutpat nisl metus eu risus.</p>
+                                        <div class="claim">
+                                            <h4>Reimbursement Claim</h4>
+                                            <div class="column-1">% of claims settled within</div>
+                                            <div class="column-2">
+                                                <span class="orang"></span>1 month
+                                            </div>
+                                            <div class="column-2">
+                                                <span class="red"></span>1-3 month
+                                            </div>
+                                            <div class="column-2">
+                                                <span class="blue"></span>3+month
+                                            </div>
+                                        </div>
+                                        <div class="cl"></div>
+                                        <div class="claim-bar">
+                                            <span class="orang-bar">85%</span>
+                                            <span class="red-bar">10%</span>
+                                            <span class="blue-bar">5%</span>
+                                            <div class="cl"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cl"></div>
+                                </div>
+                                <!--about Company Tab End-->
+                            </div>
+                            <div class="cl"></div>
                         </div>
                     </div>
                 </div>
+                <!--compare-viewdetail end-->
+                <div class="cl"></div>
             </div>
-        </div>
-        <div class="buy2-policy">
-            <div class="container">
-                <table class="table table-bordered text-center">
-                    <tr>
-                        <td colspan="2">
-                            <img src="img/policies-icon.png" alt="" title="">
-                            <p>policies</p>
-                        </td>
-                        <td colspan="1">
-                            <img src="img/premium-icon.png" alt="" title="">
-                            <p>Premium</p>
-                        </td>
-                        <td colspan="2">
-                            <img src="img/unique-icon.png" alt="" title="">
-                            <p>Unique Features</p>
-                        </td>
-                        <td colspan="2">
-                            <img src="img/room-rent-icon.png" alt="" title="">
-                            <p>Room rent</p>
-                        </td>
-                        <td colspan="2">
-                            <img src="img/copay-icon.png" alt="" title="">
-                            <p>Co-pay</p>
-                        </td>
-                        <td colspan="2">
-                            <img src="img/check-icon.png" alt="" title="">
-                            <p>Health check up</p>
-                        </td>
-                        <td colspan="1">
-                            <img src="img/buy-icon.png" alt="" title="">
-                            <p class="">Buy</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="buy2-pdets disp-blk posi-rel">
-                <div class="disp-inblk posi-abs check-pos">
-                  <div class="check-box">
-                      <input type="checkbox" name="checkbox1" id="compare">
-                      <label for="compare" class="disp-blk">Compare</label>
-                  </div>
+            <!--policy-service-details end-->
+            <div class="policy-service-details">
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="compare1">
+                    <label for="compare1"><small>Compare</small></label>
                 </div>
-                <div class="">
-                  <div class="container">
-                      <table class="table table-bordered text-center">
-                          <tr>
-                              <td colspan="2">
-                                  <img src="img/company-logo-1.jpg" alt="">
-                                  <p>Happy family floater<br>(silver) </p>
-                                  <img src="img/rating-star.png" alt="">
-                                  <p>medimanage rating</p>
-                                  <button type="button" name="button">view details</button>
-                              </td>
-                              <td colspan="1">6240</td>
-                              <td colspan="2">No medical tests required upto 60 years</td>
-                              <td colspan="2">1% of Sum Insured, per day</td>
-                              <td colspan="2">10 % of admissible claim amount</td>
-                              <td colspan="2">Not covered</td>
-                              <td colspan="1">
-                                  <a href=""><img src="img/buy-icon2.png" alt="" title="">
-                                      <p class="">Buy</p>
-                                  </a>
-                              </td>
-                          </tr>
-                      </table>
-                  </div>
-                </div>
+                <ul>
+                    <li>
+                        <div class="policies_box">
+                            <div class="insurance-detail">
+                                <div class="comp-logo"><img src="img/company-logo-4.jpg"></div>
+                                <h5>Happy Family Floater<br/>(Silver) </h5>
+                                <div class="rating-star"><img src="img/rating-star.png"></div>
+                                <small>Medimanage Rating</small>
+                                <a href="javascript:void(o)" class="view-detail">view detail</a>
+                            </div>
+                        </div>
+                        <div class="premium_box">
+                            <p>&#8377; 6,240</p>
+                        </div>
+                        <div class="unique_box">
+                            <p>No medical tests required upto 60 years</p>
+                        </div>
+                        <div class="room_rent">
+                            <p>1% of Sum Insured, per day</p>
+                        </div>
+                        <div class="copay_box">
+                            <p>10 % of admissible claim amount</p>
+                        </div>
+                        <div class="healthcheck_box">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="buy_box">
+                            <span>
+                    	<figure class="buy-icon">
+                        	<img src="img/buy-icon2.png" alt="" title="">
+                        </figure>
+                        <a href="#">BuY</a>
+                    </span>
+                        </div>
+                        <div class="cl"></div>
+                    </li>
+                </ul>
+                <div class="cl"></div>
             </div>
+            <!--policy-service-details end-->
+            <div class="policy-service-details">
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="compare2">
+                    <label for="compare2"><small>Compare</small></label>
+                </div>
+                <ul>
+                    <li>
+                        <div class="policies_box">
+                            <div class="insurance-detail">
+                                <div class="comp-logo"><img src="img/company-logo-3.jpg"></div>
+                                <h5>Happy Family Floater<br/>(Silver) </h5>
+                                <div class="rating-star"><img src="img/rating-star.png"></div>
+                                <small>Medimanage Rating</small>
+                                <a href="#" class="view-detail">view detail</a>
+                            </div>
+                        </div>
+                        <div class="premium_box">
+                            <p>&#8377; 6,240</p>
+                        </div>
+                        <div class="unique_box">
+                            <p>No medical tests required upto 60 years</p>
+                        </div>
+                        <div class="room_rent">
+                            <p>1% of Sum Insured, per day</p>
+                        </div>
+                        <div class="copay_box">
+                            <p>10 % of admissible claim amount</p>
+                        </div>
+                        <div class="healthcheck_box">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="buy_box">
+                            <span>
+                    	<figure class="buy-icon">
+                        	<img src="img/buy-icon2.png" alt="" title="">
+                        </figure>
+                        <a href="#">BuY</a>
+                    </span>
+                        </div>
+                        <div class="cl"></div>
+                    </li>
+                </ul>
+                <div class="cl"></div>
+            </div>
+            <!--policy-service-details end-->
+            <div class="policy-service-details">
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="compare3">
+                    <label for="compare3"><small>Compare</small></label>
+                </div>
+                <ul>
+                    <li>
+                        <div class="policies_box">
+                            <div class="insurance-detail">
+                                <div class="comp-logo"><img src="img/apollo-logo.png"></div>
+                                <h5>Happy Family Floater<br/>(Silver) </h5>
+                                <div class="rating-star"><img src="img/rating-star.png"></div>
+                                <small>Medimanage Rating</small>
+                                <a href="#" class="view-detail">view detail</a>
+                            </div>
+                        </div>
+                        <div class="premium_box">
+                            <p>&#8377; 6,240</p>
+                        </div>
+                        <div class="unique_box">
+                            <p>No medical tests required upto 60 years</p>
+                        </div>
+                        <div class="room_rent">
+                            <p>1% of Sum Insured, per day</p>
+                        </div>
+                        <div class="copay_box">
+                            <p>10 % of admissible claim amount</p>
+                        </div>
+                        <div class="healthcheck_box">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="buy_box">
+                            <span>
+                    	<figure class="buy-icon">
+                        	<img src="img/buy-icon2.png" alt="" title="">
+                        </figure>
+                        <a href="#">BuY</a>
+                    </span>
+                        </div>
+                        <div class="cl"></div>
+                    </li>
+                </ul>
+                <div class="cl"></div>
+            </div>
+            <!--policy-service-details end-->
+            <div class="policy-service-details">
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="compare4">
+                    <label for="compare4"><small>Compare</small></label>
+                </div>
+                <ul>
+                    <li>
+                        <div class="policies_box">
+                            <div class="insurance-detail">
+                                <div class="comp-logo"><img src="img/apollo-logo.png"></div>
+                                <h5>Happy Family Floater<br/>(Silver) </h5>
+                                <div class="rating-star"><img src="img/rating-star.png"></div>
+                                <small>Medimanage Rating</small>
+                                <a href="#" class="view-detail">view detail</a>
+                            </div>
+                        </div>
+                        <div class="premium_box">
+                            <p>&#8377; 6,240</p>
+                        </div>
+                        <div class="unique_box">
+                            <p>No medical tests required upto 60 years</p>
+                        </div>
+                        <div class="room_rent">
+                            <p>1% of Sum Insured, per day</p>
+                        </div>
+                        <div class="copay_box">
+                            <p>10 % of admissible claim amount</p>
+                        </div>
+                        <div class="healthcheck_box">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="buy_box">
+                            <span>
+                    	<figure class="buy-icon">
+                        	<img src="img/buy-icon2.png" alt="" title="">
+                        </figure>
+                        <a href="#">BuY</a>
+                    </span>
+                        </div>
+                        <div class="cl"></div>
+                    </li>
+                </ul>
+                <div class="cl"></div>
+            </div>
+            <!--policy-service-details end-->
+            <div class="policy-service-details">
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="compare5">
+                    <label for="compare5"><small>Compare</small></label>
+                </div>
+                <ul>
+                    <li>
+                        <div class="policies_box">
+                            <div class="insurance-detail">
+                                <div class="comp-logo"><img src="img/apollo-logo.png"></div>
+                                <h5>Happy Family Floater<br/>(Silver) </h5>
+                                <div class="rating-star"><img src="img/rating-star.png"></div>
+                                <small>Medimanage Rating</small>
+                                <a href="#" class="view-detail">view detail</a>
+                            </div>
+                        </div>
+                        <div class="premium_box">
+                            <p>&#8377; 6,240</p>
+                        </div>
+                        <div class="unique_box">
+                            <p>No medical tests required upto 60 years</p>
+                        </div>
+                        <div class="room_rent">
+                            <p>1% of Sum Insured, per day</p>
+                        </div>
+                        <div class="copay_box">
+                            <p>10 % of admissible claim amount</p>
+                        </div>
+                        <div class="healthcheck_box">
+                            <p>Not covered</p>
+                        </div>
+                        <div class="buy_box">
+                            <span>
+                    	<figure class="buy-icon">
+                        	<img src="img/buy-icon2.png" alt="" title="">
+                        </figure>
+                        <a href="#">BuY</a>
+                    </span>
+                        </div>
+                        <div class="cl"></div>
+                    </li>
+                </ul>
+                <div class="cl"></div>
+            </div>
+            <!--policy-service-details end-->
         </div>
+        <!--layout end-->
     </div>
 </div>
 </div>
