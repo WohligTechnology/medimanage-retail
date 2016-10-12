@@ -23,6 +23,174 @@ body {
     // padding-top: 70px;
 }
 
+.menu {
+    width: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: $brand-primary;
+    li {
+        padding-left: 13px;
+        margin-bottom: 2px;
+        &:hover {
+            background-color: #fff;
+            .menuPic-1 {
+                background-image: url('../img/list-icon2-h.png');
+            }
+            .menuPic-2 {
+                background-image: url('../img/list-icon4-h.png');
+            }
+            .menuPic-3 {
+                background-image: url('../img/list-icon6-h.png');
+            }
+            .menuPic-4 {
+                background-image: url('../img/list-icon7-h.png');
+            }
+            .menuPic-5 {
+                background-image: url('../img/list-icon5-h.png');
+            }
+            .menuPic-6 {
+                background-image: url('../img/list-icon3-h.png');
+            }
+            .menuPic-7 {
+                background-image: url('../img/list-icon11-h.png');
+            }
+            .menuPic-8 {
+                background-image: url('../img/list-icon12-h.png');
+            }
+            .menuPic-9 {
+                background-image: url('../img/list-icon9-h.png');
+            }
+            .menuPic-10 {
+                background-image: url('../img/list-icon10-h.png');
+            }
+        }
+    }
+    .menuPic-1 {
+        background-image: url('../img/list-icon2.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon2-h.png');
+        // }
+    }
+    .menuPic-2 {
+        background-image: url('../img/list-icon4.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon4-h.png');
+        // }
+    }
+    .menuPic-3 {
+        background-image: url('../img/list-icon6.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon6-h.png');
+        // }
+    }
+    .menuPic-4 {
+        background-image: url('../img/list-icon7.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon7-h.png');
+        // }
+    }
+    .menuPic-5 {
+        background-image: url('../img/list-icon5.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon5-h.png');
+        // }
+    }
+    .menuPic-6 {
+        background-image: url('../img/list-icon3.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon3-h.png');
+        // }
+    }
+    .menuPic-7 {
+        background-image: url('../img/list-icon11.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon11-h.png');
+        // }
+    }
+    .menuPic-8 {
+        background-image: url('../img/list-icon12.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon12-h.png');
+        // }
+    }
+    .menuPic-9 {
+        background-image: url('../img/list-icon9.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon9-h.png');
+        // }
+    }
+    .menuPic-10 {
+        background-image: url('../img/list-icon10.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-left: 13px;
+        height: 32px;
+        width: 32px;
+        // &:hover {
+        //     background-image: url('../img/list-icon10-h.png');
+        // }
+    }
+}
+
+.slide-out {
+    @include transform(translateX(200px));
+    @include transition(all 300ms linear);
+    background-color: $brand-primary;
+}
+
+.menu-out {
+    width: 200px;
+    @include transition(all 300ms linear);
+    background-color: $brand-primary;
+}
+
 .btn-success {
     background-color: $brand-success;
     border-color: $brand-success;
@@ -1152,11 +1320,11 @@ a {
             background-color: #D9D9D9;
         }
     }
-    // .locate-us {
-    //     {
-    //         margin-bottom: 20px;
-    //     }
-    // }
+    .locate-us {
+        span {
+            margin-bottom: 12px;
+        }
+    }
     .query {
         .subject,
         .message {

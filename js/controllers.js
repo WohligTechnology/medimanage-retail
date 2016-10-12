@@ -57,6 +57,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
+
+    setTimeout(function () {
+        // $('#menu-in').removeClass("menu-out");
+        $('#hamburger').click(function () {
+            if ($("#menu-in").hasClass("menu-out")) {
+                $('#menu-in').removeClass("menu-out");
+            } else {
+                $('#menu-in').addClass("menu-out");
+            }
+            $(".content-slide ").addClass("slide-out")
+        })
+    }, 100);
+    // menu
+
+    // menu end
 })
 
 .controller('HomepageCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
