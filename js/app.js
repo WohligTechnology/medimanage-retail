@@ -120,6 +120,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'MedhistoryCtrl'
         })
+        .state('pay-get-insured', {
+            url: "/pay-get-insured",
+            templateUrl: "views/template.html",
+            controller: 'PaygetCtrl'
+        })
         .state('our-story', {
             url: "/our-story",
             templateUrl: "views/template.html",
