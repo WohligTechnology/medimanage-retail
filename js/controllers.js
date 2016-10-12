@@ -127,6 +127,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     })
 
+    .controller('DashboardProfileCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("dashboard-myprofile"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Dashboard My Profile"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.oneAtATime = true;
+        $scope.status = {
+           isCustomHeaderOpen: false,
+           isFirstOpen: true,
+           isFirstDisabled: false
+        };
+
+    })
+
 
 .controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("faq"); //Use same name of .html file
