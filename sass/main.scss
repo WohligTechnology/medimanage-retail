@@ -23,6 +23,9 @@ body {
     // padding-top: 70px;
 }
 
+// .content-holder {
+//     overflow-x: hidden;
+// }
 .menu {
     width: 60px;
     position: fixed;
@@ -30,11 +33,32 @@ body {
     left: 0;
     height: 100%;
     background-color: $brand-primary;
+    z-index: 10;
+    @include transition(all 300ms linear);
+    .menu-text {
+        display: none;
+        font-size: 18px;
+        color: #fff;
+    }
     li {
+        padding-top: 4px;
         padding-left: 13px;
         margin-bottom: 2px;
+        span {
+            &:first-child {
+                vertical-align: middle;
+            }
+            &:nth-child(2) {
+                margin-left: 20px;
+            }
+        }
         &:hover {
             background-color: #fff;
+            .menu-text {
+                display: none;
+                font-size: 18px;
+                color: $brand-primary;
+            }
             .menuPic-1 {
                 background-image: url('../img/list-icon2-h.png');
             }
@@ -66,6 +90,11 @@ body {
                 background-image: url('../img/list-icon10-h.png');
             }
         }
+    }
+    .ham-icon {
+        display: block;
+        margin: 20px 20px 40px 20px;
+        cursor: pointer;
     }
     .menuPic-1 {
         background-image: url('../img/list-icon2.png');
@@ -180,15 +209,22 @@ body {
 }
 
 .slide-out {
-    @include transform(translateX(200px));
+    width: 250px;
     @include transition(all 300ms linear);
     background-color: $brand-primary;
+    .menu-text {
+        display: inline-block;
+    }
 }
 
-.menu-out {
-    width: 200px;
+.menu+.content-holder {
+    @include transform(translateX(0px));
     @include transition(all 300ms linear);
-    background-color: $brand-primary;
+}
+
+.slide-out+.content-holder {
+    @include transform(translateX(250px));
+    @include transition(all 300ms linear);
 }
 
 .btn-success {

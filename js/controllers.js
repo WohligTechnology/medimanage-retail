@@ -58,20 +58,40 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     });
     $.fancybox.close(true);
 
-    setTimeout(function () {
-        // $('#menu-in').removeClass("menu-out");
-        $('#hamburger').click(function () {
-            if ($("#menu-in").hasClass("menu-out")) {
-                $('#menu-in').removeClass("menu-out");
-            } else {
-                $('#menu-in').addClass("menu-out");
-            }
-            $(".content-slide ").addClass("slide-out")
-        })
-    }, 100);
-    // menu
+    // setTimeout(function () {
+    //     // $('#menu-in').removeClass("menu-out");
+    //     $('#hamburger').click(function () {
+    //         if ($("#menu-in").hasClass("menu-out")) {
+    //             $('#menu-in').removeClass("menu-out");
+    //         } else {
+    //             $('#menu-in').addClass("menu-out");
+    //         }
+    //         $(".content-slide ").addClass("slide-out")
+    //     })
+    // }, 100);
 
-    // menu end
+
+    // menu
+    $scope.getClass = "";
+    $scope.contentClass = "";
+    $scope.menuOpen = function () {
+            if ($scope.getClass == "" && $scope.contentClass == "") {
+                $scope.getClass = "slide-out";
+                $scope.contentClass = "content-slide";
+            } else {
+                $scope.getClass = "";
+                $scope.contentClass = "";
+            }
+        }
+        // $('.content-holder').click(function () {
+        //         console.log("amit")
+        //         if ($('.content-holder').hasClass('slide-content')) {
+        //             $('.content-holder').removeClass('slide-content');
+        //         } else {
+        //             $('.content-holder').addClass('slide-content');
+        //         }
+        //     })
+        // menu end
 })
 
 .controller('HomepageCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
@@ -142,19 +162,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     })
 
-    .controller('DashboardProfileCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
-        $scope.template = TemplateService.changecontent("dashboard-myprofile"); //Use same name of .html file
-        $scope.menutitle = NavigationService.makeactive("Dashboard My Profile"); //This is the Title of the Website
-        TemplateService.title = $scope.menutitle;
-        $scope.navigation = NavigationService.getnav();
-        $scope.oneAtATime = true;
-        $scope.status = {
-           isCustomHeaderOpen: false,
-           isFirstOpen: true,
-           isFirstDisabled: false
-        };
+.controller('DashboardProfileCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("dashboard-myprofile"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Dashboard My Profile"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    $scope.oneAtATime = true;
+    $scope.status = {
+        isCustomHeaderOpen: false,
+        isFirstOpen: true,
+        isFirstDisabled: false
+    };
 
-    })
+})
 
 
 .controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
