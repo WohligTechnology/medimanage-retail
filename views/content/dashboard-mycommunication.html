@@ -1,0 +1,77 @@
+<section class="dashboard-mycommunication">
+    <div class="container">
+        <div class="communication-table">
+            <table class="table">
+                <thead class="main-head">
+                    <tr>
+                        <th>Ticket Number</th>
+                        <th>Subject</th>
+                        <th>Relationship</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#162079</td>
+                        <td>Premium Calculation</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit diam, accumsan nec volutpat
+                            aliquam, tincidunt sit amet velit...</td>
+                        <td><button type="button" class="btn btn-success" ng-click="showNextRow()">VIEW DETAILS</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <table class="table" ng-show="view">
+                                <thead>
+                                    <tr class="cust-line-1">
+                                        <th>#162079</th>
+                                        <th>Premium Calculation</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit diam, accumsan
+                                            nec volutpat aliquam, tincidunt sit amet velit...</th>
+                                        <th><img src="img/close-btn.png" class="cancel-btn" alt="" ng-click="hideNextRow()"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="cust-line-2">
+                                        <td colspan="4">
+                                            <div class="logo-holder"><img src="img/logo-img.png" alt=""></div>
+                                            <span class="com-date">24/10/2015 5.43 PM</span>
+                                            <p class="com-message">Dear Member, you will receive the updated claim status in 2 days.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="cust-line-3">
+                                        <td colspan="4">
+                                            <div class="cust-logo"><img src="img/user-icon.png" alt=""></div>
+                                            <p class="cust-name">Puneet Manocha </p>
+                                            <span class="com-date">24/10/2015 5.43 PM</span>
+                                            <p class="com-message">Hi, I have submitted the query documents, please update the status.</p>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#162079</td>
+                        <td>Premium Calculation</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit diam, accumsan nec volutpat
+                            aliquam, tincidunt sit amet velit...</td>
+                        <td><button type="button" class="btn btn-success">VIEW DETAILS</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="query-form">
+            <p>SUBMIT YOUR QUERY:</p>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Subject:</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Message:</span>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+        </div>
+    </div>
+</section>

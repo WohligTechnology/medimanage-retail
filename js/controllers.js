@@ -161,6 +161,30 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
 
     })
+    .controller('dashboardMycommunicationCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("dashboard-mycommunication"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Dashboard-mycommunication"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+        $scope.view = false;
+
+        $scope.showNextRow = function () {
+            //console.log("show");
+            $scope.view = true;
+
+        }
+
+        $scope.hideNextRow = function () {
+            //console.log("show");
+            $scope.view = false;
+
+        }
+
+
+
+
+    })
 
 .controller('DashboardProfileCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("dashboard-myprofile"); //Use same name of .html file

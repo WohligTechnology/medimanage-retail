@@ -1225,6 +1225,7 @@ a {
     }
 }
 
+// ------------this css is for dashboard-download-------------
 .dashboard-download {
     .download-section {
         margin-top: 5%;
@@ -1265,6 +1266,7 @@ a {
     }
 }
 
+// ------------this css is for dashboard-quotes-------------
 .dashboard-quotes {
     .quote-table {
         margin-top: 40px;
@@ -1304,6 +1306,7 @@ a {
     }
 }
 
+// ------------this css is for dashboard-contact-------------
 .dashboard-contact {
     .contact-tabs {
         margin-top: 40px;
@@ -1402,6 +1405,83 @@ a {
                 color: #fff;
                 padding: 6px 30px;
             }
+        }
+    }
+}
+
+// ------------this css is for dashboard-mycommunication-------------
+.dashboard-mycommunication {
+    .communication-table {
+        margin-top: 20px;
+        th {
+            border-bottom: 0;
+        }
+        tr {
+            border-bottom: 1px dashed #c7c7c7;
+            &:first-child {
+                td {
+                    border-top: 0;
+                }
+            }
+        }
+        .main-head {
+            border-top: 1px dashed #c7c7c7;
+            border-bottom: 1px dashed #c7c7c7;
+        }
+    }
+    .cust-line-1 {
+        background-color: $brand-primary;
+        color: #fff;
+        border-bottom: 0!important;
+        border-top: 1px dashed #c7c7c7;
+        th {
+            vertical-align: top;
+        }
+    }
+    .cust-line-2 {
+        background-color: #E1E1E1;
+        border-bottom: 0!important;
+        td {
+            padding-left: 60px;
+        }
+    }
+    .cust-line-3 {
+        background-color: #F2F2F2;
+        td {
+            padding-left: 60px;
+        }
+    }
+    table {
+        margin-bottom: 0;
+    }
+    span {
+        display: block;
+        margin-bottom: 20px;
+        padding-left: 38px;
+    }
+    .cust-logo {
+        display: inline-block;
+        img {
+            border-radius: 50%;
+            height: 32px;
+            width: 32px;
+        }
+    }
+    .cust-name {
+        display: inline-block;
+        color: $brand-danger;
+    }
+    .com-message {
+        padding-left: 38px;
+    }
+    .cancel-btn {
+        cursor: pointer;
+    }
+    .query-form {
+        padding-top: 60px;
+        span {
+            color: #fff;
+            font-size: 16px;
         }
     }
 }
