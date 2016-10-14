@@ -161,6 +161,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
 
     })
+    .controller('DashboardCallmeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("dashboard-callme"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Dashboard Callme"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+    })
     .controller('dashboardMycommunicationCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("dashboard-mycommunication"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Dashboard-mycommunication"); //This is the Title of the Website
@@ -189,6 +196,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('DashboardProfileCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("dashboard-myprofile"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Dashboard My Profile"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    $scope.oneAtATime = true;
+    $scope.status = {
+        isCustomHeaderOpen: false,
+        isFirstOpen: true,
+        isFirstDisabled: false
+    };
+
+})
+
+
+.controller('DashboardClaimsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("dashboard-myclaims"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Dashboard My Claims"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     $scope.oneAtATime = true;
@@ -474,6 +496,41 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Have us call "); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+
+
+})
+
+.controller('GetquoteCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("get-quote"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Get a quote "); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    $scope.mySlides = [{
+        heading: "Why customers love us? ",
+        fixedContent: "Here's what our customers have to say about us",
+        content: "“ I spoke to the Advisory / Sales Team. I had a very good experience interacting with Medimanage. I feel they are the best as i have been getting the best service from the medimanage team. ”",
+        img: "img/pic-4.png",
+        custName: "Ananya"
+    }, {
+        heading: "Why customers love us? ",
+        fixedContent: "Here's what our customers have to say about us",
+        content: "“ I spoke to the Advisory / Sales Team. I had a very good experience interacting with Medimanage. I feel they are the best as i have been getting the best service from the medimanage team. ”",
+        img: "img/pic-4.png",
+        custName: "Ananya"
+
+    }, {
+        heading: "Why customers love us? ",
+        fixedContent: "Here's what our customers have to say about us",
+        content: "“ I spoke to the Advisory / Sales Team. I had a very good experience interacting with Medimanage. I feel they are the best as i have been getting the best service from the medimanage team. ”",
+        img: "img/pic-4.png",
+        custName: "Ananya"
+    }, {
+        heading: "Why customers love us? ",
+        fixedContent: "Here's what our customers have to say about us",
+        content: "“ I spoke to the Advisory / Sales Team. I had a very good experience interacting with Medimanage. I feel they are the best as i have been getting the best service from the medimanage team. ”",
+        img: "img/pic-4.png",
+        custName: "Ananya"
+    }, ];
 
 
 })

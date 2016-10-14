@@ -54,6 +54,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'DashboardContactCtrl'
         })
+        .state('dashboard-callme', {
+            url: "/dashboard-callme",
+            templateUrl: "views/template.html",
+            controller: 'DashboardCallmeCtrl'
+        })
         .state('dashboard-mycommunication', {
             url: "/dashboard-mycommunication",
             templateUrl: "views/template.html",
@@ -63,6 +68,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             url: "/dashboard-myprofile",
             templateUrl: "views/template.html",
             controller: 'DashboardProfileCtrl'
+        })
+        .state('dashboard-myclaims', {
+            url: "/dashboard-myclaims",
+            templateUrl: "views/template.html",
+            controller: 'DashboardClaimsCtrl'
         })
         .state('signup', {
             url: "/signup",
@@ -174,6 +184,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             url: "/get-call",
             templateUrl: "views/template.html",
             controller: 'GetcallCtrl'
+        })
+        .state('get-quote', {
+            url: "/get-quote",
+            templateUrl: "views/template.html",
+            controller: 'GetquoteCtrl'
         })
         .state('press', {
             url: "/press",

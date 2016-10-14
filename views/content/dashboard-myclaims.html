@@ -1,0 +1,143 @@
+<section class="dashboard-myclaims">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="profile-tabs margin40">
+                    <uib-tabset active="activeJustified">
+
+                        <uib-tab index="0" heading="INTIMATE CLAIM">
+                            <div class="profile-details">
+                              <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group group-1">
+                                            <span class="input-group-addon subject">Claim No:</span>
+                                            <input class="form-control" type="text" value="" name="claim no" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group group-1  select-div">
+                                            <span class="input-group-addon subject">Policy No:</span>
+                                            <!-- <div class="form-group "> -->
+                                                <select class="form-control" id="prod">
+                                              <option>Policy No 1</option>
+                                              <option>Policy No 2</option>
+                                              <option>Policy No 3</option>
+                                            </select>
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group group-1">
+                                            <span class="input-group-addon subject">Patient Name:</span>
+                                            <input class="form-control" type="text" value="" name="Patient Name:" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group group-1">
+                                            <span class="input-group-addon subject">Hospital Name:</span>
+                                            <input class="form-control" type="text" value="" name="Hospital Name:" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group group-1">
+                                            <span class="input-group-addon subject">Place:</span>
+                                            <input class="form-control" type="text" value="" name="Place:" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group group-1">
+                                            <span class="input-group-addon subject">Date of Admission:</span>
+                                            <input class="form-control" type="tel" value="" name="Date of Admission:" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group group-1">
+                                    <span class="input-group-addon subject wid33 vert-al-tp">Ailment / Diagnosis:</span>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="text-center">
+                                      <button type="button" class="btn btn-success btn-edit">submit</button>
+                                    </div>
+                                </div>
+                              </form>
+                            </div>
+                        </uib-tab>
+
+                        <uib-tab index="1" heading="CLAIMS HISTORY" id="tab3">
+                          <div>
+                        <div class="claim-table">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <thead>
+                                    <tr>
+                                        <td class="claim">Claim #</td>
+                                        <td class="policy">Policy #</td>
+                                        <td class="patient">Patient Name</td>
+                                        <td class="hospital">Hospital Name</td>
+                                        <td class="place">Place</td>
+                                        <td class="claim-date">Claim Intimation<br>Date</td>
+                                        <td class="claim status">Claim Status</td>
+                                        <td class=""></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Insurance Company">MV1345</td>
+                                        <td data-title="Proposer" class="policy-1"><a href="#">P875482920</a></td>
+                                        <td data-title="Patient Name" class="relationship">Puneet Manocha</td>
+                                        <td data-title="Hospital Name" class="gender">Maharaja Agrasen</td>
+                                        <td data-title="Place" class="age">Delhi</td>
+                                        <td data-title="Claim Date" class="insure">22/03/2015</td>
+                                        <td data-title="Claim Status" class="claim-status-2">
+                                            Submitted to TPA
+                                        </td>
+                                         <td data-title="" class="raise-ticket">
+                                           <a href="#"> Raise a <br>Ticket</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Insurance Company">MV1345</td>
+                                        <td data-title="Proposer" class="policy-1"><a href="#">P875482920</a></td>
+                                        <td data-title="Patient Name" class="relationship">Puneet Manocha</td>
+                                        <td data-title="Hospital Name" class="gender">Maharaja Agrasen</td>
+                                        <td data-title="Place" class="age">Delhi</td>
+                                        <td data-title="Claim Date" class="insure">22/03/2015</td>
+                                        <td data-title="Claim Status" class="claim-status-2">
+                                            Submitted to TPA
+                                        </td>
+                                         <td data-title="" class="raise-ticket">
+                                           <a href="#"> Raise a <br>Ticket</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Insurance Company">MV1345</td>
+                                        <td data-title="Proposer" class="policy-1"><a href="#">P875482920</a></td>
+                                        <td data-title="Patient Name" class="relationship">Puneet Manocha</td>
+                                        <td data-title="Hospital Name" class="gender">Maharaja Agrasen</td>
+                                        <td data-title="Place" class="age">Delhi</td>
+                                        <td data-title="Claim Date" class="insure">22/03/2015</td>
+                                        <td data-title="Claim Status" class="claim-status-2">
+                                            Submitted to TPA
+                                        </td>
+                                         <td data-title="" class="raise-ticket">
+                                           <a href="#"> Raise a <br>Ticket</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                 </div>
+                        </uib-tab>
+
+                    </uib-tabset>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
