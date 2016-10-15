@@ -1,4 +1,4 @@
-<section class="dashboard-contact">
+<section class="dashboard-contact margin40">
     <div class="container">
         <div class="row">
             <div class="col-md-offset-1 col-md-10">
@@ -8,11 +8,12 @@
                             <div class="detail appreciate">
                                 <div class="input-group">
                                     <span class="input-group-addon feedback" id="basic-addon1">Feedback:</span>
-                                    <textarea class="form-control" rows="8" id="comment"></textarea>
+                                    <textarea class="form-control" rows="6" column="8" id="comment"></textarea>
                                 </div>
                                 <button type="button" class="btn btn-success submit ">SUBMIT</button>
                             </div>
                         </uib-tab>
+
                         <uib-tab index="1" heading="LOCATE US">
                             <div class="detail locate-us">
                                 <div class="row">
@@ -55,11 +56,12 @@
                                 </div>
                             </div>
                         </uib-tab>
+
                         <uib-tab index="2" heading="SUBMIT A QUERY">
                             <div class="detail query">
                                 <div class="input-group group-1">
                                     <span class="input-group-addon subject" id="basic-addon1">Subject:</span>
-                                    <textarea class="form-control" rows="2" id="comment"></textarea>
+                                    <input class="form-control" type="text" value="" name="subject" placeholder="">
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon message" id="basic-addon1">Message:</span>
@@ -68,22 +70,28 @@
                                 <button type="button" class="btn btn-success submit ">SUBMIT</button>
                             </div>
                         </uib-tab>
+
                         <uib-tab index="3" heading="COMPLAINT">
                             <div class="detail complaint">
-                                <div class="input-group">
+                                <div class="input-group select-div">
                                     <span class="input-group-addon policy" id="basic-addon1">Policy Number:</span>
-                                    <textarea class="form-control" rows="2" id="comment"></textarea>
+                                    <select class="form-control" id="prod">
+                                      <option>Select policy-----</option>
+                                  <option>Policy No 1</option>
+                                  <option>Policy No 2</option>
+                                  <option>Policy No 3</option>
+                                </select>
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon complaint-box" id="basic-addon1">Complaint:</span>
                                     <textarea class="form-control" rows="8" id="comment"></textarea>
                                 </div>
-                                <div class="input-group">
+                                <div class="input-group browse-file">
                                     <span class="input-group-addon attachment" id="basic-addon1">Attachment:</span>
-                                    <div class="browse">
-                                        <input type="text" class="form-control path" id="usr">
-                                        <button type="button" class="btn btn-grey  ">Browse</button>
-                                    </div>
+                                    <label class="fileContainer">
+                                      <span class=" btn-browse">Browse</span>
+                                      <input type="file"/>
+                                    </label>
                                 </div>
                                 <p class="font-normal">The maximum file upload size is 2 MB</p>
                                 <button type="button" class="btn btn-success submit ">SUBMIT</button>
