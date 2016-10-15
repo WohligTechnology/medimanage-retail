@@ -97,6 +97,10 @@ $white-color: #fff !default;
     text-transform: capitalize;
 }
 
+.ht-auto{
+  height: auto !important;
+}
+
 .text-col-blue {
     text-decoration: none;
     color: $brand-primary;
@@ -2699,7 +2703,7 @@ h4 {
 }
 //  Start buying tab enD
 // my details tab
-
+.dashboard-myprofile , .query, .profile-details, .dashboard-contact, .dash-callme {
 .input-group {
     margin: 10px 0;
     width: 100%;
@@ -2729,6 +2733,7 @@ h4 {
             height: auto;
         }
     }
+}
 }
 
 .wid33 {

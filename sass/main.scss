@@ -1210,6 +1210,12 @@ a {
         background-position: 0 100%;
         padding: 30px 0;
 
+        .ask-instyle{
+          border: none;
+          border-radius: 4px;
+          font-size: 16px;
+        }
+
         h4 {
             font-weight: bold;
             font-size: 16px;
@@ -1803,9 +1809,11 @@ a {
     }
 
      .query-form {
+       margin-bottom: 40px;
     .query {
       span{
         display: table-cell;
+        width: 25%;
       }
       textarea{
         height: auto;
@@ -1817,6 +1825,13 @@ a {
             color: #fff;
             vertical-align: top;
             background-color: #D9D9D9;
+        }
+
+        .btn-qsubmit{
+          font-weight: 700;
+          border-radius: 4px;
+          font-size: 18px;
+          padding: 10px 30px;
         }
 
         .subject {
