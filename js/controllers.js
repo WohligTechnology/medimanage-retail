@@ -98,6 +98,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
+    TemplateService.menu = "";
     $scope.navigation = NavigationService.getnav();
     $scope.mySlides = [{
         heading: "Why customers love us? ",
@@ -133,6 +134,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.template = TemplateService.changecontent("custom"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Custom"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
+        TemplateService.menu = "";
         $scope.navigation = NavigationService.getnav();
 
 
@@ -229,7 +231,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.oneAtATime = true;
-
+        TemplateService.menu = "";
 
 
     })
@@ -239,6 +241,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.oneAtATime = true;
+        TemplateService.menu = "";
         $scope.mySlides = [{
             heading: "Why customers love us? ",
             fixedContent: "Here's what our customers have to say about us",
@@ -273,7 +276,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Login"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -282,7 +285,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Sign Up"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -291,7 +294,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Our Team"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -300,7 +303,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Senior Citizen"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -309,7 +312,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Personal Accident"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -318,7 +321,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Our Story"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -326,6 +329,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("ourvalues"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Our Values"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
+    TemplateService.menu = "";
     $scope.navigation = NavigationService.getnav();
     $scope.tabs = [];
     // $scope.
@@ -388,7 +392,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Why Medimanage"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -397,7 +401,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Buying Process: Step-1"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -405,6 +409,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("buying-process-step2"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Buying Process: Step-2"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
+    TemplateService.menu = "";
     $scope.navigation = NavigationService.getnav();
     $scope.slider = {
         minValue: 0,
@@ -423,7 +428,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Careers"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -432,7 +437,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Proposer Details"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -441,7 +446,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Proposer Detail2"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -450,7 +455,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Insured Details"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -459,7 +464,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Nominee Details"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -468,7 +473,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Medical history"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -477,7 +482,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Pay & get Insured"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -487,7 +492,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Trust & Security"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -496,7 +501,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Have us call "); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -504,6 +509,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("get-quote"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Get a quote "); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
+    TemplateService.menu = "";
     $scope.navigation = NavigationService.getnav();
     $scope.mySlides = [{
         heading: "Why customers love us? ",
@@ -540,7 +546,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Testimonials"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -549,7 +555,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Privacy Policy"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -558,7 +564,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Forgot Password"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -567,7 +573,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Blog Listing"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+    TemplateService.menu = "";
 
 })
 
@@ -576,6 +582,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService.changecontent("press"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Press"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
+    TemplateService.menu = "";
     $scope.navigation = NavigationService.getnav();
     $scope.release = true;
     $scope.tabs = [];
