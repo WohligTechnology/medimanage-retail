@@ -216,7 +216,7 @@ body {
 }
 
 .menu+.content-holder {
-    @include transform(translateX(60px));
+    @include transform(translateX(0px));
     @include transition(all 300ms linear);
 }
 
