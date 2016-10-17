@@ -1,8 +1,14 @@
-@media (max-width:1200px){
+@media (max-width:1200px){}
 
+@media (max-width: $screen-xs-max) {
+  .ask-expert .expert-cover .name .l-name {
+    padding-left: 15px;
 }
-
-@media (max-width: $screen-xs-max) {}
+.ask-expert .expert-cover .name .f-name {
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+}
 
 @media (max-width: $screen-sm-max) {}
 
