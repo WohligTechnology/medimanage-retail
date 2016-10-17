@@ -79,6 +79,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'SignupCtrl'
         })
+        
         .state('testimonial', {
             url: "/testimonial",
             templateUrl: "views/template.html",
