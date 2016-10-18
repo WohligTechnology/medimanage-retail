@@ -1,19 +1,25 @@
-@media (max-width:1200px){}
-
-@media (max-width: $screen-sm-max) {}//
-
+@media (max-width:1200px) {}
+@media (max-width: $screen-sm-max) {
+  .ask-expert .req-quo-frm input {
+      margin-bottom: 10px;
+  }
+}
+//
 @media (max-width: $screen-xs-max) {
-  .ask-expert .expert-cover .name .l-name {
-    padding-left: 15px;
+    .ask-expert .expert-cover .name .l-name {
+        padding-left: 15px;
+    }
+
+    .ask-expert .expert-cover .name .f-name {
+        padding-right: 15px;
+        margin-bottom: 10px;
+    }
+
 }
-.ask-expert .expert-cover .name .f-name {
-    padding-right: 15px;
-    margin-bottom: 10px;
-}
-}//
-
-@media (max-width: $screen-md-max) {}//
-
-@media (max-width:480px){}//
-
-@media (max-width:360px){}//
+//
+@media (max-width: $screen-md-max) {}
+//
+@media (max-width:480px) {}
+//
+@media (max-width:360px) {}
+//
