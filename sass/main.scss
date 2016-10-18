@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
@@ -18,9 +19,12 @@ $brand-info: #000072 !default;
 $font-color: #767676 !default;
 $dark-font-color: #4F4E4E !default;
 $white: #ffffff !default;
+$roboto-font: 'Roboto',
+sans-serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 body {
     // padding-top: 70px;
+    font-family: $roboto-font;
 }
 
 // .content-holder {
@@ -228,52 +232,50 @@ body {
 .btn-success {
     background-color: $brand-success;
     border-color: $brand-success;
-    &:hover {
-        background-color: $brand-success;
-        border-color: $brand-success;
-    }
-    &:focus {
-        background-color: $brand-success;
-        border-color: $brand-success;
-    }
+    // &:hover {
+    //     background-color: $brand-success;
+    //     border-color: $brand-success;
+    // }
+    // &:focus {
+    //     background-color: $brand-success;
+    //     border-color: $brand-success;
+    // }
 }
 
 .btn-primary {
     background-color: $brand-primary;
     border-color: $brand-primary;
-    &:hover {
-        background-color: $brand-primary;
-        border-color: $brand-primary;
-    }
-    &:focus {
-        background-color: $brand-primary;
-        border-color: $brand-primary;
-    }
+    // &:hover {
+    //     background-color: $brand-primary;
+    //     border-color: $brand-primary;
+    // }
+    // &:focus {
+    //     background-color: $brand-primary;
+    //     border-color: $brand-primary;
+    // }
 }
 
 .btn-danger {
     background-color: $brand-danger;
     border-color: $brand-danger;
-    &:hover {
-        background-color: $brand-danger;
-        border-color: $brand-danger;
-    }
-    &:focus {
-        background-color: $brand-danger;
-        border-color: $brand-danger;
-    }
+    // &:hover {
+    //     background-color: $brand-danger;
+    //     border-color: $brand-danger;
+    // }
+    // &:focus {
+    //     background-color: $brand-danger;
+    //     border-color: $brand-danger;
+    // }
 }
 
 .btn-grey {
     background-color: #8B8B8B;
     border-color: #8B8B8B;
     &:hover {
-        background-color: #8B8B8B;
-        border-color: #8B8B8B;
+        color: #fff;
     }
     &:focus {
-        background-color: #8B8B8B;
-        border-color: #8B8B8B;
+        color: #fff!important;
     }
 }
 
@@ -340,8 +342,8 @@ header {
         border-bottom: 2px solid #ECECEC;
         .nav-1 {
             color: #767676;
-            padding-top: 10px;
-            padding-bottom: 8px;
+            // padding-top: 10px;
+            // padding-bottom: 8px;
             font-size: 12px;
             ul {
                 list-style-type: none;
@@ -352,8 +354,50 @@ header {
             li+li {
                 margin-left: 15px;
             }
+            li {
+                padding-top: 10px;
+                padding-bottom: 12px;
+            }
             i {
                 font-size: xx-small;
+            }
+            .help-btn,
+            .about-btn {
+                position: relative;
+            }
+            .help-content,
+            .about-content {
+                position: absolute;
+                width: 160px;
+                border: 1px solid $brand-success;
+                color: #6a6a6a;
+                padding: 10px 10px;
+                background-color: #fff;
+                display: none;
+                top: 39px;
+                z-index: 333;
+                a {
+                    display: block !important;
+                    &:hover {
+                        color: $brand-success;
+                    }
+                }
+                a+a {
+                    border-top: 1px solid $brand-success;
+                    padding-top: 10px;
+                }
+            }
+            .help-btn:hover {
+                color: $brand-success;
+                .help-content {
+                    display: block;
+                }
+            }
+            .about-btn:hover {
+                color: $brand-success;
+                .about-content {
+                    display: block;
+                }
             }
         }
         .claims {
@@ -407,6 +451,67 @@ header {
             margin-top: 15px;
         }
         .menu-box {
+            .chvron {
+                display: inline-block;
+                font-size: 10px;
+                vertical-align: top;
+                padding: 0 10px 10px 10px;
+                background-color: #fff;
+                z-index: 9999;
+                position: absolute;
+                right: 0;
+            }
+            .health-btn,
+            .cmp-btn {
+                position: relative;
+                a {
+                    padding-right: 40px;
+                    padding-bottom: 7px;
+                }
+            }
+            .health-content,
+            .cmp-content {
+                position: absolute;
+                width: 200px;
+                border: 1px solid $brand-success;
+                color: #6a6a6a;
+                padding: 5px 10px;
+                background-color: #fff;
+                display: none;
+                top: 24px;
+                right: 0;
+                z-index: 20;
+                padding: 20px;
+                a {
+                    display: block !important;
+                    padding-right: 0;
+                    &:hover {
+                        color: $brand-success;
+                    }
+                }
+                a+a {
+                    border-top: 1px solid $brand-success;
+                    padding-top: 20px;
+                }
+            }
+            .health-btn:hover {
+                .health-content {
+                    display: block;
+                }
+                .chvron {
+                    border: 1px solid $brand-success;
+                    border-bottom: 0;
+                }
+            }
+            .cmp-btn:hover {
+                .cmp-content {
+                    display: block;
+                }
+                .chvron {
+                    border: 1px solid $brand-success;
+                    border-bottom: 0;
+                }
+            }
             margin: 20px 0;
             font-weight: 600;
             a {
@@ -420,6 +525,9 @@ header {
             ul {
                 list-style-type: none;
                 margin-bottom: 0;
+            }
+            li {
+                padding-right: 0;
             }
             .btn {
                 border-radius: 4px;
@@ -724,7 +832,6 @@ a {
             margin-top: 30px;
             input {
                 margin-bottom: 10px;
-                width: 25%;
                 margin: 0 auto 8px;
                 border-radius: 2px;
                 font-size: 15px;
@@ -741,11 +848,16 @@ a {
         }
     }
     .div-five {
-        background-image: url("../img/bg-1.jpg");
-        background-size: cover;
-        background-position: 50% 0;
+        // background-image: url("../img/bg-1.jpg");
+        // background-size: cover;
+        // background-position: 50% 0;
+        .pad-ornge,
+        .pad-grey {
+            padding: 0;
+        }
         .orange-part {
             padding: 40px 20px 20px 0;
+            background-color: #F88022;
             .why-us {
                 .flexslider {
                     background-color: transparent;
@@ -797,6 +909,7 @@ a {
             }
         }
         .grey-part {
+            background-color: #525252;
             text-align: center;
             color: white;
             padding: 40px 0 63px 25px;
@@ -1183,6 +1296,7 @@ a {
         }
         .flex-next,
         .flex-prev {
+            font-size: 0;
             &:before {
                 color: $brand-danger;
                 font-size: 25px;

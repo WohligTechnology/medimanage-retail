@@ -21,37 +21,51 @@
 <header>
     <div class="head-1">
         <div class="container">
+
             <div class="row">
-                <!-- <div class="col-md-offset-1 col-md-10"> -->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="nav-1">
-                                <ul>
-                                    <li><a ui-sref="home">HOME</a></li>
-                                    <li><a ui-sref="#">ABOUT US <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
-                                    <li><a ui-sref="#">HELP <i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
-                                </ul>
-
-
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="claims">
-                                <div class="claim-no"><span class="font-sz12 padd-rt10">Claims managed till date: </span> 4422626</div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="login">
-
-                                <div class="search-box pull-right">
-                                    <input type="text" class="form-control" placeholder="Search" id="search">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
+                <div class="col-md-4 col-sm-4">
+                    <div class="nav-1">
+                        <ul>
+                            <li><a ui-sref="home">HOME</a></li>
+                            <li class="about-btn">
+                                <a ui-sref="#">ABOUT US <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                <div class="about-content">
+                                    <a ui-sref="why-medimanage">WHY CHOOSE US</a>
+                                    <a ui-sref="our-team">OUT TEAM</a>
+                                    <a ui-sref="our-story">OUR STORY</a>
+                                    <a ui-sref="ourvalues">OUR VALUES</a>
                                 </div>
-                                <a ui-sref="login"><span class="pull-right">LOGIN</span></a>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="help-btn">
+                                <a ui-sref="#">HELP <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                <div class="help-content">
+                                    <a ui-sref="get-call">GET A CALL BACK</a>
+                                    <a ui-sref="ask-expert">ASK AN EXPERT</a>
+                                    <a ui-sref="get-quote">CREATE A QUOTE</a>
+                                    <a ui-sref="faq">FAQ</a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
                     </div>
-                <!-- </div> -->
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="claims">
+                        <div class="claim-no"><span class="font-sz12 padd-rt10">Claims managed till date: </span> 4422626</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="login">
+
+                        <div class="search-box pull-right">
+                            <input type="text" class="form-control" placeholder="Search" id="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <a ui-sref="login"><span class="pull-right">LOGIN</span></a>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -60,42 +74,34 @@
         <div class="container">
             <div class="row">
                 <!-- <div class="col-md-offset-1 col-md-10"> -->
-                    <a ui-sref="home"> <img src="img/logo.png" alt=""></a>
-                    <div class="menu-box pull-right">
-                        <ul class="list-inline">
-                            <li><a sref="">HEALTH INSURANCE
-                              <!-- <div class="dropdwn disp-inblk posi-rel"> -->
-                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                    <!-- <ul class="drop-menu disp posi-abs">
-                                       <li><a href="#">individual</a></li>
-                            <li><a tabindex="-1" href="#">family</a></li>
-                            <li><a tabindex="-1" href="#">senior citizen</a></li>
-                            <li><a tabindex="-1" href="#">maternity</a></li>
-                            <li><a tabindex="-1" href="#">personal accident</a></li>
-                            <li><a tabindex="-1" href="#">critical illness</a></li>
-                            <li><a tabindex="-1" href="#">super top-up</a></li>
-                        </ul> -->
-                    <!-- </div> -->
-                    </a>
-                    </li>
-                    <li><a sref="">COMPARE & BUY
-                               <!-- <div class="dropdwn disp-inblk"> -->
-                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                     <!-- <ul class="drop-menu">
-                        <li><a tabindex="-1" href="#">sub menu 1</a></li>
-                    <li><a tabindex="-1" href="#">sub menu 1</a></li>
-                    </ul> -->
+                <a ui-sref="home"> <img src="img/logo.png" alt=""></a>
+                <div class="menu-box pull-right">
+                    <ul class="list-inline">
+                        <li class="health-btn"><a sref="">HEALTH INSURANCE<div class="chvron"><i class="fa fa-chevron-down" aria-hidden="true"></i></div></a>
+                            <div class="health-content">
+                                <a href="">INDIVIDUAL</a>
+                                <a href="">FAMILY</a>
+                                <a href="">SENIOR CITIZEN</a>
+                                <a href="">MATERNITY</a>
+                                <a href="">PERSONAL ACCIDENT</a>
+                                <a href="">CRITICAL ILLNESS</a>
+                                <a href="">SUPER TOP-UP</a>
+                            </div>
+                        </li>
+                        <li class="cmp-btn"><a sref="">COMPARE & BUY <div class="chvron"> <i class="fa fa-chevron-down" aria-hidden="true"></i></div> </a>
+                            <div class="cmp-content">
+                                <a href="">SUB-MENU 1</a>
+                                <a href="">SUB-MENU 2</a>
+                            </div>
+                        </li>
+                        <li><a sref="">WHY MEDIMANAGE?</a></li>
+                        <li><button type="button" class="btn btn-success" ui-sref="#">GET A FREE QUOTE</button></li>
+                    </ul>
+                </div>
                 <!-- </div> -->
-                </a>
-                </li>
-                <li><a sref="">WHY MEDIMANAGE?</a></li>
-                <li><button type="button" class="btn btn-success" ui-sref="#">GET A FREE QUOTE</button></li>
-                </ul>
             </div>
-        <!-- </div> -->
-    </div>
 
 
-    </div>
+        </div>
     </div>
 </header>
