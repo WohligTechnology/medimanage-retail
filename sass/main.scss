@@ -464,11 +464,13 @@ header {
                 display: inline-block;
                 font-size: 10px;
                 vertical-align: top;
-                padding: 0 10px 10px 10px;
+                padding: 10px 5px;
                 background-color: #fff;
                 z-index: 9999;
                 position: absolute;
                 right: 0;
+                top: -10px;
+                border-radius: 4px 4px 0 0 ;
             }
             .health-btn,
             .cmp-btn {
