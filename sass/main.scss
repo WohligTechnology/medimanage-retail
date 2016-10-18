@@ -388,15 +388,24 @@ header {
                 }
             }
             .help-btn:hover {
-                color: $brand-success;
+                .nav-label {
+                    color: $brand-success;
+                }
                 .help-content {
                     display: block;
                 }
             }
             .about-btn:hover {
-                color: $brand-success;
+                .nav-label {
+                    color: $brand-success;
+                }
                 .about-content {
                     display: block;
+                }
+            }
+            .home-btn:hover {
+                .nav-label {
+                    color: $brand-success;
                 }
             }
         }
@@ -495,21 +504,34 @@ header {
                 }
             }
             .health-btn:hover {
+                .nav-label {
+                    color: $brand-success;
+                }
                 .health-content {
                     display: block;
                 }
                 .chvron {
                     border: 1px solid $brand-success;
                     border-bottom: 0;
+                    color: $brand-success;
                 }
             }
             .cmp-btn:hover {
+                .nav-label {
+                    color: $brand-success;
+                }
                 .cmp-content {
                     display: block;
                 }
                 .chvron {
                     border: 1px solid $brand-success;
                     border-bottom: 0;
+                    color: $brand-success;
+                }
+            }
+            .why-btn:hover {
+                .nav-label {
+                    color: $brand-success;
                 }
             }
             margin: 20px 0;
@@ -913,6 +935,10 @@ a {
             text-align: center;
             color: white;
             padding: 40px 0 63px 25px;
+            .marg-zero {
+                margin-left: 0;
+                margin-right: 0;
+            }
             .comp-img {
                 padding: 16px;
             }
