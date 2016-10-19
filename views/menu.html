@@ -10,93 +10,93 @@
     </ul>
   </li>
 </ul>-->
-<div class="side-menu">
+<div class="side-menu" ng-controller="menuCtrl">
   <div id="hamburger" class="ham-icon" ng-click="menuOpen();"><img src="img/list-icon.png" alt=""></div>
   <ul class="list-unstyled">
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == 'dashboard-myprofile'}">
       <a ui-sref="dashboard-myprofile">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-1"></div>
           <div class="menu-text disp-inblk">My Profile</div>
         </div>
 
       </a>
     </li>
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == ''}">
       <a href="">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-2"></div>
           <div class="menu-text">My Policies</div>
         </div>
 
       </a>
     </li>
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == 'dashboard-mycommunication'}">
       <a ui-sref="dashboard-mycommunication">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-3"></div>
           <div class="menu-text disp-inblk">My Communications</div>
         </div>
 
       </a>
     </li>
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == 'dashboard-myclaims'}">
       <a ui-sref="dashboard-myclaims">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-4"></div>
           <div class="menu-text disp-inblk">My Claims</div>
         </div>
 
       </a>
     </li>
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == 'dashboard-myquotes'}">
       <a ui-sref="dashboard-myquotes">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-5"></div>
           <div class="menu-text">My Quotes</div>
         </div>
 
       </a>
     </li>
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == 'dashboard-download'}">
       <a ui-sref="dashboard-download">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-6"></div>
           <div class="menu-text">My Downloads</div>
         </div>
 
       </a>
     </li>
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == 'dashboard-callme'}">
       <a ui-sref="dashboard-callme">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-7"></div>
           <div class="menu-text">Call Me</div>
         </div>
 
       </a>
     </li>
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == 'dashboard-contact'}">
       <a ui-sref="dashboard-contact">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-8"></div>
           <div class="menu-text">Contact Us</div>
         </div>
 
       </a>
     </li>
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == ''}">
       <a href="">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-9"></div>
           <div class="menu-text">Articles</div>
         </div>
 
       </a>
     </li>
-    <li>
+    <li ng-class="{'dash-ahov':states.current.name == ''}">
       <a href="">
-        <div class=menu-label>
+        <div class='menu-label'>
           <div class="menuPic-10"></div>
           <div class="menu-text">Blog</div>
         </div>

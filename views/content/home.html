@@ -253,10 +253,13 @@
             <div class="story">
                 <div class="product-detail-tab">
                     <uib-tabset type="pills">
-                        <uib-tab>
-                            <uib-tab-heading>
+                        <uib-tab id="tab-1" select="activateTab(0)">
+                            <uib-tab-heading  >
                                 <div class="icon-image">
-                                    <img src="img/star-icon.png" alt="">
+                                    <img class="init" ng-src="{{clicks[0].status && 'img/star-icon-h.png' || 'img/star-icon.png'}}" alt="">
+                                    <!-- <img class="init" ng-show="tab.show" ng-src="img/star-icon-h.png" select="hideTab()" alt="">
+                                    <!--<img class="init" src="img/star-icon.png" alt="">
+                                    <img class="hov" src="img/star-icon-h.png" alt="">-->
                                 </div>
                                 <SPAN>PRODUCT REVIEWS</SPAN>
                             </uib-tab-heading>
@@ -268,10 +271,13 @@
                                 </p>
                             </div>
                         </uib-tab>
-                        <uib-tab>
-                            <uib-tab-heading>
+                        <uib-tab id="tab-2" select="activateTab(1)">
+                            <uib-tab-heading  >
                                 <div class="icon-image">
-                                    <img src="img/article-icon.png" alt="">
+                                    <img class="init"  ng-src="{{clicks[1].status && 'img/article-icon-h.png' || 'img/article-icon.png'}}"  alt="">
+                                    <!-- <img class="init" ng-show="tab.show" ng-src="img/star-icon-h.png" select="hideTab()" alt=""> -->
+                                    <!--<img class="init" src="img/article-icon.png" alt="">
+                                    <img class="hov" src="img/article-icon-h.png" alt="">-->
                                 </div>
                                 <SPAN>ARTICLES</SPAN>
                             </uib-tab-heading>
@@ -283,10 +289,11 @@
                                 </p>
                             </div>
                         </uib-tab>
-                        <uib-tab>
-                            <uib-tab-heading>
+                        <uib-tab id="tab-3" select="activateTab(2)">
+                            <uib-tab-heading >
                                 <div class="icon-image">
-                                    <img src="img/industry-icon.png" alt="">
+                                    <img class="init" ng-src="{{clicks[2].status && 'img/industry-icon-h.png' || 'img/industry-icon.png'}}" alt="">
+                                    <!-- <img class="hov" src="img/industry-icon-h.png" alt=""> -->
                                 </div>
                                 <span>INDUSTRY UPDATES</span>
                             </uib-tab-heading>
@@ -297,10 +304,11 @@
                                 </p>
                             </div>
                         </uib-tab>
-                        <uib-tab>
+                        <uib-tab id="tab-4"  select="activateTab(3)">
                             <uib-tab-heading>
                                 <div class="icon-image">
-                                    <img src="img/blog-icon.png" alt="">
+                                    <img class="init" ng-src="{{clicks[3].status && 'img/blog-icon-h.png' || 'img/blog-icon.png'}}" alt="">
+                                    <!-- <img class="hov" src="img/blog-icon-h.png" alt=""> -->
                                 </div>
                                 <span>BLOG</span>
                             </uib-tab-heading>
@@ -312,10 +320,11 @@
                                 </p>
                             </div>
                         </uib-tab>
-                        <uib-tab>
-                            <uib-tab-heading>
+                        <uib-tab id="tab-5" select="activateTab(4)">
+                            <uib-tab-heading >
                                 <div class="icon-image">
-                                    <img src="img/online-icon.png" alt="">
+                                    <img class="init" ng-src="{{clicks[4].status && 'img/online-icon-h.png' || 'img/online-icon.png'}}" alt="">
+                                    <!-- <img class="hov" src="img/online-icon-h.png" alt=""> -->
                                 </div>
                                 <span>BUY ONLINE</span>
                             </uib-tab-heading>
@@ -327,10 +336,11 @@
                                 </p>
                             </div>
                         </uib-tab>
-                        <uib-tab>
-                            <uib-tab-heading>
+                        <uib-tab id="tab-6" select="activateTab(5)">
+                            <uib-tab-heading >
                                 <div class="icon-image">
-                                    <img src="img/medical-icon.png" alt="">
+                                    <img class="init" ng-src="{{clicks[5].status && 'img/medical-icon-h.png' || 'img/medical-icon.png'}}" alt="">
+                                    <!-- <img class="hov" src="img/medical-icon-h.png" alt=""> -->
                                 </div>
 
                                 <SPAN>PLANS WITHOUT MEDICAL TESTS</SPAN>

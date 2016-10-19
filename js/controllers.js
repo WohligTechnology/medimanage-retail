@@ -1,55 +1,76 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', 'rzModule'])
 
-.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
-    $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
-    $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
-    TemplateService.title = $scope.menutitle;
-    $scope.navigation = NavigationService.getnav();
+// .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+//     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
+//     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
+//     TemplateService.title = $scope.menutitle;
+//     $scope.navigation = NavigationService.getnav();
+//     $scope.tab = {};
+//     $scope.clicks = [];
+//     console.log("this controller");
+//     $scope.mySlides = [
+//         'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+//         'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
+//         'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
+//         'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
+//     ];
+//     // $scope.tabimages = [{
+//     //     inactive: 'img/assdas',
+//     //     active: 'sadasdas'
+//     // }, {
+//     //     inactive: 'img/assdas',
+//     //     active: 'sadasdas'
+//     // }, {
+//     //     inactive: 'img/assdas',
+//     //     active: 'sadasdas'
+//     // }, {
+//     //     inactive: 'img/assdas',
+//     //     active: 'sadasdas'
+//     // }]
 
-    $scope.mySlides = [
-        'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-        'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-        'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-        'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
-    ];
-    //   $scope.tabimages = [{
-    //     inactive : 'img/assdas',
-    //     active: 'sadasdas'
-    //   },
-    //   {
-    //     inactive : 'img/assdas',
-    //     active: 'sadasdas'
-    //   },
-    //   {
-    //     inactive : 'img/assdas',
-    //     active: 'sadasdas'
-    //   },{
-    //     inactive : 'img/assdas',
-    //     active: 'sadasdas'
-    //   }]
-    // _.each($scope.tabimages,function (key) {
-    //   $scope.currentimage.push({
-    //     image:key.inactive
-    //   })
-    // });
-    // $scope.activateTab = function (index) {
-    //   $scope.currentimage[index].image = $scope.tabimages[index].active;
-    // }
-})
+//     // $scope.activateTab = function () {
+//     //     $scope.currentimage[index].image = $scope.tabimages[index].active;
+//     // }
+//     $scope.showTab = function () {
+//         $scope.tab.show = true;
+//         $scope.tab.hide = true;
+//     };
+//     $scope.hideTab = function () {
+//         $scope.tab.show = false;
+//         $scope.tab.hide = false;
+//     };
+//     // $scope.activateTab = [{
+//     //     inactive:
+//     // }]
+
+//         // $scope.activateTab
+
+// })
 
 .controller('FormCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
-    $scope.template = TemplateService.changecontent("form"); //Use same name of .html file
-    $scope.menutitle = NavigationService.makeactive("Form"); //This is the Title of the Website
-    TemplateService.title = $scope.menutitle;
-    $scope.navigation = NavigationService.getnav();
+        $scope.template = TemplateService.changecontent("form"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Form"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
 
-    $scope.formSubmitted = false;
+        $scope.formSubmitted = false;
 
-    $scope.submitForm = function (data) {
-        console.log(data);
-        $scope.formSubmitted = true;
-    }
-})
+        $scope.submitForm = function (data) {
+            console.log(data);
+            $scope.formSubmitted = true;
+        }
+    })
+    .controller('menuCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state) {
+
+        // $scope.navigation = NavigationService.getnav();
+        console.log($state);
+        $scope.formSubmitted = false;
+        $scope.states = $state;
+        $scope.submitForm = function (data) {
+            console.log(data);
+            $scope.formSubmitted = true;
+        }
+    })
 
 .controller('headerctrl', function ($scope, TemplateService) {
     $scope.template = TemplateService;
@@ -99,6 +120,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     TemplateService.menu = "";
+
+    $scope.clicks = [];
     $scope.navigation = NavigationService.getnav();
     $scope.mySlides = [{
         heading: "Why customers love us? ",
@@ -127,7 +150,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         custName: "Ananya"
     }, ];
 
+    $scope.activateTab = function (index) {
+        console.log(index);
+        for (var i = 0; i < 6; i++) {
+            $scope.clicks[i] = {};
+            $scope.clicks[i].status = false;
 
+        }
+        $scope.clicks[index].status = true;
+    }
 })
 
 .controller('CustomCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
@@ -169,6 +200,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
+    })
+    .controller('DashboardMypoliciesCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("dashboard-mypolicies"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Dashboard-mypolicies"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.oneAtATime = true;
     })
     .controller('dashboardMycommunicationCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("dashboard-mycommunication"); //Use same name of .html file

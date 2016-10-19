@@ -59,6 +59,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'DashboardCallmeCtrl'
         })
+        .state('dashboard-mypolicies', {
+            url: "/dashboard-mypolicies",
+            templateUrl: "views/template.html",
+            controller: 'DashboardMypoliciesCtrl'
+        })
         .state('dashboard-mycommunication', {
             url: "/dashboard-mycommunication",
             templateUrl: "views/template.html",
@@ -79,8 +84,8 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'SignupCtrl'
         })
-        
-        .state('testimonial', {
+
+    .state('testimonial', {
             url: "/testimonial",
             templateUrl: "views/template.html",
             controller: 'TestimonialCtrl'
