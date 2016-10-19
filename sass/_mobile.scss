@@ -1,11 +1,60 @@
-@media (max-width:1200px) {}
-@media (max-width: $screen-sm-max) {
-  .ask-expert .req-quo-frm input {
-      margin-bottom: 10px;
+@media (max-width:1200px) {
+  .mobile-no{
+    width: 60%;
   }
+}
+@media (max-width: $screen-sm-max) {
+  .req-quo-frm input {
+      margin-bottom: 20px;
+  }
+
+  .fileContainer{
+    display: block;
+    text-align: center;
+  }
+
+  .career-sec{
+    h2{
+      font-size: 24px;
+    }
+    .career-cont{
+      font-size: 14px;
+      padding: 10px 0;
+    }
+    h4{
+      font-size: 14px;
+    }
+  }
+
+  .career .padding-top40 {
+    padding-top: 10px;
+}
+
+  .career .btn-browse {
+        margin-bottom: 10px;
+      }
+
+  .mob-marg{
+    margin: 10px 0;
+  }
+
+  .scl-btn{
+    margin: 5px;
+    img{
+      zoom:0.8;
+    }
+  }
+
 }
 //
 @media (max-width: $screen-xs-max) {
+  .font-sz24{
+    font-size: 24px;
+  }
+
+  h2{
+    margin-top: 10px;
+  }
     .ask-expert .expert-cover .name .l-name {
         padding-left: 15px;
     }
@@ -13,6 +62,19 @@
     .ask-expert .expert-cover .name .f-name {
         padding-right: 15px;
         margin-bottom: 10px;
+    }
+    .buy1-radio .radio-span {
+      text-align: left;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .buy1-iam input {
+      margin: 10px 0 10px;
+    }
+
+    .buy1-family .date-col input[type="date"] {
+      padding: 12px 2%;
     }
 
 }
@@ -22,7 +84,7 @@
     .padding40{
       padding: 10px;
   }
-  
+
 }
 //
 @media (max-width:480px) {}
