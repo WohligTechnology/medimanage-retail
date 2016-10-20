@@ -972,9 +972,8 @@ a {
             }
         }
     }
-
-    .right-float{
-      float: right;
+    .right-float {
+        float: right;
     }
     .div-five {
         // background-image: url("../img/bg-1.jpg");
@@ -1244,7 +1243,10 @@ a {
         p {
             text-align: justify;
         }
-        .panel-title {
+        // .panel-title {
+        //     position: relative;
+        // }
+        .panel-heading {
             position: relative;
         }
         .panel-body {
@@ -1256,6 +1258,8 @@ a {
             padding: 12px 18px;
         }
         i {
+            position: absolute;
+            right: 0;
             padding: 12px 18px;
             font-size: 18px;
             &:hover {
@@ -1264,11 +1268,6 @@ a {
             &:before {
                 color: #767676;
             }
-        }
-        .shift-icon {
-            position: absolute;
-            top: 0;
-            right: 0;
         }
     }
     .refresh {

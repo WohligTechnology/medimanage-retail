@@ -1,52 +1,5 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', 'rzModule'])
 
-// .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
-//     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
-//     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
-//     TemplateService.title = $scope.menutitle;
-//     $scope.navigation = NavigationService.getnav();
-//     $scope.tab = {};
-//     $scope.clicks = [];
-//     console.log("this controller");
-//     $scope.mySlides = [
-//         'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-//         'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-//         'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-//         'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
-//     ];
-//     // $scope.tabimages = [{
-//     //     inactive: 'img/assdas',
-//     //     active: 'sadasdas'
-//     // }, {
-//     //     inactive: 'img/assdas',
-//     //     active: 'sadasdas'
-//     // }, {
-//     //     inactive: 'img/assdas',
-//     //     active: 'sadasdas'
-//     // }, {
-//     //     inactive: 'img/assdas',
-//     //     active: 'sadasdas'
-//     // }]
-
-//     // $scope.activateTab = function () {
-//     //     $scope.currentimage[index].image = $scope.tabimages[index].active;
-//     // }
-//     $scope.showTab = function () {
-//         $scope.tab.show = true;
-//         $scope.tab.hide = true;
-//     };
-//     $scope.hideTab = function () {
-//         $scope.tab.show = false;
-//         $scope.tab.hide = false;
-//     };
-//     // $scope.activateTab = [{
-//     //     inactive:
-//     // }]
-
-//         // $scope.activateTab
-
-// })
-
 .controller('FormCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("form"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Form"); //This is the Title of the Website
@@ -78,41 +31,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
-
-    // setTimeout(function () {
-    //     // $('#menu-in').removeClass("menu-out");
-    //     $('#hamburger').click(function () {
-    //         if ($("#menu-in").hasClass("menu-out")) {
-    //             $('#menu-in').removeClass("menu-out");
-    //         } else {
-    //             $('#menu-in').addClass("menu-out");
-    //         }
-    //         $(".content-slide ").addClass("slide-out")
-    //     })
-    // }, 100);
-
-
-    // menu
     $scope.getClass = "";
     $scope.contentClass = "";
     $scope.menuOpen = function () {
-            if ($scope.getClass == "" && $scope.contentClass == "") {
-                $scope.getClass = "slide-out";
-                $scope.contentClass = "content-slide";
-            } else {
-                $scope.getClass = "";
-                $scope.contentClass = "";
-            }
+        if ($scope.getClass == "" && $scope.contentClass == "") {
+            $scope.getClass = "slide-out";
+            $scope.contentClass = "content-slide";
+        } else {
+            $scope.getClass = "";
+            $scope.contentClass = "";
         }
-        // $('.content-holder').click(function () {
-        //         console.log("amit")
-        //         if ($('.content-holder').hasClass('slide-content')) {
-        //             $('.content-holder').removeClass('slide-content');
-        //         } else {
-        //             $('.content-holder').addClass('slide-content');
-        //         }
-        //     })
-        // menu end
+    }
 })
 
 .controller('HomepageCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
