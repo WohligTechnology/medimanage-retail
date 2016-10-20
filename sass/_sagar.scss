@@ -5,6 +5,9 @@ $black-color: #000 !default;
 $shadow-col: #ececec !default;
 $white-color: #fff !default;
 
+.form-control{
+  height: 48px;
+}
 .posi-rel {
     position: relative;
 }
