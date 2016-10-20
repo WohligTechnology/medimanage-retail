@@ -1,60 +1,141 @@
 @media (max-width:1200px) {
-  .mobile-no{
-    width: 60%;
-  }
+    .mobile-no {
+        width: 60%;
+    }
 }
 @media (max-width: $screen-sm-max) {
-  .req-quo-frm input {
-      margin-bottom: 20px;
-  }
-
-  .fileContainer{
-    display: block;
-    text-align: center;
-  }
-
-  .career-sec{
-    h2{
-      font-size: 24px;
+    .press-subs,
+    .req-quo-frm {
+        input {
+            margin-bottom: 20px;
+        }
     }
-    .career-cont{
-      font-size: 14px;
-      padding: 10px 0;
-    }
-    h4{
-      font-size: 14px;
-    }
-  }
 
-  .career .padding-top40 {
-    padding-top: 10px;
-}
+    h1{
+      font-size: 30px;
+    }
 
-  .career .btn-browse {
+    h2 {
+        font-size: 18px;
+    }
+
+    .date-col input[type="date"] {
+        height: 45px;
+    }
+
+    .press-subs h4 {
         margin-bottom: 10px;
-      }
-
-  .mob-marg{
-    margin: 10px 0;
-  }
-
-  .scl-btn{
-    margin: 5px;
-    img{
-      zoom:0.8;
     }
-  }
 
+    .product-card,
+    .title-image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .home-page {
+        .div-one {
+            h1 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .product-detail-tab a {
+        height: 100px;
+    }
+
+    .why-tab {
+        margin: 20px;
+    }
+
+    .fileContainer {
+        display: block;
+        text-align: center;
+    }
+
+    .career-sec {
+        h2 {
+            font-size: 24px;
+        }
+
+        .career-cont {
+            font-size: 14px;
+            padding: 10px 0;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+    }
+
+    .career .padding-top40 {
+        padding-top: 10px;
+    }
+
+    .career .btn-browse {
+        margin-bottom: 10px;
+    }
+
+    .mob-marg {
+        margin: 10px 0;
+    }
+
+    .scl-btn {
+        margin: 5px;
+
+        img {
+            zoom: 0.8;
+        }
+    }
 }
 //
 @media (max-width: $screen-xs-max) {
-  .font-sz24{
-    font-size: 24px;
-  }
+    .font-sz24 {
+        font-size: 24px;
+    }
 
-  h2{
-    margin-top: 10px;
-  }
+    .buy-process-bar {
+        ul {
+            li {
+                margin: 4px 4px 10px -4px;
+                display: block;
+
+                &:after {
+                    border: 12px solid transparent;
+                }
+
+                a {
+                    padding: 5px 15px 5px 20px;
+                    border-top-left-radius: 12px;
+                    border-bottom-left-radius: 12px;
+                }
+            }
+        }
+    }
+
+    .health-service {
+        .col-2,
+        .col-3 {
+            margin-left: 0;
+        }
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .home-page {
+        .mob-cent {
+            float: none;
+        }
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+
     .ask-expert .expert-cover .name .l-name {
         padding-left: 15px;
     }
@@ -63,28 +144,26 @@
         padding-right: 15px;
         margin-bottom: 10px;
     }
+
     .buy1-radio .radio-span {
-      text-align: left;
+        text-align: left;
         font-size: 14px;
         margin-top: 10px;
     }
 
     .buy1-iam input {
-      margin: 10px 0 10px;
+        margin: 10px 0;
     }
 
     .buy1-family .date-col input[type="date"] {
-      padding: 12px 2%;
+        padding: 12px 2%;
     }
-
 }
 //
 @media (max-width: $screen-md-max) {
-
-    .padding40{
-      padding: 10px;
-  }
-
+    .padding40 {
+        padding: 10px;
+    }
 }
 //
 @media (max-width:480px) {}
