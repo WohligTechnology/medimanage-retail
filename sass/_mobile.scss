@@ -2,7 +2,13 @@
     .mobile-no {
         width: 60%;
     }
+
+    .permanent-nav ul li a p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
 }
+//
 @media (max-width: $screen-sm-max) {
     .press-subs,
     .req-quo-frm {
@@ -93,11 +99,23 @@
             zoom: 0.8;
         }
     }
+
+    input[type="date"]{
+      width: 100%;
+    }
 }
 //
 @media (max-width: $screen-xs-max) {
     .font-sz24 {
         font-size: 24px;
+    }
+
+    .faq h1 {
+        font-size: 24px;
+    }
+
+    .faq p {
+        font-size: 12px;
     }
 
     .buy-process-bar {
