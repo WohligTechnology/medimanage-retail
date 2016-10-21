@@ -5,6 +5,11 @@ $black-color: #000 !default;
 $shadow-col: #ececec !default;
 $white-color: #fff !default;
 
+
+.marg-auto{
+  margin: 0 auto;
+}
+
 .form-control{
   height: 48px;
 }
@@ -864,6 +869,10 @@ h4 {
 }
 //Senior citizen page addeD
 
+.sen-clkht{
+  height: auto;
+}
+
 .senior-hd-bg {
     background: url("../img/citizen-banner.jpg") no-repeat;
     background-size: cover;
@@ -977,6 +986,12 @@ h4 {
 
 .senior-prod {
     padding: 40px;
+    .center-bord {
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        margin-left: 0;
+        margin-right: 0;
+      }
 
     ul {
         li {
@@ -988,18 +1003,13 @@ h4 {
                 font-size: 16px;
             }
 
-            .center-bord {
-                border-left: 1px solid #ccc;
-                border-right: 1px solid #ccc;
-                margin-left: 0;
-                margin-right: 0;
+
             }
 
             img {
                 margin: 0 auto;
             }
         }
-    }
 
     button {
         width: 30%;
