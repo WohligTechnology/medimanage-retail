@@ -1,0 +1,361 @@
+<div class="medical-history">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="med-form margin40">
+                    <div class="row">
+                        <div class="col-md-2  col-sm-12 col-xs-12">
+                            <!-- DESKTOP NAV BAR -->
+                            <div class="permanent-nav hidden-sm hidden-xs">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a ui-sref="proposer-details" class="navpast-comp"><span class="">1</span><p class="disp-inblk">Proposer<br/> Details</p></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="insured-details" class="navpast-comp"><span class="">2</span><p class="disp-inblk">Insured<br/> Details</p></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="medical-history" class="navcurrent-page"><span class="">3</span><p class="disp-inblk">Medical<br/> History</p></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="nominee-details"><span class="">4</span><p class="disp-inblk">Nominee<br/> Details</p></a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="pay-get-insured"><span class="">5</span><p class="disp-inblk">Pay & get<br/> Insured</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- TABLET & PHONE NAV BAR -->
+                            <div class="permanent-nav hidden-lg hidden-md text-center">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="text-justify">
+                                        <a ui-sref="proposer-details" class="navpast-comp"><span>1</span><p class="disp-blk">Proposer<br/> Details</p></a>
+                                    </li>
+                                    <li class="text-justify">
+                                        <a ui-sref="insured-details" class="navpast-comp"><span>2</span><p class="disp-blk">Insured<br/> Details</p></a>
+                                    </li>
+                                    <li class="text-justify">
+                                        <a ui-sref="medical-history" class="navcurrent-page"><span>3</span><p class="disp-blk">Medical<br/> History</p></a>
+                                    </li>
+                                    <li class="text-justify">
+                                        <a ui-sref="nominee-details"><span>4</span><p class="disp-blk">Nominee<br/> Details</p></a>
+                                    </li>
+                                    <li class="text-justify">
+                                        <a ui-sref="pay-get-insured"><span>5</span><p class="disp-blk">Pay & get<br/> Insured</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-12 col-xs-12">
+                            <div class="med-box">
+                                <h3 class="font-wt700">Has any of the insured members suffered from following diseases?</h3>
+                                <form>
+
+                                    <uib-accordion close-others="oneAtATime">
+                                        <div uib-accordion-group class="panel-default" is-open="status.open1">
+                                            <uib-accordion-heading>
+                                                High or low blood pressure, Chest Pain, or any other cardiac disorder?
+                                                <i class="pull-right fa " ng-class="{'fa fa-chevron-down': status.open1, 'fa fa-chevron-right': !status.open1}"></i>
+                                            </uib-accordion-heading>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Puneet Manocha <br><span>(Self)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                  <input class="switch-input form-control" type="checkbox" />
+                                                    <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                    <span class="switch-handle"></span>
+                                                  </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Akshita Manocha <br><span>(Spouse)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Ayaan Manocha <br><span>(Son)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Arya Manocha <br><span>(Daughter)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                         <input class="switch-input form-control" type="checkbox" />
+                                                         <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                         <span class="switch-handle"></span>
+                                                       </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Puneet Manocha<br><span>(Self)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                  <input class="switch-input form-control" type="checkbox" />
+                                                    <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                    <span class="switch-handle"></span>
+                                                  </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Akshita Manocha <br><span>(Spouse)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Ayaan Manocha <br><span>(Son)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Arya Manocha<br><span>(Daughter)</p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                         <input class="switch-input form-control" type="checkbox" />
+                                                         <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                         <span class="switch-handle"></span>
+                                                       </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div uib-accordion-group class="panel-default" is-open="status.open2">
+                                            <uib-accordion-heading>
+                                              Tuberculosis, Asthma, Bronchitis or any other lung/respiratory disorder?
+                                                <i class="pull-right fa " ng-class="{'fa fa-chevron-down': status.open2, 'fa fa-chevron-right': !status.open2}"></i>
+                                            </uib-accordion-heading>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Puneet Manocha<br><span> (Self)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                  <input class="switch-input form-control" type="checkbox" />
+                                                    <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                    <span class="switch-handle"></span>
+                                                  </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Akshita Manocha<br><span>(Spouse)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Ayaan Manocha <br><span>(Son)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Arya Manocha<br><span>(Daughter)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                         <input class="switch-input form-control" type="checkbox" />
+                                                         <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                         <span class="switch-handle"></span>
+                                                       </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div uib-accordion-group class="panel-default" is-open="status.open3">
+                                            <uib-accordion-heading>
+                                                Ulcer(Stomach/Duodenal), Liver or gall bladder disorder or any other digestive tract disorder?
+                                                <i class="pull-right fa " ng-class="{'fa fa-chevron-down': status.open3, 'fa fa-chevron-right': !status.open3}"></i>
+                                            </uib-accordion-heading>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Puneet Manocha <br><span>(Self)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                  <input class="switch-input form-control" type="checkbox" />
+                                                    <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                    <span class="switch-handle"></span>
+                                                  </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Akshita Manocha<br><span>(Spouse)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Ayaan Manocha <br><span>(Son)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Arya Manocha<br><span>(Daughter)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                         <input class="switch-input form-control" type="checkbox" />
+                                                         <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                         <span class="switch-handle"></span>
+                                                       </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div uib-accordion-group class="panel-default" is-open="status.open4">
+                                            <uib-accordion-heading>
+                                                Kidney Failure, Stone in kidney or urinary tract, Prostate disorder or any other kidney/urinary tract disorder?
+                                                <i class="pull-right fa " ng-class="{'fa fa-chevron-down': status.open4, 'fa fa-chevron-right': !status.open4}"></i>
+                                            </uib-accordion-heading>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Puneet Manocha<br> <span>(Self)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                  <input class="switch-input form-control" type="checkbox" />
+                                                    <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                    <span class="switch-handle"></span>
+                                                  </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Akshita Manocha<br><span>(Spouse)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Ayaan Manocha <br></span>(Son)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Arya Manocha<br><span>(Daughter)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                         <input class="switch-input form-control" type="checkbox" />
+                                                         <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                         <span class="switch-handle"></span>
+                                                       </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div uib-accordion-group class="panel-default" is-open="status.open5">
+                                            <uib-accordion-heading>
+                                                Stroke, Epilepsy (fits), Paralysis or any other nervous system (Brain, Spinal cord, etc) disorder?
+                                                <i class="pull-right fa " ng-class="{'fa fa-chevron-down': status.open5, 'fa fa-chevron-right': !status.open5}"></i>
+                                            </uib-accordion-heading>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Puneet Manocha <br><span>(Self)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                  <input class="switch-input form-control" type="checkbox" />
+                                                    <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                    <span class="switch-handle"></span>
+                                                  </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Akshita Manocha<br><span>(Spouse)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Ayaan Manocha <br><span>(Son)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                          <input class="switch-input form-control" type="checkbox" />
+                                                          <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                          <span class="switch-handle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                                    <p>Arya Manocha<br><span>(Daughter)</span></p>
+                                                    <div class="toggle-btn">
+                                                        <label class="switch">
+                                                         <input class="switch-input form-control" type="checkbox" />
+                                                         <span class="switch-label" data-on="Yes" data-off="No"></span>
+                                                         <span class="switch-handle"></span>
+                                                       </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </uib-accordion>
+                                </form>
+                            </div>
+                            <div class="ins-btn marg-tp10">
+                                <div class="row">
+                                    <button type="button" class="btn btn-success pull-left btn-back">back</button>
+                                    <button type="button" class="btn btn-success pull-right btn-continue">continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
