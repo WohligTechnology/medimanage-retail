@@ -230,7 +230,7 @@
                 </label>
                 <span class="disp-blk">Compare</span>
             </div>
-
+<!-- ng-show="hideDetbtn" -->
             <div class="row">
                 <div class="col-md-2">
                     <div class="poli-box box-ht">
@@ -238,7 +238,8 @@
                         <p class="font-wt700 text-capitalize">Happy Family Floater <br>(Silver)</p>
                         <img src="img/rating-star.png" height="10px" class="img-responsive imgc-marg">
                         <span class="text-uppercase col-696969 font-wt700">medimanage rating</span>
-                        <button ng-click="showDetP(1)" class="btn det-btn marg-t10" type="submit">view details</button>
+                        <button ng-click="showDetP(1)"  class="btn det-btn marg-t10" type="submit">{{(polDet)&& "hide details"|| "view details"}}</button>
+                        <button ng-click="hideDetP(1)" ng-show="polDet" class="btn det-btn marg-t10 posi-abs hidden-btn" type="submit">{{(polDet)&& "hide details"|| "view details"}}</button>
                     </div>
                 </div>
                 <div class="col-md-1">

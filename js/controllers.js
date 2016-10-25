@@ -391,8 +391,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.tabs[id] = true;
             if (1) {
                 $scope.polDet = true;
+                $scope.hideDetbtn = false;
             }
-        }
+        };
+        $scope.hideDetbtn = true;
+    $scope.hideDetP = function(id) {
+            $scope.tabs[id] = true;
+            if (1) {
+                $scope.hideDetbtn = true;
+                $scope.polDet = false;
+            }
+        };
 
 })
 

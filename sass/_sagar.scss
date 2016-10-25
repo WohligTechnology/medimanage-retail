@@ -2089,6 +2089,7 @@ h4 {
 }
 //policy list end
 //policydet tab start
+
 .policy-det {
     background: #eeeeee;
     border: 1px solid #b4b4b4;
@@ -2109,6 +2110,7 @@ h4 {
         vertical-align: middle;
         display: inline-block;
         margin: 0 0 5px 5px;
+
         a {
             color: $white-color;
             text-decoration: none;
@@ -2159,27 +2161,36 @@ h4 {
     left: 0;
 }
 
-.dwn-btn{
-  background: transparent;
-  color: $brand-danger;
-  border: 1px solid $brand-danger;
-  text-transform: uppercase;
-  border-radius: 4px;
-  font-size: 12px;
+.dwn-btn {
+    background: transparent;
+    color: $brand-danger;
+    border: 1px solid $brand-danger;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 12px;
 
-  &:hover {
-      background: $brand-danger;
-      color: $white-color;
-  }
+    &:hover {
+        background: $brand-danger;
+        color: $white-color;
+    }
 
-  &:active,
-  &:focus {
-      background: transparent;
-      color: $brand-danger;
-      border: 1px solid $brand-danger;
-      outline: none;
-  }
+    &:active,
+    &:focus {
+        background: transparent;
+        color: $brand-danger;
+        border: 1px solid $brand-danger;
+        outline: none;
+    }
 }
+
+.hidden-btn {
+    bottom: 18px;
+    left: 46px;
+}
+// .hidden-btn {
+//     bottom: 0px;
+//     left: 47px;
+// }
 //policy det tab end
 
 .buy2-boxbord {
