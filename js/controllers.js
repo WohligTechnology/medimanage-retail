@@ -373,6 +373,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     TemplateService.menu = "";
     $scope.navigation = NavigationService.getnav();
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
     $scope.slider = {
         minValue: 0,
         maxValue: 90,
@@ -382,6 +385,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             step: 1
         }
     };
+    $scope.tabs = false;
+    //$scope.polDet = false;
+    $scope.showDetP = function(id) {
+            $scope.tabs[id] = true;
+            if (1) {
+                $scope.polDet = true;
+            }
+        }
 
 })
 

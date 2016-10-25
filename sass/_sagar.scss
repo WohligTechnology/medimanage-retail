@@ -1907,6 +1907,7 @@ h4 {
 
         .rz-bubble {
             bottom: -40px;
+            font-weight: 700;
 
             .rz-limit {
                 display: none;
@@ -1967,13 +1968,14 @@ h4 {
 }
 
 .cmp-btn {
-  position: relative;
-  height: 150px;
+    position: relative;
+    height: 150px;
+
     .compa-btn {
-      top: 50%;
-      left: 50%;
-      @include transform(translate(-50%,-50%));
-      position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%,-50%));
+        position: absolute;
         text-transform: uppercase;
         font-size: 12px;
         margin: 0 auto;
@@ -1998,23 +2000,187 @@ h4 {
     }
 }
 
-.comp-name{
-  text-transform: capitalize;;
-  font-weight: 700;
-  color: #e0e0e0;
+.comp-name {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #e0e0e0;
 }
 
-.comp-name2{
-  color: #333;
+.comp-name2 {
+    color: #333;
 }
 
-.name-posi{
-  top: 60%;
-  left: 50%;
-  text-align: center;
-  @include transform(translate(-50%,-50%));
+.name-posi {
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    @include transform(translate(-50%,-50%));
 }
 //compare box end
+//policy list start
+
+.policy-title {
+    border: 1px solid #e0e0e0;
+    margin: 20px 0 0;
+
+    .col-md-1,
+    .col-md-2 {
+        padding: 0;
+        margin: 0;
+        height: max-height;
+    }
+}
+
+.poli-hov {
+    &:hover {
+        box-shadow: 0 0 5px #e0e0e0;
+
+        .blue-hover {
+            background: $brand-primary;
+            color: $white-color;
+        }
+    }
+}
+
+.bord-lf {
+    border-left: 1px solid #e0e0e0;
+}
+
+.box-ht {
+    height: 200px;
+}
+
+.poli-box {
+    padding: 20px 0;
+    text-align: center;
+
+    span {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-transform: capitalize;
+    }
+}
+
+.img-ht {
+    img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+.chk-pos {
+    text-align: center;
+    top: 50%;
+    left: -65px;
+    @include transform(translateY(-50%));
+}
+
+.marg-t10 {
+    margin-top: 10px;
+}
+
+.buy-box {
+    background: $brand-success;
+    color: $white-color;
+    margin-right: 15px;
+}
+//policy list end
+//policydet tab start
+.policy-det {
+    background: #eeeeee;
+    border: 1px solid #b4b4b4;
+    padding: 10px 15px 15px;
+
+    .nav-tabs {
+        padding-left: 30px;
+    }
+
+    .ball {
+        background: lightgray;
+        height: 15px;
+        width: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 100%;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0 0 5px 5px;
+        a {
+            color: $white-color;
+            text-decoration: none;
+        }
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #dddddd;
+
+        a {
+            padding: 16px 40px !important;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: $white-color;
+            color: #848484;
+
+            &:focus {
+                color: $brand-danger !important;
+                background-color: $white-color;
+            }
+
+            &:active {
+                color: $brand-danger !important;
+                background-color: $white-color;
+            }
+
+            &:hover {
+                background-color: $white-color;
+            }
+        }
+    }
+
+    .tab-content {
+        border: 1px solid #dddddd;
+        border-top: 0;
+        padding: 4% 8%;
+        background: $white-color;
+    }
+}
+
+.prodt-list {
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.rgt-posi {
+    top: 0;
+    left: 0;
+}
+
+.dwn-btn{
+  background: transparent;
+  color: $brand-danger;
+  border: 1px solid $brand-danger;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 12px;
+
+  &:hover {
+      background: $brand-danger;
+      color: $white-color;
+  }
+
+  &:active,
+  &:focus {
+      background: transparent;
+      color: $brand-danger;
+      border: 1px solid $brand-danger;
+      outline: none;
+  }
+}
+//policy det tab end
 
 .buy2-boxbord {
     border: 1px solid #e0e0e0;
@@ -2317,6 +2483,14 @@ h4 {
     &:hover {
         background: $brand-success;
         color: $white-color;
+    }
+
+    &:active,
+    &:focus {
+        background: transparent;
+        color: $brand-success;
+        border: 1px solid $brand-success;
+        outline: none;
     }
 }
 
