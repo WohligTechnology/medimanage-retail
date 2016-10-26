@@ -1,6 +1,9 @@
-<div ng-include="template.menu" class="template menu {{getClass}} " ng-controller="headerctrl"></div>
-<div class="content-holder" ng-controller="headerctrl">
-    <div ng-include="template.header " class="template header "></div>
-    <div ng-include="template.content " class="template content "></div>
-    <div ng-include="template.footer " class="template footer "></div>
+<div ng-class="{'pl-60': template.menu}">
+
+  <div ng-include="template.menu" class="template menu {{getClass}}" ng-controller="headerctrl"></div>
+  <div class="content-holder" ng-controller="headerctrl">
+      <div ng-include="template.header " class="template header "></div>
+      <div ng-include="template.content " class="template content "></div>
+      <div ng-include="template.footer " class="template footer "></div>
+  </div>
 </div>
