@@ -367,7 +367,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('Buystep2Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('Buystep2Ctrl', function($scope, TemplateService, NavigationService, $timeout, $uibModal) {
     $scope.template = TemplateService.changecontent("buying-process-step2"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Buying Process: Step-2"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -386,22 +386,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }
     };
     $scope.tabs = false;
-    //$scope.polDet = false;
-    $scope.showDetP = function(id) {
-            $scope.tabs[id] = true;
-            if (1) {
-                $scope.polDet = true;
-                $scope.hideDetbtn = false;
-            }
-        };
-        $scope.hideDetbtn = true;
-    $scope.hideDetP = function(id) {
-            $scope.tabs[id] = true;
-            if (1) {
-                $scope.hideDetbtn = true;
-                $scope.polDet = false;
-            }
-        };
+    $scope.polDet = false;
+    $scope.toggleDet = function () {
+      $scope.polDet = ($scope.polDet)?false:true;
+
+    }
+
+    $scope.compare = function() {
+      $uibModal.open({
+        animation: true,
+        templateUrl: "views/modal/compare.html",
+        scope: $scope,
+        size: 'lg',
+      });
+    };
 
 })
 

@@ -7,7 +7,7 @@
                         <div class="col-md-12">
                             <div class="buy-process-bar font-wt700 posi-rel">
                                 <ul>
-                                    <li class="select"><a href="#">Enter Your Details</a></li>
+                                    <li class="select"><a ui-sref="buying-process-step1">Enter Your Details</a></li>
                                     <li class="select"><a href="#">Choose Your Best Policy</a></li>
                                     <li><a href="#">Make Payment & Get Insured</a></li>
                                 </ul>
@@ -23,7 +23,7 @@
         <div class="det-box">
             <div class="row">
                 <div class="col-md-2 col-sm-12 col-xs-12">
-                    <div class="">
+                    <div class="mydet-box">
                         <p class="font-wt700">My Details</p>
                         <button class="btn btn-default det-btn" type="submit">modify details</button>
                     </div>
@@ -141,36 +141,70 @@
         </div>
 
 
-        <div class="compa-box">
+        <div class="compa-box posi-rel">
+            <img src="img/close-btn-big-red.png" alt="" class="posi-abs big-close">
             <div class="row">
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="comp-card posi-rel">
-                                <div class="comp-img">
-                                    <img src="img/apollo-logo.png" class="posi-abs">
+                            <div class=" compa-card posi-rel wid100">
+                                <div class="posi-abs card-posi  z-in1 wid100">
+                                    <div class="posi-rel bg-white">
+                                        <p class="comp-name posi-abs name-posi2">add another policy</p>
+                                    </div>
                                 </div>
-                                <p class="comp-name comp-name2  posi-abs name-posi">Easy Health - Premium (1) - Floatery</p>
+                                <div class="posi-abs card-posi hide bg-white z-in2  wid100">
+                                    <div class="posi-rel bg-white">
+                                        <img src="img/close-btn-red.png" alt="" class="posi-abs red-close">
+                                        <div class=" compa-img">
+                                            <img src="img/apollo-logo.png" class="posi-abs">
+                                        </div>
+                                        <p class="comp-name comp-name2 posi-abs name-posi">Easy Health - Premium (1) - Floatery</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="comp-card posi-rel">
-                                <div class="comp-img">
-                                    <img src="img/maxbupa-logo.jpg" class="posi-abs">
+                            <div class=" compa-card posi-rel">
+                                <div class="posi-abs card-posi z-in1 wid100">
+                                    <div class="posi-rel bg-white">
+                                        <p class="comp-name posi-abs name-posi2">add another policy</p>
+                                    </div>
                                 </div>
-                                <p class="comp-name comp-name2 posi-abs name-posi">Heartbeat Gold - Floater</p>
+                                <div class="posi-abs card-posi bg-white z-in2 wid100">
+                                    <div class="posi-rel bg-white">
+                                        <img src="img/close-btn-red.png" alt="" class="posi-abs red-close">
+                                        <div class=" compa-img">
+                                            <img src="img/maxbupa-logo.jpg" class="posi-abs">
+                                        </div>
+                                        <p class="comp-name comp-name2 posi-abs name-posi">Heartbeat Gold - Floater</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="comp-card posi-rel">
-                                <p class="comp-name posi-abs name-posi">add another policy</p>
+                            <div class="compa-card posi-rel">
+                                <div class="posi-abs card-posi z-in1 wid100">
+                                    <div class="posi-rel bg-white">
+                                        <p class="comp-name posi-abs name-posi2">add another policy</p>
+                                    </div>
+                                </div>
+                                <div class="posi-abs card-posi bg-white z-in2 wid100">
+                                    <div class="posi-rel bg-white">
+                                        <img src="img/close-btn-red.png" alt="" class="posi-abs red-close">
+                                        <div class=" compa-img">
+                                            <img src="img/apollo-logo.png" class="posi-abs">
+                                        </div>
+                                        <p class="comp-name comp-name2 posi-abs name-posi">Easy Health - Premium (1) - Floatery</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="cmp-btn">
-                        <button class="btn btn-success compa-btn" type="submit">COMPARE PLANS</button>
+                    <div class="compare-btn">
+                        <button class="btn btn-success compa-btn" type="submit" ng-click="compare();">COMPARE PLANS</button>
                     </div>
                 </div>
             </div>
@@ -230,7 +264,6 @@
                 </label>
                 <span class="disp-blk">Compare</span>
             </div>
-<!-- ng-show="hideDetbtn" -->
             <div class="row">
                 <div class="col-md-2">
                     <div class="poli-box box-ht">
@@ -238,8 +271,7 @@
                         <p class="font-wt700 text-capitalize">Happy Family Floater <br>(Silver)</p>
                         <img src="img/rating-star.png" height="10px" class="img-responsive imgc-marg">
                         <span class="text-uppercase col-696969 font-wt700">medimanage rating</span>
-                        <button ng-click="showDetP(1)"  class="btn det-btn marg-t10" type="submit">{{(polDet)&& "hide details"|| "view details"}}</button>
-                        <button ng-click="hideDetP(1)" ng-show="polDet" class="btn det-btn marg-t10 posi-abs hidden-btn" type="submit">{{(polDet)&& "hide details"|| "view details"}}</button>
+                        <button ng-click="toggleDet()" class="btn det-btn marg-t10" type="submit">{{(polDet)&& "hide details"|| "view details"}}</button>
                     </div>
                 </div>
                 <div class="col-md-1">
@@ -462,14 +494,14 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="text-center">
-                                        <img src="img/conditions-icon.png" alt=""  class="img-responsive imgc-marg">
+                                        <img src="img/conditions-icon.png" alt="" class="img-responsive imgc-marg">
                                         <h4 class="font-wt700">Terms & conditions</h4>
                                         <button class="btn btn-default dwn-btn" type="submit">download</button>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="text-center">
-                                        <img src="img/brochure-icon.png" alt=""  class="img-responsive imgc-marg">
+                                        <img src="img/brochure-icon.png" alt="" class="img-responsive imgc-marg">
                                         <h4 class="font-wt700">Brochure</h4>
                                         <button class="btn btn-default dwn-btn" type="submit">download</button>
                                     </div>
@@ -495,32 +527,28 @@
                         <div class="abt-tab"></div>
                         <div class="row">
                             <div class="col-md-6">
-                              <div class="text-justify">
-                                <h4 class="font-wt700">About Company</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Pellentesque varius blandit ultricies. Nulla facilisi.
-                                  Morbi commodo, est ac dignissim feugiat, augue tortor pharetra justo, non volutpat nisl metus eu risus.</p>
-                              </div>
+                                <div class="text-justify">
+                                    <h4 class="font-wt700">About Company</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius blandit ultricies. Nulla facilisi. Morbi commodo, est ac dignissim feugiat, augue tortor pharetra justo, non volutpat nisl metus eu risus.</p>
+                                </div>
                             </div>
                             <div class="col-md-6">
-                              <div class="text-justify">
-                                <h4 class="font-wt700">Our View</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Pellentesque varius blandit ultricies. Nulla facilisi.
-                                  Morbi commodo, est ac dignissim feugiat, augue tortor pharetra justo, non volutpat nisl metus eu risus.</p>
-                              </div>
+                                <div class="text-justify">
+                                    <h4 class="font-wt700">Our View</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius blandit ultricies. Nulla facilisi. Morbi commodo, est ac dignissim feugiat, augue tortor pharetra justo, non volutpat nisl metus eu risus.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                              <div class="text-justify">
-                                <h4 class="font-wt700">Cashless Claim</h4>
-                              </div>
+                                <div class="text-justify">
+                                    <h4 class="font-wt700">Cashless Claim</h4>
+                                </div>
                             </div>
                             <div class="col-md-6">
-                              <div class="text-justify">
-                                <h4 class="font-wt700">Reimbursement Claim</h4>
-                              </div>
+                                <div class="text-justify">
+                                    <h4 class="font-wt700">Reimbursement Claim</h4>
+                                </div>
                             </div>
                         </div>
                     </uib-tab>
