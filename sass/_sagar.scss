@@ -164,6 +164,92 @@ input[type=date]::-webkit-inner-spin-button {
 .imgc-marg {
     margin: 0 auto;
 }
+
+
+//NAvbar CSS start
+.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+    background: white;
+    color: #767676;
+
+    .btn-success{
+      border-radius: 4px;
+    }
+
+    .login {
+        span {
+            color: #767676;
+            font-weight: 700;
+        }
+      }
+
+    .search-box {
+        border: 1px solid $brand-success;
+        position: relative;
+        border-radius: 4px;
+        padding-left: 8px;
+        padding-right: 24px;
+        // margin-top: 5px;
+          margin: 10px 0;
+        input {
+            background-color: transparent;
+            height: 24px;
+            display: inline-block;
+            border: none;
+            font-size: 12px;
+            font-weight: normal;
+            padding: 0;
+            margin: 5px 0;
+
+        }
+        i {
+            position: absolute;
+            right: 5px;
+            top: 6px;
+            font-size: 20px;
+            color: $brand-success;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+
+
+/*
+ *  scroll style start
+ */
+.style-33::-webkit-scrollbar {
+    //height: 10px;
+    //padding: 5px;
+}
+
+.style-33::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border: 1px solid #E2E2E2;
+    border-radius: 20px;
+    background-color: $white-color;
+}
+
+.style-33::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.style-33::-webkit-scrollbar-thumb {
+    background-color: $brand-success;
+    border-radius: 10px;
+}
+/*
+ *  scroll style start
+ */
+//NAvbar CSS end
 //login page starts here
 
 .login-sec {
