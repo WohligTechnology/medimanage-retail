@@ -1961,6 +1961,11 @@ h4 {
 }
 //compare box start
 
+.compare-scroll{
+  overflow-x: auto;
+  padding-bottom: 30px;
+}
+
 .wid100{
   width: 100%;
 }
@@ -2186,11 +2191,8 @@ h4 {
         vertical-align: middle;
         display: inline-block;
         margin: 0 0 5px 5px;
-
-        a {
-            color: $white-color;
-            text-decoration: none;
-        }
+        color: $white-color;
+        cursor: pointer;
     }
 
     .nav-item {
@@ -2911,6 +2913,7 @@ h4 {
     }
 }
 
+
 .med-scroll {
     overflow-x: auto;
 }
@@ -2919,6 +2922,9 @@ h4 {
 //   outline: 1px solid slategrey;
 // }
 
+.wid800{
+  width: 800px;
+}
 .med-box {
     //height: 480px;
     display: block;
@@ -3730,6 +3736,8 @@ h4 {
     padding: 0 25px;
     max-width: 1050px;
     margin: 0 auto;
+    overflow-x: auto;
+    padding-bottom: 20px;
 }
 
 .claim-table table {

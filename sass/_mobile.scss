@@ -271,7 +271,7 @@
         font-size: 16px;
     }
 
-    .dashboard-myprofile .nav-item a {
+    .dashboard-myprofile, .dashboard-contact .nav-item a {
         padding: 15px 35px !important;
         font-size: 12px;
     }
@@ -286,8 +286,27 @@
         }
     }
 
+    .box-ht {
+        height: 250px;
+    }
+
+    .bg-white{
+      p{
+        font-size: 12px;
+        line-height: 1;
+      }
+    }
+
+    .btn-back, .btn-continue{
+          padding: 6px 25px;
+    }
+
     .icon-box img {
         zoom: 0.6;
+    }
+
+    hr{
+      display: none;
     }
 
     .download img {
@@ -304,6 +323,12 @@
 
     .dashboard-myprofile, .dashboard-contact .nav-item a {
         padding: 10px 20px !important;
+    }
+
+    .dashboard-contact{
+      span{
+        font-size: 12px;
+      }
     }
 
     h1 {

@@ -1526,9 +1526,11 @@ a {
 }
 
 // ------------this css is for dashboard-quotes-------------
-.dashboard-quotes {
+.dashboard-quotes, .dashboard-myprofile {
     .quote-table {
+      overflow-x: auto;
         margin-top: 40px;
+        padding-bottom: 20px;
     }
     th {
         border-top: 1px dashed #c7c7c7 !important;
@@ -1735,7 +1737,8 @@ a {
 // ------------this css is for dashboard-mycommunication-------------
 .dashboard-mycommunication {
     .communication-table {
-        margin-top: 20px;
+      overflow-x: auto;
+        margin: 20px 0;
         th {
             border-bottom: 0;
         }
@@ -1879,6 +1882,7 @@ a {
         padding: 0;
     }
     .company-table {
+      // overflow-x: auto;
         thead {
             background-color: #8ED3EE;
         }
@@ -1923,6 +1927,9 @@ a {
             top: -5px;
         }
     }
+}
+.accord-content{
+  overflow-x: auto;
 }
 
 @import "fancybox-override";
