@@ -120,36 +120,47 @@
             </div>
 
             <div class="collapse navbar-collapse style-33" id="nav-collapse">
-                <ul class="list-unstyled">
-                    <li class="home-btn"><a ui-sref="home" class="nav-label">HOME</a></li>
-                    <li class="about-btn">
-                        <a ui-sref="#" class="nav-label">ABOUT US </a>
-                        <div class="about-content">
-                          <ul>
+
+                <uib-accordion close-others="oneAtATime">
+                    <div uib-accordion-group class="panel-default">
+                        <uib-accordion-heading>
+                            <a class="menu-nav-mobile" ui-sref="home" ui-sref-active="active">HOME</a>
+                        </uib-accordion-heading>
+                    </div>
+
+                    <div uib-accordion-group class="panel-default" is-open="status.open1">
+                        <uib-accordion-heading>
+                            ABOUT US
+                            <i class="pull-right fa icon color-white" ng-class="{'fa-caret-up':( status.open1), 'fa-caret-down': (!status.open1)}"></i>
+                        </uib-accordion-heading>
+                        <ul class="nav-submenu list-unstyled">
                             <li><a ui-sref="why-medimanage">WHY CHOOSE US</a></li>
                             <li><a ui-sref="our-team">OUT TEAM</a></li>
                             <li><a ui-sref="our-story">OUR STORY</a></li>
                             <li><a ui-sref="ourvalues">OUR VALUES</a></li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li class="help-btn">
-                        <a ui-sref="#" class="nav-label">HELP</a>
-                        <div class="help-content">
-                            <ul>
-                                <li><a ui-sref="get-call">GET A CALL BACK</a></li>
-                                <li><a ui-sref="ask-expert">ASK AN EXPERT</a></li>
-                                <li><a ui-sref="get-quote">CREATE A QUOTE</a></li>
-                                <li><a ui-sref="faq">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <hr class="menu-hr">
-                <ul class="list-unstyled">
-                    <li class="health-btn"><a sref="" class="nav-label">HEALTH INSURANCE</a>
-                        <div class="health-content">
-                          <ul>
+                        </ul>
+                    </div>
+
+                    <div uib-accordion-group class="panel-default" is-open="status.open2">
+                        <uib-accordion-heading>
+                            HELP
+                            <i class="pull-right fa icon color-white" ng-class="{'fa-caret-up':( status.open2), 'fa-caret-down': (!status.open2)}"></i>
+                            </a>
+                        </uib-accordion-heading>
+                        <ul class="nav-submenu list-unstyled">
+                            <li><a ui-sref="get-call">GET A CALL BACK</a></li>
+                            <li><a ui-sref="ask-expert">ASK AN EXPERT</a></li>
+                            <li><a ui-sref="get-quote">CREATE A QUOTE</a></li>
+                            <li><a ui-sref="faq">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div uib-accordion-group class="panel-default" is-open="status.open3">
+                        <uib-accordion-heading>
+                            HEALTH INSURANCE
+                            <i class="pull-right fa icon color-white" ng-class="{'fa-caret-up':( status.open3), 'fa-caret-down': (!status.open3)}"></i>
+                        </uib-accordion-heading>
+                        <ul class="nav-submenu list-unstyled">
                             <li><a href="">INDIVIDUAL</a></li>
                             <li><a href="">FAMILY</a></li>
                             <li><a href="">SENIOR CITIZEN</a></li>
@@ -157,28 +168,36 @@
                             <li><a href="">PERSONAL ACCIDENT</a></li>
                             <li><a href="">CRITICAL ILLNESS</a></li>
                             <li><a href="">SUPER TOP-UP</a></li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li class="cmp-btn"><a sref="" class="nav-label">COMPARE & BUY</a>
-                        <div class="cmp-content">
-                          <ul>
+                        </ul>
+                    </div>
+
+                    <div uib-accordion-group class="panel-default" is-open="status.open4">
+                        <uib-accordion-heading>
+                            COMPARE & BUY
+                            <i class="pull-right fa icon color-white" ng-class="{'fa-caret-up':( status.open4), 'fa-caret-down': (!status.open4)}"></i>
+                            </a>
+                        </uib-accordion-heading>
+                        <ul class="nav-submenu list-unstyled">
                             <li><a href="">SUB-MENU 1</a></li>
                             <li><a href="">SUB-MENU 2</a></li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li class="why-btn"><a ui-sref="why-medimanage" class="nav-label">WHY MEDIMANAGE ?</a></li>
-                </ul>
-                <hr class="menu-hr">
-                <div class="login">
-                    <div class="search-box">
-                        <input type="text" class="form-control" placeholder="Search" id="search">
-                        <i class="fa fa-search " aria-hidden="true"></i>
+                        </ul>
                     </div>
-                    <a ui-sref="login"><span class="">LOGIN</span></a>
-                </div>
-                <hr class="menu-hr">
+
+                    <div uib-accordion-group class="panel-default">
+                        <uib-accordion-heading>
+                            <a class="menu-nav-mobile" ui-sref="why-medimanage" ui-sref-active="active">WHY MEDIMANAGE ?</a>
+                        </uib-accordion-heading>
+                    </div>
+
+                    <div uib-accordion-group class="panel-default">
+                        <uib-accordion-heading>
+                            <a class="menu-nav-mobile" ui-sref="login" ui-sref-active="active">Login</a>
+                        </uib-accordion-heading>
+                    </div>
+
+                </uib-accordion>
+
+
                 <div class="claims">
                     <div class="claim-no font-wt700"><span class="font-sz12 padd-rt10">Claims managed till date: </span> 4422626</div>
                 </div>

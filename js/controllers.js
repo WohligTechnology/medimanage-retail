@@ -33,6 +33,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $.fancybox.close(true);
     $scope.getClass = "";
     $scope.contentClass = "";
+    $scope.oneAtATime = true;
     $scope.menuOpen = function() {
         if ($scope.getClass == "" && $scope.contentClass == "") {
             $scope.getClass = "slide-out";

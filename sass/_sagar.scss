@@ -210,6 +210,71 @@ input[type=date]::-webkit-inner-spin-button {
             cursor: pointer;
         }
     }
+
+//accordian start
+    li {
+                a {
+                    display: block;
+                    font-weight: 600;
+                    padding: 12px 30px;
+                    border-bottom: 1px solid #ddd;
+                    line-height: 1;
+                    @include transition(all ease 300ms);
+
+                    &.active,
+                    &:hover {
+                      color: $brand-success;
+                    }
+                }
+            }
+
+
+            .panel-group {
+            .panel + .panel {
+                margin-top: 0;
+            }
+
+            .panel {
+                border: none;
+
+                .panel-heading {
+                    background: #fff;
+                    padding: 0;
+                    border: 0;
+                    border-bottom: 1px solid #ddd;
+
+                    h4 {
+                        margin: 0;
+
+                        a {
+                            color: #333333;
+                            font-size: 14px;
+                            padding: 12px 20px;
+                            display: block !important;
+
+                            & .menu-nav-mobile {
+                                padding: 0 !important;
+
+                                &.active {
+                                    color: $brand-success;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .panel-collapse .panel-body {
+                padding: 0;
+                border: none;
+            }
+        }
+
+        .padd0{
+          padding: 0px
+        }
+
+        //Accordian end
 }
 
 
